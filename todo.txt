@@ -1,0 +1,66 @@
+Days are a little shorter
+
+Copy mods' effects:
+  Communism for Town Debt (@ x30)
+  Long Distance Relationship
+  Friends Forever
+	  - Pets and livestock are invincible
+
+Stamina goes so low (4) during Late that you're slightly slow at full.
+Machines don't craft during Late
+(But all machines crafting at end of day will advance 7 hours / be done in the morning)
+If you go to bed at or after 11pm, you'll wake with less energy, to a minimum of 3/4 energy at Late+.
+
+Gain less Permits/XP
+✅ Certain items cost 10x more
+
+Several milestones have more tiers, mostly things likely to max out early, as a matter of course
+
+✅ Franlyn recipe unlocks take more discs
+
+Buildings construction takes more debt and materials
+
+New fruit trees take longer to grow up, based on how many fruit they give per harvest. (2 fruit --> x2 grow duration, 3 --> x3, etc.)
+Many simple fruits restore less energy (assume -5, min 1, unless specified):
+	- Cooked Cactus Fruit
+	- Banana / Cooked
+	- Bush Lime / Cooked
+	- Quandong / Cooked
+The energy regen buff is twice as strong
+
+Some craftable items cost more ingredients:
+	- Well
+	+ Billy Can Kit
+	- Crude Furnace
+	++ Scarecrows
+	+ Compost Bin
+	+ Worm Farm
+	+ Crab Pot
+	+ Bee House
+	+ Sprinklers
+	++ Water Tank
+	+ Grain Mill
+	+ Cooking Table
+	- Crafting Table
+	+ Bird Coop
+	+ Animal Feeder
+	++ Silo
+	+ Keg
+	++ Animal Collection Point
+	++ Windmill
+	+ Row Boat
+	+ Sail Boat
+	+ Bridges
+	
+
+Most crafting stations craft more slowly. Those marked with a plus are very very slow:
+	+ Campfire
+	+ Crude Furnace
+	- Table Saw
+	- Barbecue
+	- Furnace
+	- Stone Grinder
+	- Grain Mill
+
+Animals cost more from Irwin's Barn
+The profit margin for selling happy animals is NOT increased from normal
