@@ -1,0 +1,99 @@
+0: None (100 points at 10/50/250/1000) - None
+1: Harvest Master (50 points at 100/500/1000/2000) - Picking fruit and logs off the ground will get you far in this place. Here is a milestone for gathering lots of stuff up.
+2: Chatterbox (100 points at 10/50/250/1000) - Being friendly and making friends is an adventure on its own! Be sure to chat with everyone every day! You might learn something.
+3: Bug Catcher (100 points at 10/50/250/1000) - Catching bugs is a great activity. Here is a milestone for catching some of those creepy crawlies.
+4: Crafting Crazy (100 points at 10/50/250/1000) - Crafting useful things yourself is a handy skill in a place starting off with nothing. Here is a milestone for crafting items.
+5: Super Taster (100 points at 10/50/250/1000) - Fruit? Meat? Fungus? It doesn't matter. Food will give you energy to keep doing your tasks all day long. Here is a milestone for eating things!
+6: Walking About (200 points at 5000/20000/100000/250000/500000/1000000/5000000) - Staying in one spot isn't generally considered exploring. You're going to cover some distance, that's for sure! Here is a milestone for travelling!
+7: Savvy Shopper (250 points at 10000/50000/100000/500000/1500000) - Nothing wrong with spending some of that hard-earned dosh. Here is a milestone for spending Dinks.
+8: Entrepreneur (250 points at 10000/50000/100000/500000/1500000) - Making that bread. That cold hard cash. Nothing wrong with making a bit of a profit. Here is a milestone selling stuff for money.
+9: Grill Master (100 points at 10/50/250/1000) - Chuck another steak on the barbie, mate. A milestone for grilling up some meat to eat!
+10: Green Thumb (100 points at 10/50/250/1000) - Planting seeds in the red dirt. They grow up so fast. Here is a milestone for planting some seeds.
+11: Wet Thumb (100 points at 10/50/250/1000) - Watering plants is good for your soul and good for the plant's general health. It's win-win. So here is a milestone for watering a lot of plants!
+12: Rock On (100 points at 10/50/250/1000) - Smashing rocks is hard work. But sometimes they have stuff in them! Here is a milestone for smashing rocks.
+13: Ore or Nothing (100 points at 10/50/250/1000) - You've smashed a couple of them rocks filled with ore. Here is a milestone for smashing ore deposits.
+14: Making Bars (100 points at 10/50/250/1000) - Smelting. Oh, you've been smelting alright. Here is a milestone for smelting ore into bars.
+15: Grinding Down (100 points at 10/50/250/1000) - Grinding rocks down into powder. Here is a milestone for using a stone grinder a bunch.
+16: Timber! (100 points at 10/50/250/1000) - Sometime trees get in the way and sometimes you just need to borrow their wood for a bit. Here is a milestone for chopping down trees.
+17: Stumped (100 points at 10/50/250/1000) - You can't just chop a tree down and leave the stump. Here is a milestone for getting rid of the lil' stumps that are there after the tree falls down.
+18: Saw'll Good (100 points at 10/50/250/1000) - You like wood, right? But what about square wood? Here is a milestone for cutting wood into planks.
+19: Fish Catcher (100 points at 10/50/250/1000) - You've caught a bunch of fish. Here is a milestone for catching a bunch of fish!
+20: Human Mower (50 points at 50/250/1000/5000) - No matter how much you clear it seems to come back. Mowing never ends. Here is a milestone for chopping grass.
+21: Everything Hunter (100 points at 10/50/250/1000) - Hunting is sometimes necessary. Here is a milestone for hunting creatures.
+22: Trap Time (100 points at 10/50/250/1000) - Trapping animals for relocation is a kind way to deal with them. It's not easy to do, either! Here is a milestone for trapping an animal.
+23: Furniture Fancy (100 points at 10/50/250/1000) - Buying furniture for your home? Maybe a gift? Here is a milestone for buying furniture.
+24: Wall Change (100 points at 10/50/250/1000) - New walls. Same old house. Here is a milestone for buying wallpaper.
+25: Floor Change (100 points at 10/50/250/1000) - Here is a milestone for buying flooring.
+26: Seeds Sale (100 points at 10/50/250/1000) - Here is a milestone for buying seeds.
+27: Crop Taker (100 points at 10/50/250/1000) - Reap what you have sown. Here is a milestone for harvesting crops.
+28: Knitted Out (100 points at 10/50/250/1000) - Looking good in some new threads. Here is a milestone for buying clothes
+29: Hot Fruit (100 points at 10/50/250/1000) - Cooked fruit. Sounds gross, I know. It might be... Anyway, here is a milestone for cooking fruit.
+30: Cordon bleu (100 points at 10/50/250/1000) - Mixing things all together to make something? You're a bloody chef, I'll tell you what. Here is a milestone for cooking at the cooking table.
+31: Forest Maker (100 points at 10/50/250/1000) - Always replace what you've taken. Here is a milestone for planting tree seeds.
+32: Fishmonger (100 points at 10/50/250/1000) - What are fish doing in the ocean when they could be put to good use lining your pockets. Here is a milestone for selling fish.
+33: Creepy Dink (100 points at 10/50/250/1000) - Bugs are everywhere. For some reason, John wants them. Here is a milestone for selling bugs.
+34: Shellfish Lover (100 points at 10/50/250/1000) - You've got to squeeze for every Dink you can. Even if it means dealing with shells. Here is a milestone for selling shells.
+35: Farmer's Market (100 points at 10/50/250/1000) - Farming has paid off. You've reaped what you have sown. Here is a milestone for selling plants.
+36: Archeologist (100 points at 10/50/250/1000) - There is stuff everywhere underground. Here is a milestone for digging up treasure.
+37: Fruit Buried (100 points at 10/50/250/1000) - Bury fruit and get a fruit tree! You beauty! Here is a milestone for burying fruit.
+38: Pearl Picker (100 points at 1/10/20/50/100) - Here is a milestone for diving for treasure.
+39: Pet Petter (100 points at 10/50/250/1000) - You treat your feathered and furred friends well. Here is a milestone for petting your animals.
+40: Farm Feeder (100 points at 10/50/250/1000) - You feed them every day so they will love you. Here is a milestone for feeding your animals.
+41: Deep Miner (200 points at 1/10/50/100/200) - Deep down in the shifting mines, it's dangerous... but you've been there a bunch! Here is a milestone for entering the mines.
+42: Helpful Friend (100 points at 1/10/50/100/200) - You help anyone that asks, eh? Here is a milestone for doing a lot of favours.
+43: Poisoned Person (100 points at 1) - Being poisoned might not kill you, but it will take a lot of energy out of you. Here is a one time milestone for being poisoned. But try not to be from now on, okay?
+44: Damage Sponge (100 points at 50/100/500) - You sure can take a hit or two. Here is a milestone for taking damage.
+45: Hard Worker (100 points at 1) - Watch your energy. If you push yourself too far or if you stay out too late you will faint. You'll lose stuff if you pass out. Here's a milestone for fainting, but try not to from now on.
+46: Pen Pal (100 points at 1/15/50) - The more friendly you are with someone the more likely they will send you mail! Here is a milestone for receiving letters.
+47: Homemaker (750 points at 1/2/3) - From tent, to house to even bigger house! Here is a milestone for upgrading your home.
+48: Explorer (100 points at 1) - Every adventure starts somewhere and yours starts here. Here is a milestone for placing the base tent.
+49: Camper (100 points at 1) - A place to rest your head - your new home for now. Here is a milestone for placing your tent.
+50: Town Planner (250 points at 1/2/3/4/5/6/7/8/9) - Building the town - one building at a time. Here is a milestone for finishing a new building!
+51: Equipped (100 points at 5/50/250/500/1000) - You can buy a lot of useful tools to help you! Here is a milestone for buying tools.
+52: Smashing (100 points at 1/25/100/500/1000) - What are these things even made of? Here is a milestone for breaking tools.
+53: Board As (200 points at 1/10/50/100/200) - You always go out of your way to help people who have posted on the bulletin board. Here is a milestone for completing tasks from the bulletin board.
+54: Entomologist (100 points at 5/10/20/25/35) - You make sure you document all the different bugs you've caught. Here is a milestone for adding new species of bugs to your Pedia.
+55: Ichthyologist  (100 points at 5/10/20/25/35) - You make sure you document all the different fish you've caught. Here is a milestone for adding new species of fish to your Pedia.
+56: Zoologist (100 points at 10/50/250/1000) - You are documenting all the wildlife here on the island. Here is a milestone for adding a new animal to your Pedia.
+57: Product Processor (100 points at 1/10/50/100/200) - Take those animal products and make them better! Here is a milestone for making something from animal products.
+58: Eggcellent (100 points at 10/50/250/1000) - They crack easy, but they sell for a bit! Here is a milestone for selling eggs.
+59: Wild Seeder (100 points at 10/50/250/1000) - You've gotta give back after you take. Here is a milestone for planting wild seeds for grass, bushes and trees.
+60: Soil Mover (100 points at 25/100/250/1000/5000) - Pick up some dirt, put it there. Here is a milestone for moving soil.
+61: Tool Improvement (100 points at 10/50/250/1000) - What if you take the tools from John's shop and make them better? Here is a milestone for upgrading tools.
+62: I drive. (200 points at 5000/20000/100000/250000/500000/1000000/5000000) - Travelling on foot is for fools. Here is a milestone for travelling in style via vehicle.
+63: Stylish Hair (200 points at 1) - Here is a milestone for getting haircuts.
+64: Filthy Dinkin' Rich (1000 points at 1/2/3/4/5/6/7/8/9/10) - Saving money in the bank. Clever. Here is a milestone for having a cold hard Mil.
+65: Animal Handler (200 points at 1/5/10) - Giving an animal a new home is a great thing. Here is a milestone for buying a new animal friend.
+66: Crab Catcher (200 points at 1/10/50/100/200) - Crab pots don't always catch crabs, but when they do, it's crab night! Here is a milestone for catching something in your crab pot.
+67: Fossil Finder (200 points at 1/10/20/50) - Milestone for selling fossils.
+68: Egg Thief (200 points at 1/10/20/50) - Milestone for selling Wary Mu eggs.
+69: Hive Head (200 points at 1/10/20/50) - Beehives. You can smash 'em or sell them. Here is a milestone for selling a beehive.
+70: Bee Keeper (100 points at 1/10/20/50/100) - Keeping your bee's happy and they will give you a little honey. Here is a milestone for collecting honey.
+71: Painter (100 points at 1/5/10) - Painting things gives them their own flair. Here is a milestone for making something your own with a nice paint job.
+72: Shark Hunter (400 points at 1/10/20/50/100) - Going on a fishing trip but you caught a shark. Crikey! Here is a milestone for reeling in a beast.
+73: Shell Yeah (100 points at 10/50/250/1000) - Shells are nature's way of littering. Here is a milestone for picking up those bad boys.
+74: Brewmatic (100 points at 10/50/250/1000) - Why not make some tea in a Billy and then pop them in a keg? Here is a milestone for doing some brewing.
+75: Teleporter (500 points at 1) - Tele-Towers are handy. But are you still you? Oh well, here is a milestone for using the Tele-Towers.
+76: Composter (100 points at 10/50/250/1000) - Plants love old stinky stuff. Poop. Bones. They love it all. Here is a milestone for using the composter.
+77: Wheelie Cool (100 points at 10/50/250/1000) - Move dirt from here to there. Here is a milestone for using a Wheelbarrow.
+78: Lawn Master (100 points at 10/50/200/500/1000) - Mowing the lawn. You're in suburbia now. Here is a milestone for mowing the law.
+79: Chopper Master (200 points at 5000/20000/100000/250000/500000/1000000/5000000) - A helicopter? It flies? Here is a milestone for flying like a bird.
+80: Tractor Time (100 points at 10/50/250/1000) - Now it's time to really farm. Here is a milestone for getting a tractor.
+81: Bucket Head (250 points at 1) - A bucket on your head! You bloody galah. You're having a laugh. Here is a milestone for rockin a bucket on your head.
+82: Photographer (100 points at 20) - Taking photos. Saving memories. Here is a milestone for taking some photos.
+83: Glider (200 points at 5000/20000/100000/250000/500000/1000000/5000000) - Falling with style. Here is a milestone for hanging and gliding.
+84: Locksmith (200 points at 1/10/20/50) - Unlocking doors with your keys. Where does the key go? Who knows. Here is a milestone for using keys.
+85: Dairy Good (100 points at 10/50/250/1000) - Here is a milestone for milking Vombats.
+86: Hairy Good (100 points at 10/50/250/1000) - Here is a milestone for shearing Pleep.
+87: Green Grocer (100 points at 10/50/250/1000) - Here is a milestone for selling fruit.
+88: Amber Cash (250 points at 1/10/20/50) - Here is a milestone for selling amber.
+89: Gift Giver (250 points at 1/10/20) - Birthdays are special for some reason. Here is a milestone for giving a birthday gift to someone.
+90: Ruby Runner (200 points at 1/10/20/50) - Here is a milestone for finding a Ruby and selling it.
+91: Thunderstruck (100 points at 10/50/250/1000) - Sometimes the sky gets mad and starting throwing down bolts. Here is a milestone for getting hit by lightning.
+92: Thunder Eggo (200 points at 1/10/20/50) - Here is a milestone for finding a Thunder Egg and selling it.
+93: Alpha Hunter (250 points at 1/10/20/50) - Alpha animals cause havoc. Here is a milestone for defeating an Alpha animal.
+94: Fishy Dish (100 points at 10/50/250/1000) - Why keep your fish in an aquarium when you could keep them in your belly? Here is a milestone for cooking fish.
+95: Critter Catcher (100 points at 10/50/250/1000) - It's brave to dive down and grab a random critter with your bare hands. Here is a milestone for catching underwater critters.
+96: Bug Comp Champ (500 points at 1/2/3) - Bug Comps are serious business. No time for fun. Here is a milestone for placing in the Bug Comp.
+97: Giddy-Up (200 points at 5000/20000/100000/250000/500000/1000000/5000000) - They aren't as pretty as vehicles, but riding an animal is good fun. Here is a milestone for riding an animal for a distance.
+98: Fishing Comp Champ (500 points at 1/2/3) - Fishing Comps are come twice a year. Lots of time for fun. Here is a milestone for placing in the Fishing Comp.

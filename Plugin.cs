@@ -123,6 +123,23 @@ internal class Constants
     "Bomb",
     "Lawn Mower",
   ];
+
+  /// <summary>
+  ///   These milestones don't make sense to add additional completion tiers for various reasons.
+  /// </summary>
+  internal static readonly int[] dontExtendMilestoneIds = [
+    0,  // None - Dummy Milestone that doesn't really exist
+    43, // Poisoned Person - Get poisoned
+    44, // Damage Sponge - Take damage
+    45, // Hard Worker - Faint from zero energy
+    47, // Homemaker - Upgrade your house
+    48, // Explorer - Place the base tent
+    49, // Camper - Place your home tent
+    50, // Town Planner - Build new buildings
+    63, // Stylish Hair - Get your first hair cut
+    75, // Teleporter - Use your first teleporter
+    81, // Bucket Head - Wear a bucket for a hat for the first time
+  ];
 }
 
 [HarmonyPatch]
@@ -130,7 +147,7 @@ internal class Patches
 {
   [HarmonyPostfix]
   [HarmonyPatch(typeof(Inventory), nameof(Inventory.setUpItemOnStart))]
-  private static void Replace(Inventory __instance)
+  private static void EditItemDefinitions(Inventory __instance)
   {
     var selected = new List<InventoryItem>();
 
@@ -139,7 +156,10 @@ internal class Patches
       // item.fuelMax *= 2;
 
       // Franklyn needs more discs to unlock recipes TODO test
-      // if (item.craftable is not null) {
+      // if (
+      //   item.craftable?.crafterLevelLearnt > 0 &&
+      //   item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.CraftingShop
+      // ) {
       //   item.craftable.crafterLevelLearnt *= Constants.SLOWDOWN_FACTOR;
       // }
 
@@ -161,24 +181,65 @@ internal class Patches
     // Plugin.LogItems(selected);
     // Plugin.Log("\n");
 
-    // Plugin.Log("Not Selected, but needs to be");
-    // Plugin.LogMany(
-    //   Constants.targetItemNames.Where(name =>
-    //     !selected.Any(item => item.getInvItemName() == name)
-    //   )
+    // var needs = Constants.targetItemNames.Where(name =>
+    //   !selected.Any(item => item.getInvItemName() == name)
     // );
+    // if (needs.Any()) {
+    //   Plugin.Log("Not Selected, but needs to be");
+    //   Plugin.LogMany(needs);
+    // }
 
-    // Plugin.Log("\n");
-    // Plugin.Log("Selected, but shouldn't be");
-    // Plugin.LogItems(
-    //   selected.Where(item =>
-    //     !Constants.targetItemNames.Any(name => item.getInvItemName() == name)
-    //   )
+    // var shouldNot = selected.Where(item =>
+    //   !Constants.targetItemNames.Any(name => item.getInvItemName() == name)
     // );
+    // if (shouldNot.Any()) {
+    //   if (needs.Any()) Plugin.Log("\n");
+    //   Plugin.Log("Selected, but shouldn't be");
+    //   Plugin.LogItems(shouldNot);
+    // }
     
     // Progression items cost more from vendors
     foreach (var item in selected) {
       item.value *= Constants.SLOWDOWN_FACTOR;
     }
+  }
+
+  [HarmonyPostfix]
+  [HarmonyPatch(typeof(MilestoneManager), nameof(MilestoneManager.refreshMilestoneAmounts))]
+  private static void AddExtraLevelsToMilestones(MilestoneManager __instance)
+  {
+    for (int i = 0; i < __instance.milestones.Count; i++) {
+      var milestone = __instance.milestones[i];
+
+      if (!Constants.dontExtendMilestoneIds.Contains(i)) addExtraLevels(milestone);
+
+      // var name = __instance.getMilestoneName(milestone);
+      // var description = __instance.getMilestoneDescription(milestone);
+      // Plugin.Log($"{i}: {name} ({milestone.rewardPerLevel} points at {string.Join("/", milestone.pointsPerLevel)}) - {description}");
+    }
+  }
+
+  private static void addExtraLevels(Milestone m) {
+    // Number of extra tiers should roughly match the slowdown factor.
+    // If the game is going to go 4x as long, add 2x, 3x, and 4x milestones, so you don't max out way too early.
+    int extraLevels = Math.Max(0,
+      (int) Constants.SLOWDOWN_FACTOR - 1
+    );
+
+    // Make a copy of existing Milestone Levels with extra space in the array
+    var size = m.pointsPerLevel.Length;
+    var levels = new int[size + extraLevels];
+    for (int j = 0; j < size; j++) {
+      levels[j] = m.pointsPerLevel[j];
+    }
+
+    // Append additional levels that are multiples of the old max level: 2x, 3x, 4x...
+    var lastVanillaLevel = m.pointsPerLevel.Last();
+    for (int j = 0; j < extraLevels; j++) {
+      levels[size + j] = lastVanillaLevel * (j+2);
+    }
+
+    // Save new levels array back to the Milestone object
+    m.changeAmountPerLevel(levels);
   }
 }
