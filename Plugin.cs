@@ -156,12 +156,12 @@ internal class Patches
       // item.fuelMax *= 2;
 
       // Franklyn needs more discs to unlock recipes TODO test
-      // if (
-      //   item.craftable?.crafterLevelLearnt > 0 &&
-      //   item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.CraftingShop
-      // ) {
-      //   item.craftable.crafterLevelLearnt *= Constants.SLOWDOWN_FACTOR;
-      // }
+      if (
+        item.craftable?.crafterLevelLearnt > 0 &&
+        item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.CraftingShop
+      ) {
+        item.craftable.crafterLevelLearnt *= Constants.SLOWDOWN_FACTOR;
+      }
 
       var name = item.getInvItemName();
 
