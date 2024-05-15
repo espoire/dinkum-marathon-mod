@@ -1,7 +1,6 @@
 Days are a little shorter
 
 Copy mods' effects:
-  Communism for Town Debt (@ x30)
   Long Distance Relationship
   Friends Forever
 	  - Pets and livestock are invincible
@@ -19,7 +18,9 @@ Gain less XP
 
 ✅ Franlyn recipe unlocks take more discs
 
-Buildings construction takes more debt and materials
+Buildings construction takes more:
+  ✅ debt
+  materials
 
 New fruit trees take longer to grow up, based on how many fruit they give per harvest. (2 fruit --> x2 grow duration, 3 --> x3, etc.)
 Many simple fruits restore less energy (assume -5, min 1, unless specified):

@@ -1,12 +1,8 @@
 ﻿﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using BepInEx;
 using HarmonyLib;
-using HarmonyLib.Tools;
-using UnityEngine;
 using System.Linq;
-using System.Text.RegularExpressions;
 
 namespace PaCInfo;
 
@@ -94,6 +90,32 @@ internal class Constants
     "Battle Shovel",
     "Bat Zapper",
     "Bone Bow",
+
+    // Buildings
+    "Crafting Lab Deed",
+    "Your House Deed",
+    "Post Office Deed",
+    "Shop Deed",
+    "Clothing Shop Deed",
+    "Plant Shop Deed",
+    "Mine Deed",
+    "Furniture Shop Deed",
+    "Visiting Site Deed",
+    "Animal Shop Deed",
+    "Museum Deed",
+    "Bulletin Board Deed",
+    "Bank Deed",
+    "Guest House Deed",
+    "House Deed",
+    "Base Tent Deed",
+    "Visiting Site Deed",
+    "House Move Deed",
+    "Town Hall Deed",
+    "Salon Deed",
+    "Tuckshop Deed",
+    "Airport Deed",
+    "Player House 2",
+    "Your House Deed 3",
   ];
 
   /// <summary>
@@ -210,6 +232,7 @@ internal class Patches
       if (
         Constants.allowList.Contains(name) ||
         !Constants.denyList.Contains(name) && (
+          item.isDeed ||
           item.isPowerTool ||
           item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.CraftingShop || (
             item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.TrapperShop &&
@@ -242,7 +265,15 @@ internal class Patches
     
     // Progression items cost more from vendors
     foreach (var item in selected) {
-      item.value = (int) (item.value * Constants.SLOWDOWN_FACTOR);
+      item.value = (int) (item.value * Constants.SLOWDOWN_FACTOR * (item.isDeed ? 2 : 1));
+
+      if (item.isDeed && item.craftable) {
+        var stacks = item.craftable.stackOfItemsInRecipe;
+
+        for (int i = 0; i < stacks.Length; i++) {
+          stacks[i] = (int) (stacks[i] * Constants.SLOWDOWN_FACTOR * 2);
+        }
+      }
     }
   }
 
