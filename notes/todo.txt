@@ -11,7 +11,8 @@ Machines don't craft during Late
 (But all machines crafting at end of day will advance 7 hours / be done in the morning)
 If you go to bed at or after 11pm, you'll wake with less energy, to a minimum of 3/4 energy at Late+.
 
-Gain less Permits/XP
+Gain less XP
+✅ Permits cost more points
 ✅ Certain items cost 10x more
 
 ✅ Several milestones have more tiers

@@ -6,6 +6,7 @@ using HarmonyLib;
 using HarmonyLib.Tools;
 using UnityEngine;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace PaCInfo;
 
@@ -44,7 +45,7 @@ public partial class Plugin : BaseUnityPlugin
 
 internal class Constants
 {
-  internal static readonly int SLOWDOWN_FACTOR = 4;
+  internal static readonly double SLOWDOWN_FACTOR = 0.2;
 
   /// <summary>
   ///   Target item list, used to check that the rules are actually hitting the desired items.
@@ -140,6 +141,48 @@ internal class Constants
     75, // Teleporter - Use your first teleporter
     81, // Bucket Head - Wear a bucket for a hat for the first time
   ];
+
+  /// <summary>
+  ///   These licenses will have their first level costs less slowed-down than most licenses.
+  ///   Rationale for inclusion: grant access to the necessities (basic tools, minimal inventory space) early enough.
+  /// </summary>
+  internal static readonly int[] cheapFirstTierLicenseIds = [
+    1,  // Mining
+    2,  // Logging
+    3,  // Fishing
+    4,  // Hunting
+    11, // Farming
+    16, // Excavation (shovels)
+
+    12, // Cargo (inventory space)
+    14  // Toolbelt (hotbar slot / inventory space)
+  ];
+
+  /// <summary>
+  ///   These licenses will not have thier costs increased at all.
+  ///   Rationale for inclusion: These are (almost) purely decorative, and Marathon is supposed to slow progression only.
+  /// </summary>
+  internal static readonly int[] noIncreaseLicenseIds = [
+    5,  // Landscaping (tiles, ramps)
+    19, // Sign Writing
+    20  // Water Scaping
+  ];
+
+
+
+  /// <summary>
+  ///   These licenses will have extra tiers generated, up to the engine's max of 5.
+  ///   Rationale for inclusion: Endgame license points sinks, easily extensible.
+  /// </summary>
+  internal static readonly int[] addExtraTiersLicenseIds = [
+    8,  // Commerce (increase item sell values)
+
+    // Couldn't make these work; too many magic numbers in too many places to patch.
+    // Lots of calculations look like if (i <= invSlots.Length - (10 - LicenceManager.manage.allLicences[12].getCurrentLevel() * 3))
+    // Where the 10 means (3 inventory rows * 3 max cargo licence levels + 1)
+    // 12, // Cargo (inventory space)
+    // 14  // Toolbelt (hotbar slot / inventory space)
+  ];
 }
 
 [HarmonyPatch]
@@ -152,15 +195,14 @@ internal class Patches
     var selected = new List<InventoryItem>();
 
     foreach (var item in __instance.allItems) {
-      // All tools have double durability TODO test
-      // item.fuelMax *= 2;
+      if (item is null) continue;
 
       // Franklyn needs more discs to unlock recipes TODO test
       if (
         item.craftable?.crafterLevelLearnt > 0 &&
         item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.CraftingShop
       ) {
-        item.craftable.crafterLevelLearnt *= Constants.SLOWDOWN_FACTOR;
+        item.craftable.crafterLevelLearnt = (int) (item.craftable.crafterLevelLearnt * Constants.SLOWDOWN_FACTOR);
       }
 
       var name = item.getInvItemName();
@@ -200,7 +242,7 @@ internal class Patches
     
     // Progression items cost more from vendors
     foreach (var item in selected) {
-      item.value *= Constants.SLOWDOWN_FACTOR;
+      item.value = (int) (item.value * Constants.SLOWDOWN_FACTOR);
     }
   }
 
@@ -210,6 +252,7 @@ internal class Patches
   {
     for (int i = 0; i < __instance.milestones.Count; i++) {
       var milestone = __instance.milestones[i];
+      if (milestone is null) continue;
 
       if (!Constants.dontExtendMilestoneIds.Contains(i)) addExtraLevels(milestone);
 
@@ -242,4 +285,64 @@ internal class Patches
     // Save new levels array back to the Milestone object
     m.changeAmountPerLevel(levels);
   }
+
+  [HarmonyPostfix]
+  [HarmonyPatch(typeof(LicenceManager), nameof(LicenceManager.setLicenceLevelsAndPrice))]
+  private static void Abcd(LicenceManager __instance)
+  {
+    // Increase Commerce license max level from 3 to 5
+    foreach (int id in Constants.addExtraTiersLicenseIds) {
+      var license = __instance.allLicences[id];
+      license.maxLevel = 5;
+    }
+
+    for (int i = 0; i < __instance.allLicences.Length; i++) {
+      var license = __instance.allLicences[i];
+      if (license is null) continue;
+
+      if (Constants.cheapFirstTierLicenseIds.Contains(i)) {
+        // Increase total cost by about SLOWDOWN_FACTOR times, backloaded
+        license.levelCostMuliplier = (int) (license.levelCostMuliplier * Constants.SLOWDOWN_FACTOR);
+
+      } else if (!Constants.noIncreaseLicenseIds.Contains(i)) {
+        // Increase total cost by SLOWDOWN_FACTOR times, evenly
+        license.levelCost = (int) (license.levelCost * Constants.SLOWDOWN_FACTOR);
+      }
+    }
+  }
+
+  // private static void LogAllLicenses(LicenceManager __instance) {
+  //   for (int i = 0; i < __instance.allLicences.Length; i++) {
+  //     var license = __instance.allLicences[i];
+  //     if (license is null) continue;
+
+  //     var name = __instance.getLicenceName(license.type);
+  //     var levelPrices = new int[license.maxLevel];
+  //     for (int j = 0; j < license.maxLevel; j++) {
+  //       levelPrices[j] = (j + 1) * license.levelCost * Mathf.Clamp(j * license.levelCostMuliplier, 1, 100);
+  //     }
+
+  //     Plugin.Log($@"{i}: {name} - Max Lv. {license.maxLevel}, costs {string.Join(" / ", levelPrices)}");
+  //   }
+  // }
+
+  [HarmonyPrefix]
+  [HarmonyPatch(typeof(LicenceManager), nameof(LicenceManager.getLicenceLevelDescription))]
+  private static bool ExtendFormulaicLicenseDescriptions(ref string __result, LicenceManager.LicenceTypes type, int level) {
+    
+    // Provide English language description text from Commerce-4 and Commerce-5
+    if (type == LicenceManager.LicenceTypes.Commerce && level > 3) {
+      __result = $"The holder will receive {5 * level}% more when selling items.";
+      return false;
+    }
+
+    return true;
+  }
+
+  // [HarmonyPostfix]
+  // [HarmonyPatch(typeof(Inventory), "Awake")]
+  // private static void IncreaseMaxInventorySize(Inventory __instance) {
+  //   Traverse.Create(__instance).Field("slotPerRow").SetValue(13);
+  //   Traverse.Create(__instance).Field("numberOfSlots").SetValue(13*4);
+  // }
 }
