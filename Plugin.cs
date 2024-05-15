@@ -376,4 +376,19 @@ internal class Patches
   //   Traverse.Create(__instance).Field("slotPerRow").SetValue(13);
   //   Traverse.Create(__instance).Field("numberOfSlots").SetValue(13*4);
   // }
+
+  [HarmonyPrefix]
+  [HarmonyPatch(typeof(TownManager), "townMembersDonate")]
+  private static void TownMembersDonateMore(ref TownManager ___manage) {
+    int debt = NetworkMapSharer.Instance.townDebt;
+    if (debt <= 0) return;
+
+    int residents = NPCManager.manage.npcStatus.Where(npc => npc.checkIfHasMovedIn()).Count();
+    int possibleResidents = NPCManager.manage.npcStatus.Count;
+    double residentsFrac = (double) residents / possibleResidents;
+    double debtPaidFrac = residentsFrac / UnityEngine.Random.Range(8f, 18f);
+    int payment = (int) (debt * debtPaidFrac);
+
+    ___manage.payTownDebt(payment);
+  }
 }
