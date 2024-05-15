@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using BepInEx;
 using HarmonyLib;
 using System.Linq;
+using SkillTypes = CharLevelManager.SkillTypes;
 
 namespace PaCInfo;
 
@@ -390,5 +391,25 @@ internal class Patches
     int payment = (int) (debt * debtPaidFrac);
 
     ___manage.payTownDebt(payment);
+  }
+
+  private static double getSkillTypeCostMultiplier(int skillId) {
+    switch (skillId) {
+      case (int) SkillTypes.Farming: return 1.0;
+      case (int) SkillTypes.Foraging: return 2.0;
+      case (int) SkillTypes.Mining: return 3.0;
+      case (int) SkillTypes.Fishing: return 2.0;
+      case (int) SkillTypes.BugCatching: return 2.0;
+      case (int) SkillTypes.Hunting: return 1.5;
+    }
+
+    return 1.0;
+  }
+
+  [HarmonyPostfix]
+  [HarmonyPatch(typeof(CharLevelManager), "getLevelRequiredXP")]
+  private static void SkillsTakeMoreXp(ref int __result, int skillId) {
+    double multiplier = Constants.SLOWDOWN_FACTOR * getSkillTypeCostMultiplier(skillId);
+    __result = (int) (__result * multiplier);
   }
 }
