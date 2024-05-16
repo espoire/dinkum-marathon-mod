@@ -27,7 +27,7 @@ public partial class Plugin : BaseUnityPlugin
   internal static Plugin ActiveInstance;
   static internal void LogItems(IEnumerable<InventoryItem> items) {
     foreach (var item in items) {
-      Log($"{item.getItemId()}: {item.getInvItemName()}");
+      Log($"{item.getItemId()}: {item.getInvItemName()} - {item.value} Dinks");
     }
   }
 
@@ -42,7 +42,7 @@ public partial class Plugin : BaseUnityPlugin
 
 internal class Constants
 {
-  internal static readonly double SLOWDOWN_FACTOR = 0.2;
+  internal static readonly double SLOWDOWN_FACTOR = 3;
 
   /// <summary>
   ///   Target item list, used to check that the rules are actually hitting the desired items.
@@ -148,6 +148,12 @@ internal class Constants
     "Lawn Mower",
   ];
 
+  internal enum Magnitude { Some, Regular, Lots }
+
+  internal static readonly (int, Magnitude)[] itemIdsWithBoostedCraftMaterialsCosts = [
+    
+  ];
+
   /// <summary>
   ///   These milestones don't make sense to add additional completion tiers for various reasons.
   /// </summary>
@@ -215,6 +221,8 @@ internal class Patches
   [HarmonyPatch(typeof(Inventory), nameof(Inventory.setUpItemOnStart))]
   private static void EditItemDefinitions(Inventory __instance)
   {
+    // Plugin.LogItems(__instance.allItems);
+
     var selected = new List<InventoryItem>();
 
     foreach (var item in __instance.allItems) {
@@ -243,9 +251,9 @@ internal class Patches
       ) selected.Add(item);
     }
 
-    // Plugin.Log("Selected");
-    // Plugin.LogItems(selected);
-    // Plugin.Log("\n");
+    Plugin.Log("Selected");
+    Plugin.LogItems(selected);
+    Plugin.Log("\n");
 
     // var needs = Constants.targetItemNames.Where(name =>
     //   !selected.Any(item => item.getInvItemName() == name)
@@ -276,6 +284,10 @@ internal class Patches
         }
       }
     }
+
+    Plugin.Log("Selected");
+    Plugin.LogItems(selected);
+    Plugin.Log("\n");
   }
 
   [HarmonyPostfix]
@@ -397,10 +409,10 @@ internal class Patches
     switch (skillId) {
       case (int) SkillTypes.Farming: return 1.0;
       case (int) SkillTypes.Foraging: return 2.0;
-      case (int) SkillTypes.Mining: return 3.0;
+      case (int) SkillTypes.Mining: return 2.5;
       case (int) SkillTypes.Fishing: return 2.0;
       case (int) SkillTypes.BugCatching: return 2.0;
-      case (int) SkillTypes.Hunting: return 1.5;
+      case (int) SkillTypes.Hunting: return 1.75;
     }
 
     return 1.0;

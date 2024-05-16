@@ -1,0 +1,1728 @@
+0: Basic Axe - 500 Dinks
+1: Megaphone - 10000 Dinks
+2: Bug Net - 550 Dinks
+3: Chainsaw - 50000 Dinks
+4: Fishing Rod - 630 Dinks
+5: Shovel of Dirt - 450 Dinks
+6: Shovel - 450 Dinks
+7: Hoe - 400 Dinks
+8: Basic Pickaxe - 600 Dinks
+9: Torch - 3000 Dinks
+10: Watering Can - 5000 Dinks
+11: Wooden Bat - 212 Dinks
+12: Bag of Cement - 10 Dinks
+13: BBQ - 17000 Dinks
+14: Bone - 25 Dinks
+15: Brick Path - 2 Dinks
+16: Brick Steps - 6 Dinks
+17: Bush Lime - 90 Dinks
+18: Camp Fire - 288 Dinks
+19: Cooked Meat - 800 Dinks
+20: Funnel Web Spider - 1020 Dinks
+21: Meat - 400 Dinks
+22: Nails - 78 Dinks
+23: Shiny Stone - 100 Dinks
+24: Cooking Kettle - 50000 Dinks
+25: Garden Light - 1115 Dinks
+26: Stone - 10 Dinks
+27: Stone Grinder - 5000 Dinks
+28: Sugar Cane - 560 Dinks
+29: Ulysses Butterfly - 660 Dinks
+30: Wooden Crate - 754 Dinks
+31: Corner Ramp - 146 Dinks
+32: Palm Wood Fence - 154 Dinks
+33: Gum Log - 100 Dinks
+34: Wooden Torch - 14 Dinks
+35: Crafting Lab Deed - 250000 Dinks
+36: Your House Deed - 95000 Dinks
+37: Post Office Deed - 0 Dinks
+38: PowerLine - 0 Dinks
+39: Shop Deed - 75000 Dinks
+40: Aussie Hat - 2250 Dinks
+41: Black Boots - 1800 Dinks
+42: Blue Jeans - 450 Dinks
+43: Tradie Boots - 515 Dinks
+44: Tradie Pants - 530 Dinks
+45: Dark Shorts - 540 Dinks
+46: Purple Shirt - 540 Dinks
+47: Red Flanney - 1000 Dinks
+48: Barcoo Grunter - 1290 Dinks
+49: Barramundi - 8416 Dinks
+50: River Bass - 2784 Dinks
+51: Cooked Fish - 1200 Dinks
+52: Jungle Perch - 1200 Dinks
+53: Purple Seat - 650 Dinks
+54: Wooden Double Bed - 604 Dinks
+55: Coffee Table - 258 Dinks
+56: Wooden Seat - 550 Dinks
+57: Wooden Couch - 984 Dinks
+58: Small Round Table - 327 Dinks
+59: Dark Wooden Cabinet - 554 Dinks
+60: Sugar Cane Seeds - 200 Dinks
+61: Dog Hat - 4400 Dinks
+62: Holiday Hat - 730 Dinks
+63: Blue Beanie - 825 Dinks
+64: Top Hat - 6250 Dinks
+65: Red Baseball Cap - 1125 Dinks
+66: Yellow Bucket Hat - 165 Dinks
+67: Welcome Sign - 2844 Dinks
+68: Business Pants - 1000 Dinks
+69: Business Shirt - 1000 Dinks
+70: Business Shoes - 1000 Dinks
+71: Green Pants - 1000 Dinks
+72: Green Sweater - 1000 Dinks
+73: Green Shoes - 400 Dinks
+74: Blue Holiday Shirt - 680 Dinks
+75: Thongs - 510 Dinks
+76: Blue Holiday Shorts - 665 Dinks
+77: Tradie Shirt - 1000 Dinks
+78: Khaki Boots - 1000 Dinks
+79: Khaki Shorts - 1000 Dinks
+80: Khaki Shirt - 1000 Dinks
+81: Clothing Shop Deed - 180000 Dinks
+82: Blue Shorts - 903 Dinks
+83: Blue and Yellow Shirt - 1200 Dinks
+84: Red Sneakers - 1130 Dinks
+85: Blue Dress - 565 Dinks
+86: Fairest Dress - 1015 Dinks
+92: White Flats - 1675 Dinks
+88: Mustard Coat - 2560 Dinks
+89: White Sneakers - 1400 Dinks
+90: Ripped Jeans - 1605 Dinks
+91: White Dress - 995 Dinks
+92: White Flats - 1675 Dinks
+93: Red Dress - 795 Dinks
+94: Red Flats - 425 Dinks
+95: Pinstripe Jacket - 4000 Dinks
+96: Pinstripe Pants - 4000 Dinks
+97: Grasshopper - 1700 Dinks
+98: Common Blue Tail - 772 Dinks
+99: Palm Wood Bridge - 1069 Dinks
+100: Fly - 72 Dinks
+101: Cockroach - 154 Dinks
+102: Yellow Wattle Flower - 145 Dinks
+103: Metal Detector - 3300 Dinks
+104: Opal - 15000 Dinks
+105: Copper Ore - 50 Dinks
+106: Iron Ore - 100 Dinks
+107: Quartz Crystal - 200 Dinks
+108: Peacock Spider - 1792 Dinks
+109: Trogid - 1400 Dinks
+110: StreetLamp - 4044 Dinks
+111: Cabbage - 1750 Dinks
+112: Cabbage Seeds - 350 Dinks
+113: Iron Bar - 2000 Dinks
+114: Copper Bar - 1000 Dinks
+115: Furnace - 15400 Dinks
+116: Carrot - 475 Dinks
+117: Carrot Seeds - 285 Dinks
+118: Thunder Box - 10000 Dinks
+119: First Aid Kit - 3500 Dinks
+120: Green Beanie - 825 Dinks
+121: Red Beanie - 275 Dinks
+122: Blue Bucket Hat - 165 Dinks
+123: Corn - 358 Dinks
+124: Corn Seeds - 550 Dinks
+125: Plant Shop Deed - 200000 Dinks
+126: Fast Watering Can - 250 Dinks
+127: Dark Wooden Single Bed - 667 Dinks
+128: Watering Can - 18750 Dinks
+129: Mine Deed - 250000 Dinks
+130: Miners Helmet - 5000 Dinks
+131: Wooden Chair - 210 Dinks
+132: Wooden Table - 371 Dinks
+133: Wooden Bedside Table - 302 Dinks
+134: Wooden Chest Of Drawers - 389 Dinks
+135: Wooden Cabinet - 300 Dinks
+136: Wooden Single Bed - 30 Dinks
+137: Stylish ArmChair - 899 Dinks
+138: Stylish Sofa - 1300 Dinks
+139: Dark Wooden Chair - 435 Dinks
+140: Purple Couch - 762 Dinks
+141: White Chair - 340 Dinks
+142: White Coffee Table - 432 Dinks
+143: White Dinner Table - 578 Dinks
+144: White Long Coffee Table - 410 Dinks
+145: White Sofa - 819 Dinks
+146: Stylish Bed - 1245 Dinks
+147: Stylish Bedside Table - 856 Dinks
+148: Stylish Drawers - 1002 Dinks
+149: Stylish Dresser - 899 Dinks
+150: Furniture Shop Deed - 145000 Dinks
+151: Dainty Bed - 1088 Dinks
+152: Dainty Bedside Table - 600 Dinks
+153: Dainty Chair - 610 Dinks
+154: Dainty Coffee Table - 873 Dinks
+155: Dainty Drawers - 652 Dinks
+156: Dainty Kitchen Table - 569 Dinks
+157: Dainty Lamp - 380 Dinks
+158: Dainty Ottoman - 210 Dinks
+159: Dainty Sofa - 953 Dinks
+160: White Armchair - 706 Dinks
+161: White Ottoman - 268 Dinks
+162: White Bed - 923 Dinks
+163: White Bedside Table. - 620 Dinks
+164: White Chest of Drawers - 693 Dinks
+165: Fern Vase - 103 Dinks
+166: Purple Vase - 244 Dinks
+167: Yellow Wattle Vase - 1500 Dinks
+168: Kitchen Cabinet - 600 Dinks
+169: Kitchen Oven - 700 Dinks
+170: Kitchen Sink - 600 Dinks
+171: Stylish Chair - 653 Dinks
+172: Stylish Table - 1100 Dinks
+173: Stylish Lamp - 758 Dinks
+174: Regal ArmChair - 1088 Dinks
+175: Regal Bed - 1088 Dinks
+176: Regal Bedside Table - 1088 Dinks
+177: Regal Chair - 1088 Dinks
+178: Regal Lamp - 1088 Dinks
+179: Regal Sofa - 1088 Dinks
+180: Regal Table - 1088 Dinks
+181: Regal Drawers - 1088 Dinks
+182: Feather - 300 Dinks
+183: Copper Pickaxe - 3250 Dinks
+184: Iron Pickaxe - 9062 Dinks
+185: Space Helmet - 12750 Dinks
+186: Space Suit Pants - 3000 Dinks
+187: Space Suit Shirt - 4500 Dinks
+188: Space Suit Shoes - 2500 Dinks
+189: Pink Baseball Cap - 375 Dinks
+190: Black Pants - 2000 Dinks
+191: Black Shirt - 3000 Dinks
+192: Black Sneakers - 1200 Dinks
+193: Daisy Shorts - 2500 Dinks
+194: Pink Off Shoulder - 3000 Dinks
+195: Strapped Sandals - 600 Dinks
+196: Green Baseball Cap - 375 Dinks
+197: Nautilus Shell - 20 Dinks
+198: Scallop Shell - 5 Dinks
+199: Syrinx Shell - 80 Dinks
+200: Banded Morwong - 4320 Dinks
+201: Bluefish - 1560 Dinks
+202: Garfish - 2346 Dinks
+203: Golden Perch - 4384 Dinks
+204: Mangrove Jack - 3498 Dinks
+205: Luderick - 4160 Dinks
+206: Blue Spot Flathead - 998 Dinks
+207: Travalla - 7800 Dinks
+208: Yellowfin Tuna - 24600 Dinks
+209: Pirate Coat - 5940 Dinks
+210: Spinifex Tuft - 10 Dinks
+211: Hot Air Balloon - 350000 Dinks
+212: Spinifex Resin - 10 Dinks
+213: Palm Wood - 150 Dinks
+214: Prickly Pear Flesh - 600 Dinks
+215: Cactus Figs - 100 Dinks
+216: Copper Axe - 3125 Dinks
+217: Iron Axe - 8906 Dinks
+218: Jump Charm - 10 Dinks
+219: Swim Charm - 10 Dinks
+220: Run Charm - 10 Dinks
+221: White Collar Dress - 1695 Dinks
+222: Dark Blue Button Dress - 565 Dinks
+223: Crab Pot - 7400 Dinks
+224: Mud Crab - 4540 Dinks
+225: Honey - 3100 Dinks
+226: Bee House - 9150 Dinks
+227: Bee - 680 Dinks
+228: Queen Bee - 2300 Dinks
+229: Red Back Spider - 1552 Dinks
+230: Desert Scorpion - 1212 Dinks
+231: Stink Bug - 300 Dinks
+232: Paper Wasp - 990 Dinks
+233: Birdwing Butterfly - 9100 Dinks
+234: Swallow-tail Butterfly - 990 Dinks
+235: Harlequin Butterfly - 2121 Dinks
+236: Slingshot - 3500 Dinks
+237: Yabbie - 1899 Dinks
+238: Pink Shorts - 1200 Dinks
+239: Pink Sneakers - 750 Dinks
+240: Pink T-Shirt - 1075 Dinks
+241: Blue Sneakers - 750 Dinks
+242: Blue T-Shirt - 1075 Dinks
+243: Purple Dress - 580 Dinks
+244: Purple Flats - 335 Dinks
+245: Purple Pants - 1000 Dinks
+246: Crocodile Tooth - 3650 Dinks
+247: Glowing Mushroom - 35 Dinks
+248: Firefly - 860 Dinks
+249: Cricket - 1348 Dinks
+250: Cement Path - 2 Dinks
+251: Brick Fence - 4 Dinks
+252: Ute - 25 Dinks
+253: Green Boots - 750 Dinks
+254: Brown Pants - 1000 Dinks
+255: Blue Flannelette Shirt - 1180 Dinks
+256: Black Pants - 1000 Dinks
+257: Green Jacket - 2560 Dinks
+258: Maroon Pants - 1000 Dinks
+259: Adventure Hood - 7200 Dinks
+260: Red Strapped Shoes - 465 Dinks
+261: Overall Dress - 1580 Dinks
+262: Striped Tights - 1000 Dinks
+263: Chef Hat - 3025 Dinks
+264: Cements Steps - 6 Dinks
+265: Water Tank Plan - 0 Dinks
+266: Chef Jacket - 4050 Dinks
+267: Chef Pants - 2400 Dinks
+268: Orange Shorts - 975 Dinks
+269: Orange T-Shirt - 1010 Dinks
+270: Brown Sandals - 715 Dinks
+271: Hedge - 18 Dinks
+272: Roo Poo - 1 Dinks
+273: Wooden Lamp Post - 558 Dinks
+274: Palm Wood Gate - 952 Dinks
+275: Fertilizer - 156 Dinks
+276: Wood Bridge Rail - 1538 Dinks
+277: Bomb - 5000 Dinks
+278: Sprinkler - 12300 Dinks
+279: Aviator Sunglasses - 1250 Dinks
+280: Eye Patch - 1150 Dinks
+281: Fake Mustache - 1400 Dinks
+282: Modern Glasses - 2750 Dinks
+283: Modern Sunglasses - 2075 Dinks
+284: Monocle - 2400 Dinks
+285: Old School Glasses - 1200 Dinks
+286: Round Glasses - 750 Dinks
+287: Round Sunglasses - 1550 Dinks
+288: Small Glasses - 850 Dinks
+289: Small Sunglasses - 1200 Dinks
+290: Square Glasses - 1200 Dinks
+291: Square Sunglasses - 1200 Dinks
+292: Jolly Beard - 657 Dinks
+293: Jolly Hat - 3010 Dinks
+294: Jolly Pants - 1000 Dinks
+295: Jolly Shirt - 1000 Dinks
+296: Jolly Shoes - 400 Dinks
+297: Bananas - 248 Dinks
+298: Termite Nest - 38 Dinks
+299: Dink - 1 Dinks
+300: Apple - 107 Dinks
+301: Hard Wood Log - 175 Dinks
+302: Animal Trap - 4025 Dinks
+303: Scythe - 906 Dinks
+304: Table Saw - 2600 Dinks
+305: Gum Wood Plank - 150 Dinks
+306: Palm Wood Plank - 225 Dinks
+307: Hard Wood Plank - 250 Dinks
+308: Raw Drumstick - 350 Dinks
+309: Pearl - 5000 Dinks
+310: Cooked Drumstick - 700 Dinks
+311: Magic Shovel - 5000 Dinks
+312: Magic Shovel of Dirt - 5000 Dinks
+313: Grass Seed - 2 Dinks
+314: Palm Wood Path - 70 Dinks
+315: Palm Wood Steps - 94 Dinks
+316: Gum Nut - 4 Dinks
+317: Pine Cone - 4 Dinks
+318: Palm Tree Seed - 4 Dinks
+319: Sleeping Bag - 0 Dinks
+320: Kale - 1520 Dinks
+321: Kale Seeds - 380 Dinks
+322: Potato - 640 Dinks
+323: Potato Seeds - 320 Dinks
+324: Wheat - 216 Dinks
+325: Wheat Seeds - 180 Dinks
+326: Watermelon Seeds - 385 Dinks
+327: Watermelon - 3080 Dinks
+328: Pumpkin - 3120 Dinks
+329: Pumpkin Seeds - 390 Dinks
+330: Onion - 450 Dinks
+331: Onion Seeds - 270 Dinks
+332: Visiting Site Deed - 0 Dinks
+333: Carp - 1996 Dinks
+334: Eyestripe Surgeonfish - 3996 Dinks
+335: Black & White Snapper - 1992 Dinks
+336: Boofhead Catfish - 2103 Dinks
+337: Murray Cod - 10400 Dinks
+338: Eel Tailed Catfish - 1408 Dinks
+339: Stingray - 3396 Dinks
+340: MotorBike - 40000 Dinks
+341: Bird Coop - 6690 Dinks
+342: Animal Shop Deed - 150000 Dinks
+343: Animal Feeder - 758 Dinks
+344: Animal Food - 50 Dinks
+345: Chicken Egg - 350 Dinks
+346: Rock Path - 2 Dinks
+347: Animal Stall - 11492 Dinks
+348: Vombat Whistle - 3098 Dinks
+349: Milking Bucket - 800 Dinks
+350: Milk - 1500 Dinks
+351: Wooden Flower Bed - 330 Dinks
+352: Hedge Arch - 351 Dinks
+353: Diving Knife - 1250 Dinks
+354: Flapper Hat - 1125 Dinks
+355: Sun Hat - 1850 Dinks
+356: Gangsta Hat - 1850 Dinks
+357: Emu Mount - 25 Dinks
+358: Brick Fountain - 15500 Dinks
+359: Cooking Table - 2570 Dinks
+360: Lamington - 4031 Dinks
+361: Fish and Chips - 2320 Dinks
+362: Fruit Salad - 1110 Dinks
+363: Garden Salad - 2551 Dinks
+364: Hearty Stew - 1965 Dinks
+365: Desert Rose Pot - 480 Dinks
+366: Fruit Bowl - 440 Dinks
+367: Alarm Clock - 5540 Dinks
+368: Regal Clock - 1288 Dinks
+369: Red Lava Lamp - 1088 Dinks
+370: Roo Plush - 6088 Dinks
+371: Basic Wooden Floor - 250 Dinks
+372: Basic Wooden Wall - 250 Dinks
+373: Dainty Floor - 450 Dinks
+374: Regal Rug - 1450 Dinks
+375: Dainty Wall - 250 Dinks
+376: Checkered Floor - 250 Dinks
+377: Basic White Wall - 250 Dinks
+378: Light Blue Wall - 250 Dinks
+379: Checkered Wall - 250 Dinks
+380: Museum Deed - 125000 Dinks
+381: Chequer Vest - 1000 Dinks
+382: Old Key - 4080 Dinks
+383: Quarry - 35000 Dinks
+384: Old Gear - 525 Dinks
+385: Hang Glider - 400000 Dinks
+386: Candle hat - 16000 Dinks
+387: Basic Spear - 812 Dinks
+388: Chicken Whistle - 5188 Dinks
+389: Basic Hammer - 2062 Dinks
+390: Toad Skin - 200 Dinks
+391: Bulletin Board - 10000 Dinks
+392: Keg - 14062 Dinks
+393: Wattle Brew - 6380 Dinks
+394: Camera - 8000 Dinks
+395: Animal Collection Point - 1285 Dinks
+396: Desert Rose - 140 Dinks
+397: Billy Button - 140 Dinks
+398: Royal Bluebell - 140 Dinks
+399: Desert Pea - 140 Dinks
+400: Common Heath - 140 Dinks
+401: Town Hall - 0 Dinks
+402: Shears - 900 Dinks
+403: Wool - 2150 Dinks
+404: Animal Den - 7438 Dinks
+405: Blueprint - 20000 Dinks
+406: Pink Polka Dot Pants - 1000 Dinks
+407: Pink Polka Dot Shirt - 1000 Dinks
+408: Pink Polka dot Shoes - 600 Dinks
+409: Pink Polka Dot Dress - 665 Dinks
+410: Orange Dino Shirt - 984 Dinks
+411: Skull Shirt - 1034 Dinks
+412: Feather Shirt - 934 Dinks
+413: Black Baseball Cap - 375 Dinks
+414: White Baseball Cap - 375 Dinks
+415: White Sweatpants - 530 Dinks
+416: Brown Sand Shoes - 403 Dinks
+417: Camo Cap - 1125 Dinks
+418: Camo Dress - 665 Dinks
+419: Camo Pants - 1300 Dinks
+420: Camo Shirt - 1400 Dinks
+421: Camo Boots - 655 Dinks
+422: Cargo Pants - 1207 Dinks
+423: Blue Stripe Shirt. - 1400 Dinks
+424: Green Sand Shoes - 403 Dinks
+425: Orange Cargo Pants - 1507 Dinks
+426: Orange Sand Shoes - 407 Dinks
+427: Orange Stripe Shirt. - 1400 Dinks
+428: Straw Sun Hat - 1350 Dinks
+429: Red Puffy Jacket - 1500 Dinks
+430: Blue Puffy Jacket - 1500 Dinks
+431: Green Puffy Jacket - 1500 Dinks
+432: Purple Puffy Jacket - 1500 Dinks
+433: Blue Ugly Sweater - 1153 Dinks
+434: Blue Cuffed Pants - 1507 Dinks
+435: Green Cuffed Pants - 1507 Dinks
+436: Purple Cuffed Pants - 1507 Dinks
+437: Red Cuffed Pants - 1507 Dinks
+438: Pink Singlet - 600 Dinks
+439: Red Singlet - 600 Dinks
+440: Red Shorts - 903 Dinks
+441: Black Singlet - 600 Dinks
+442: Black Shorts - 903 Dinks
+443: Swimming Goggles - 1765 Dinks
+444: Punk Goggles - 2765 Dinks
+445: Yellow Gumboots - 1800 Dinks
+446: Rain Coat - 1600 Dinks
+447: Rain Hat - 1396 Dinks
+448: Blue Stripe Dress - 765 Dinks
+449: Orange Stripe Dress - 765 Dinks
+450: Gacha Machine - 35000 Dinks
+451: Basic Bench - 1280 Dinks
+452: Scarecrow - 4250 Dinks
+453: Brick Flower Bed - 19 Dinks
+454: Recycling Bin - 656 Dinks
+455: Small Rock - 800 Dinks
+456: Tin Ore - 25 Dinks
+457: Crude Axe - 50 Dinks
+458: Crude Furnace - 554 Dinks
+459: Tent - 0 Dinks
+460: Tin Bar - 500 Dinks
+461: Flagpole - 0 Dinks
+462: Base Tent - 0 Dinks
+463: Picket Fence - 119 Dinks
+464: Picket Gate - 765 Dinks
+465: Skull Mask - 22750 Dinks
+466: Tin Sheet - 275 Dinks
+467: Dog Kennel - 2775 Dinks
+468: Dog Whistle - 2025 Dinks
+469: Green Pattern Wall - 250 Dinks
+470: Blue Pattern Wall - 250 Dinks
+471: Red Pattern Wall - 250 Dinks
+472: Pink Pattern Wall - 250 Dinks
+473: Dark Wooden Wall - 250 Dinks
+474: Dark Wooden Floor - 750 Dinks
+475: Pink Carpet - 250 Dinks
+476: Basic Blue Wallpaper - 250 Dinks
+477: Basic Green Wallpaper - 250 Dinks
+478: Basic Pink Wallpaper - 250 Dinks
+479: Basic Red Wall - 250 Dinks
+480: Bank Deed - 100000 Dinks
+481: Crafting Table - 1480 Dinks
+482: Tiki Torch - 205 Dinks
+483: Crude Fence - 32 Dinks
+484: Bonytongue - 3308 Dinks
+485: Green Flat Cap - 525 Dinks
+486: Pirate Pants - 730 Dinks
+487: Pirate Boots - 1000 Dinks
+488: Pirate Hat - 2525 Dinks
+489: Ninja Hood - 12750 Dinks
+490: Ninja Boots - 1800 Dinks
+491: Ninja Pants - 3000 Dinks
+492: Ninja Shirt - 3000 Dinks
+493: Yellow Polka Dot Dress - 865 Dinks
+494: Yellow Plaid Dress - 1065 Dinks
+495: Blue Plaid Dress - 1065 Dinks
+496: Brown Overall Dress - 1125 Dinks
+497: Green Overall Dress - 1125 Dinks
+498: Green Cardigan Dress - 1225 Dinks
+499: Pink Cardigan Dress - 1225 Dinks
+500: Green Bow Hat - 1125 Dinks
+501: Old Straw Hat - 250 Dinks
+502: Donation Box - 472 Dinks
+503: Weather Station - 2500 Dinks
+504: Green Flannelette Shirt - 1180 Dinks
+505: Green Plaid Pants - 800 Dinks
+506: Blue Plaid Pants - 800 Dinks
+507: Orange Flanney Shirt - 1180 Dinks
+508: Orange Plaid Pants - 800 Dinks
+509: Red Plaid Pants - 800 Dinks
+510: Orange Flat Cap - 525 Dinks
+511: Red Flat Cap - 525 Dinks
+512: Blue Flat Cap - 525 Dinks
+513: Blue Flanney Dress - 1080 Dinks
+514: Green Flannelette Dress - 1180 Dinks
+515: Orange Flanney Dress - 1180 Dinks
+516: Red Flanney Dress - 1000 Dinks
+517: Guitar - 3025 Dinks
+518: House Deed - 95000 Dinks
+519: House Deed - 95000 Dinks
+520: House Deed - 95000 Dinks
+521: House Deed - 85000 Dinks
+522: Eastern Chair - 4350 Dinks
+523: Eastern Seat - 5500 Dinks
+524: Eastern Bed - 6000 Dinks
+525: Eastern Bedside Table - 3020 Dinks
+526: Eastern Bookshelf - 3504 Dinks
+527: Eastern Wardrobe - 6200 Dinks
+528: Eastern Coffee Table - 2968 Dinks
+529: Eastern Couch - 9840 Dinks
+530: Eastern Table - 3710 Dinks
+531: Eastern Lamp - 1022 Dinks
+532: Eastern Floor - 750 Dinks
+533: Eastern Wall - 250 Dinks
+534: Red Wood Floor - 658 Dinks
+535: Small Stack of Books - 984 Dinks
+536: Wombie Bank - 2984 Dinks
+537: Billy Button Pot - 984 Dinks
+538: Royal Bluebell Pot - 984 Dinks
+539: Rattan Bed - 1305 Dinks
+540: Rattan Bookshelf - 1484 Dinks
+541: Rattan Cabinet - 1300 Dinks
+542: Rattan Chair - 1135 Dinks
+543: Rattan Coffee Table - 1084 Dinks
+544: Rattan Couch - 984 Dinks
+545: Rattan Table - 1371 Dinks
+546: Rattan Floor - 650 Dinks
+547: Rattan Lamp - 984 Dinks
+548: Rattan Seat - 550 Dinks
+549: Rattan Bedside Table - 702 Dinks
+550: Rattan Wall - 657 Dinks
+551: Nordic Bed - 13050 Dinks
+552: Nordic Bedside Table - 2808 Dinks
+553: Nordic Bookshelf - 7420 Dinks
+554: Nordic Cabinet - 3300 Dinks
+555: Nordic Chair - 3405 Dinks
+556: Nordic Coffee Table - 3102 Dinks
+557: Nordic Couch - 9840 Dinks
+558: Nordic Table - 5484 Dinks
+559: Nordic Floor - 250 Dinks
+560: Nordic Lamp - 2768 Dinks
+561: Nordic Seat - 1550 Dinks
+562: Nordic Wall - 250 Dinks
+563: Pink Bed - 1505 Dinks
+564: Pink Bedside Table - 802 Dinks
+565: Pink Bookshelf - 1584 Dinks
+566: Pink Cabinet - 1370 Dinks
+567: Pink Chair - 935 Dinks
+568: Pink Coffee Table - 1384 Dinks
+569: Pink Couch - 1384 Dinks
+570: Pink Table - 1691 Dinks
+571: Pink Lamp - 1184 Dinks
+572: Pink Seat - 1250 Dinks
+573: Cube Floor - 657 Dinks
+574: Cube Wall - 657 Dinks
+575: Cooked Apple - 390 Dinks
+576: Cooked Banana - 290 Dinks
+577: Cooked Bush Lime - 190 Dinks
+578: Palm Wood Bridge - 5681 Dinks
+579: Meadow Katydid - 900 Dinks
+580: Rhinoceros Beetle - 1930 Dinks
+581: Goliath stick - 6330 Dinks
+582: Bogong Moth - 260 Dinks
+583: Scarlet Jezebel Butterfly - 790 Dinks
+584: Raw Giant Drumstick - 500 Dinks
+585: Hot Cylinder - 3090 Dinks
+586: Green Board - 6120 Dinks
+587: Old Wheel - 1320 Dinks
+588: Shiny Disc - 1480 Dinks
+589: North Teletower - 0 Dinks
+590: East Teletower - 0 Dinks
+591: South Teletower - 0 Dinks
+592: West Teletower - 0 Dinks
+593: Copper Spear - 2781 Dinks
+594: Iron Spear - 5281 Dinks
+595: Copper Hammer - 3938 Dinks
+596: Iron Hammer - 8125 Dinks
+597: Island Map - 1 Dinks
+598: Adventurer's Journal - 1 Dinks
+599: Jack Hammer - 50000 Dinks
+600: Jet Ski - 40000 Dinks
+601: Glass Bulb - 1035 Dinks
+602: Smooth Slate - 745 Dinks
+603: Big Chicken Egg - 545 Dinks
+604: Row Boat - 6328 Dinks
+605: Blackfish - 3908 Dinks
+606: Galaxias - 4808 Dinks
+607: Silver Perch - 1708 Dinks
+608: Anchovy - 4620 Dinks
+609: Goat Fish - 3200 Dinks
+610: Barracuda - 12000 Dinks
+611: Blob Fish - 100 Dinks
+612: Saratoga - 7616 Dinks
+613: Tarpon - 3960 Dinks
+614: Black Cricket - 980 Dinks
+615: Monarch Butterfly - 3860 Dinks
+616: Lacewing - 1680 Dinks
+617: Emperor DragonFly - 4172 Dinks
+618: Pygmyfly - 1672 Dinks
+619: Tau Emerald Dragonfly - 2010 Dinks
+620: Ladybird - 1900 Dinks
+621: Tiger Moth - 1360 Dinks
+622: Duskhawker DragonFly - 2350 Dinks
+623: Largidae - 780 Dinks
+624: Huntsman - 3552 Dinks
+625: Blue Moon Butterfly - 290 Dinks
+626: Fiddler Beetle - 2400 Dinks
+627: Stag Beetle - 4100 Dinks
+628: Marlin - 20200 Dinks
+629: Grayling - 2508 Dinks
+630: Hercules Moth - 3000 Dinks
+631: Centipede - 2220 Dinks
+632: Short Finned Eel - 3008 Dinks
+633: Spinning Wheel - 5400 Dinks
+634: Cloth - 5150 Dinks
+635: Cheese Maker - 8625 Dinks
+636: Cheese - 2400 Dinks
+637: High Quality Milk - 2300 Dinks
+638: High Quality Cheese - 3500 Dinks
+639: Old Spring - 485 Dinks
+640: Sliding Handle - 592 Dinks
+641: Button Board - 1556 Dinks
+642: Bright Wire - 635 Dinks
+643: Old Toy - 1642 Dinks
+644: Ear Hats - 835 Dinks
+645: Old Contraption - 15090 Dinks
+646: Cooked Giant Drumstick - 1500 Dinks
+647: Cooked Croco Meat - 1750 Dinks
+648: Croco Meat - 625 Dinks
+649: Mangrove Stick - 90 Dinks
+650: Bottle Tree Wood - 280 Dinks
+651: Red Hooded Cap - 1125 Dinks
+652: Pilot Goggles - 1905 Dinks
+653: Googly Eyes - 6765 Dinks
+654: Hero Mask - 5400 Dinks
+655: Bunny Hood - 9875 Dinks
+656: Yellow Sweats - 900 Dinks
+657: Yellow Sneakers - 1800 Dinks
+658: Yellow B Shirt - 1304 Dinks
+659: Mine Pass - 12500 Dinks
+660: Fern Seed - 22 Dinks
+661: Bush Seed - 24 Dinks
+662: Base Tent Deed - 800 Dinks
+663: Visiting Site Deed - 0 Dinks
+664: Flame Sac - 5250 Dinks
+665: Basic Green Rug - 1450 Dinks
+666: Basic Red Rug - 1450 Dinks
+667: Bank Wall - 2500 Dinks
+668: Grass Floor - 157 Dinks
+669: Cooked Cactus Fig - 250 Dinks
+670: Item Sign - 612 Dinks
+671: Cloud Wall - 657 Dinks
+672: Retro Flower Wall - 657 Dinks
+673: Retro Floor - 657 Dinks
+674: Basic Blue Rug - 1450 Dinks
+675: Basic Pink Rug - 1450 Dinks
+676: Basic Purple Rug - 1450 Dinks
+677: Basic Blue Orange - 1450 Dinks
+678: Marble Floor - 2500 Dinks
+679: Bug Book - 49000 Dinks
+680: Fish Book - 59000 Dinks
+681: Plant Book - 18000 Dinks
+682: Compactor - 25000 Dinks
+683: Jackaroo Hood - 9875 Dinks
+684: Helicopter - 1500000 Dinks
+685: Meat Pie - 1830 Dinks
+686: Pavlova - 4970 Dinks
+687: Dagwood Dog - 848 Dinks
+688: Croc Teeth Bat - 11025 Dinks
+689: Flaming Bat - 16275 Dinks
+690: Quiche - 3830 Dinks
+691: Meat on a stick. - 890 Dinks
+692: Water Tank - 49486 Dinks
+693: Silo - 20094 Dinks
+694: Blackwood Seed - 4 Dinks
+695: Fake Beard - 2000 Dinks
+696: Cement Fence - 6 Dinks
+697: Simple Animal Trap - 2131 Dinks
+698: Bottle Brush - 245 Dinks
+699: Copper Watering Can - 12500 Dinks
+700: Copper Watering Can - 18750 Dinks
+701: Iron Watering Can - 28125 Dinks
+702: Iron Watering Can - 42188 Dinks
+703: Compost Bin - 8056 Dinks
+704: Shovel of Sand - 450 Dinks
+705: Shovel of Mud - 450 Dinks
+706: Shovel of Red Sand - 450 Dinks
+707: Fir Grass Seeds - 2 Dinks
+708: Tropical Grass Seeds - 2 Dinks
+709: Long Shoes - 1800 Dinks
+710: Tele Pad - 75000 Dinks
+711: Tele Caller - 6570 Dinks
+712: Black Jacket - 2560 Dinks
+713: Black Jeans - 1450 Dinks
+714: White Pants - 2000 Dinks
+715: White T-Shirt - 1000 Dinks
+716: Black Flat Cap - 525 Dinks
+717: Black Flanney Shirt - 1180 Dinks
+718: Black Plaid Pants - 800 Dinks
+719: Yellow Shorts - 903 Dinks
+720: Yellow T Shirt - 1304 Dinks
+721: Yellow Boots - 515 Dinks
+722: White Boots - 515 Dinks
+723: Face Bandana Green - 2600 Dinks
+724: Face Bandana Black - 2600 Dinks
+725: Face Bandana Blue - 2600 Dinks
+726: Face Bandana Orange - 2600 Dinks
+727: Face Bandana Red - 2600 Dinks
+728: Large Round Glasses - 1600 Dinks
+729: Retro Point Glasses - 1600 Dinks
+730: Retro Point Sun Glasses - 1600 Dinks
+731: Triangle Glasses - 3600 Dinks
+732: Shutter Shades - 1250 Dinks
+733: Round Horned Glasses - 1250 Dinks
+734: Round Horned Sun Glasses - 1250 Dinks
+735: Yellow Dress - 1065 Dinks
+736: Rainbow Dress - 1065 Dinks
+737: Black Plaid Dress - 1065 Dinks
+738: Rainbow T Shirt - 1304 Dinks
+739: Rainbow Pants - 1000 Dinks
+740: Rainbow Sneakers - 1800 Dinks
+741: Red Nose - 1100 Dinks
+742: Beak - 5400 Dinks
+743: Black Coat - 2560 Dinks
+744: Black Ripped Jeans - 1601 Dinks
+745: House Move Deed - 95000 Dinks
+746: Jelly - 400 Dinks
+747: Jelly Brew - 5000 Dinks
+748: Bottle Brush Brew - 10780 Dinks
+749: Advanced Sprinkler - 36788 Dinks
+750: Vombat Poo - 25 Dinks
+751: White Mask - 5400 Dinks
+752: Black Mask - 5400 Dinks
+753: Windmill - 28988 Dinks
+754: Flower Pot - 38 Dinks
+755: Gum Wood Path - 46 Dinks
+756: Hard Wood Path - 78 Dinks
+757: Hard Wood Bridge - 6150 Dinks
+758: Gum Wood Bridge - 4275 Dinks
+759: Brick Bridge - 238 Dinks
+760: Gum Wood Fence - 119 Dinks
+761: Hard Wood Fence - 165 Dinks
+762: Tin Fence - 171 Dinks
+763: Big Fried Egg - 817 Dinks
+764: Fried Egg - 525 Dinks
+765: Gum Wood Gate - 765 Dinks
+766: Hard Wood Gate - 1015 Dinks
+767: Tin Gate - 688 Dinks
+768: Copper Hoe - 3000 Dinks
+769: Brick Well - 1125 Dinks
+770: Quandong - 110 Dinks
+771: Cooked Quandong - 220 Dinks
+772: Flake - 950 Dinks
+773: Cooked Flake - 1900 Dinks
+774: Wheelbarrow - 15000 Dinks
+775: Iron Path - 312 Dinks
+776: Bottle Brush Seed - 55 Dinks
+777: Wattle Seed - 55 Dinks
+778: Copper Fishing Rod - 3288 Dinks
+779: Iron Fishing Rod - 9110 Dinks
+780: Chicken Hood - 9875 Dinks
+781: Wizard Hat - 12250 Dinks
+782: Wizard Robe - 5940 Dinks
+783: Witch Hat - 12250 Dinks
+784: Witch Robe - 5940 Dinks
+785: Green Chair - 935 Dinks
+786: Green Seat - 1250 Dinks
+787: Green Bed - 1505 Dinks
+788: Green Bedside Table - 802 Dinks
+789: Green Bookshelf - 1584 Dinks
+790: Green Cabinet - 1370 Dinks
+791: Green Couch - 1384 Dinks
+792: Green Coffee Table - 1384 Dinks
+793: Green Table - 1691 Dinks
+794: Green Lamp - 1184 Dinks
+795: Town Hall Base Tent Upgrade - 800 Dinks
+796: Town Hall Deed - 800 Dinks
+797: Storage Barrel - 4281 Dinks
+798: Lawn Mower - 25000 Dinks
+799: Coconut - 261 Dinks
+800: Boogie Board - 10000 Dinks
+801: Tractor - 750000 Dinks
+802: Blue Paint - 200 Dinks
+803: Paint Remover - 200 Dinks
+804: Black Paint - 200 Dinks
+805: Green Paint - 200 Dinks
+806: Orange Paint - 200 Dinks
+807: Pink Paint - 200 Dinks
+808: Purple Paint - 200 Dinks
+809: Red Paint - 200 Dinks
+810: White Paint - 200 Dinks
+811: Yellow Paint - 200 Dinks
+812: Chrome Paint - 125000 Dinks
+813: Gold Paint - 250000 Dinks
+814: Buccinidae Shell - 10 Dinks
+815: Cassidae Shell - 7 Dinks
+816: Sand Dollar - 10 Dinks
+817: Tonnidae Shell - 6 Dinks
+818: Biscuit Sea Star - 1200 Dinks
+819: Eleven-armed Sea Star - 8540 Dinks
+820: Black Sea Cucumber - 12540 Dinks
+821: Spiny Sea Urchin - 640 Dinks
+822: Pink Sea Urchin - 1540 Dinks
+823: Purple Sea Urchin - 8040 Dinks
+824: King Prawn - 3540 Dinks
+825: Tiger Prawn - 1540 Dinks
+826: Bay Bug - 4540 Dinks
+827: Fresh Water Mussel - 800 Dinks
+828: Fresh Water Prawn - 1540 Dinks
+829: Inland Crab - 740 Dinks
+830: Purple Mottled Crab - 440 Dinks
+831: Blue Mussel - 799 Dinks
+832: Cushion Sea Star - 2540 Dinks
+833: White Yabbie - 980 Dinks
+834: Blue Sea Slug - 12540 Dinks
+835: Croco Berley Box - 1000 Dinks
+836: Devil Berley Box - 1200 Dinks
+837: Shark Berley Box - 1100 Dinks
+838: Battle Shovel - 75000 Dinks
+839: Bone Bow - 120000 Dinks
+840: Bone Arrow - 250 Dinks
+841: Gold Pocket Watch - 5000000 Dinks
+842: Boom Box - 1500000 Dinks
+843: Tomato - 351 Dinks
+844: Tomato Seeds - 810 Dinks
+845: Green Bean - 295 Dinks
+846: Green Bean Seeds - 680 Dinks
+847: Empty Miners Helmet - 5000 Dinks
+848: Wooden Chest - 2200 Dinks
+849: Doggo Collar - 15000 Dinks
+850: Mu Saddle - 25000 Dinks
+851: Copper Bulb Lamp - 2794 Dinks
+852: Cooked Prime Meat - 6000 Dinks
+853: Raw Prime Meat - 2000 Dinks
+854: Repair Table - 30000 Dinks
+855: Repair Kit - 15000 Dinks
+856: Charging Station - 50000 Dinks
+857: Old Sign - 10480 Dinks
+858: Iron Hoe - 8750 Dinks
+859: Bat Wing - 900 Dinks
+860: Grain Mill - 7525 Dinks
+861: Flour - 1080 Dinks
+862: Sugar - 840 Dinks
+863: Worm Farm - 23938 Dinks
+864: Machine Manual - 7500 Dinks
+865: Warm Nordic Bed - 13050 Dinks
+866: Warm Nordic Bedside Table - 2808 Dinks
+867: Warm Nordic Bookshelf - 7420 Dinks
+868: Warm Nordic Cabinet - 3300 Dinks
+869: Warm Nordic Chair - 3405 Dinks
+870: Warm Nordic Coffee Table - 3102 Dinks
+871: Warm Nordic Couch - 9840 Dinks
+872: Warm Nordic Table - 5484 Dinks
+874: Warm Nordic Lamp - 2768 Dinks
+874: Warm Nordic Lamp - 2768 Dinks
+875: Warm Nordic Seat - 1550 Dinks
+876: Red Hang Glider - 400000 Dinks
+877: Butter Glider - 120000 Dinks
+878: Dark Wooden Table - 371 Dinks
+879: Dark Wooden Seat - 550 Dinks
+880: Dark Wooden Couch - 984 Dinks
+881: Dark Wooden Bedside Table - 302 Dinks
+882: Tea Pot - 1984 Dinks
+883: Small Pot - 1984 Dinks
+884: Rattan Basket - 884 Dinks
+885: Palm Wood Bench - 1796 Dinks
+886: Hard Wood Bench - 1952 Dinks
+887: Gum Wood Bench - 1328 Dinks
+888: Iron Wood Bench - 6406 Dinks
+889: Festoon Lights - 7431 Dinks
+890: Mushroom Lamp - 2450 Dinks
+891: Jackaroo Statue - 55000 Dinks
+892: Bush Devil Statue - 55000 Dinks
+893: Bread - 3240 Dinks
+894: Fairy Bread - 1230 Dinks
+895: Pastie - 3945 Dinks
+896: Damper - 2580 Dinks
+897: Sausage Roll - 2475 Dinks
+898: Prime Roast - 10395 Dinks
+899: Golden Jackaroo Statue - 180000 Dinks
+900: Golden Bush Devil Statue - 180000 Dinks
+901: Iron Cement Fence - 314 Dinks
+902: Copper Top Fence - 202 Dinks
+903: Umbrella - 3000 Dinks
+904: Bulletin Board - 10000 Dinks
+905: Thunder Sac - 3250 Dinks
+906: Bat Zapper - 50000 Dinks
+907: Gum Wood Steps - 71 Dinks
+908: Hard Wood Steps - 102 Dinks
+909: Gum Wood Lamp Post - 514 Dinks
+910: Hard Wood Lamp Post - 571 Dinks
+911: Copper Scythe - 2382 Dinks
+912: Iron Scythe - 5478 Dinks
+913: Cement Bird Bath - 62 Dinks
+914: Hardwood Crude Fence - 56 Dinks
+915: Froggy Hood - 9875 Dinks
+916: Cat Hood - 9875 Dinks
+917: Yellow Print Dress - 1695 Dinks
+918: Yellow Print Pants - 903 Dinks
+919: Brown Boat Shoes - 1200 Dinks
+920: Floppy Straw Hat - 1850 Dinks
+921: Bunting Festoon - 26688 Dinks
+922: House Customisation Kit - 12500 Dinks
+923: Gum Wood Flag Post - 6781 Dinks
+924: Palm Wood Flag Post - 6825 Dinks
+925: Dirt Printer - 150000 Dinks
+926: Mighty Seeds - 15000 Dinks
+927: Mighty Spread - 120000 Dinks
+928: Hard Wood Flag Post - 6945 Dinks
+929: Black Wooden Crate - 754 Dinks
+930: Blue Wooden Crate - 754 Dinks
+931: Chrome Wooden Crate - 754 Dinks
+932: Gold Wooden Crate - 754 Dinks
+933: Green Wooden Crate - 754 Dinks
+934: Orange Wooden Crate - 754 Dinks
+935: Pink Wooden Crate - 754 Dinks
+936: Purple Wooden Crate - 754 Dinks
+937: Red Wooden Crate - 754 Dinks
+938: White Wooden Crate - 754 Dinks
+939: Yellow Wooden Crate - 754 Dinks
+940: Black Wooden Chest - 2200 Dinks
+941: Blue Wooden Chest - 2200 Dinks
+942: Chrome Wooden Chest - 2200 Dinks
+943: Gold Wooden Chest - 2200 Dinks
+944: Green Wooden Chest - 2200 Dinks
+945: Orange Wooden Chest - 2200 Dinks
+946: Pink Wooden Chest - 2200 Dinks
+947: Purple Wooden Chest - 2200 Dinks
+948: Red Wooden Chest - 2200 Dinks
+949: White Wooden Chest - 2200 Dinks
+950: Yellow Wooden Chest - 2200 Dinks
+951: Salon Deed - 320000 Dinks
+952: Butterfly Orchid - 540 Dinks
+953: Glow Bug - 2580 Dinks
+954: Deep Fish - 18060 Dinks
+955: Bat Glider - 500000 Dinks
+956: Alpha Hammer - 200000 Dinks
+957: Alpha Antler - 12500 Dinks
+958: Alpha Scale - 15500 Dinks
+959: Alpha Spear - 200000 Dinks
+960: Alpha Bat - 200000 Dinks
+961: Pattern Stone Path - 2 Dinks
+962: Panda Hood - 9875 Dinks
+963: Alpha Eye - 25000 Dinks
+964: Cobblestone Path - 2 Dinks
+965: Cobblestone Fence - 4 Dinks
+966: Rock Edge Path - 2 Dinks
+967: Cobblestone Road - 2 Dinks
+968: Cobblestone Road Lines - 2 Dinks
+969: Cooked Freshwater Fish - 2000 Dinks
+970: Cooked Saltwater Fish - 2800 Dinks
+971: Detective Pants - 2400 Dinks
+972: Trench Coat - 5120 Dinks
+973: Black Boat Shoes - 1200 Dinks
+974: P.I Hat - 3700 Dinks
+975: Dark Detective Pants - 2400 Dinks
+976: Dark Trench Coat - 5120 Dinks
+977: Dark P.I Hat - 3700 Dinks
+978: Blue Summer Dress - 2160 Dinks
+979: Green Summer Dress - 2160 Dinks
+980: Minimalist Bed - 12160 Dinks
+981: Minimalist Bedside Table - 12160 Dinks
+982: Minimalist Book Shelf - 12160 Dinks
+983: Minimalist Chair - 13160 Dinks
+984: Minimalist Couch - 16160 Dinks
+985: Minimalist Dresser - 12160 Dinks
+986: Minimalist Lamp - 7580 Dinks
+987: Minimalist Seat - 14160 Dinks
+988: White Brick Wallpaper - 750 Dinks
+989: Red Brick Wallpaper - 750 Dinks
+990: Green Brick Wallpaper - 750 Dinks
+991: Dark Tiles - 1500 Dinks
+992: Bright Tiles - 1500 Dinks
+993: Mascot Head - 2000000 Dinks
+994: Mascot Legs - 2000000 Dinks
+995: Mascot Torso - 2000000 Dinks
+996: Bunk Bed - 1334 Dinks
+997: Cooked Blob Fish - 201 Dinks
+998: Honey Comb Path - 244 Dinks
+999: Warm Nordic Wall - 250 Dinks
+1000: Warm Nordic Floor - 250 Dinks
+1001: Bottle Tree Seed - 8000 Dinks
+1002: Mushroom Path - 12 Dinks
+1003: Pearl Path - 391 Dinks
+1004: Melon Scarecrow - 4200 Dinks
+1005: Elf Ears - 32850 Dinks
+1006: Elf Hat - 6020 Dinks
+1007: Elf Pants - 8000 Dinks
+1008: Elf Shirt - 8000 Dinks
+1009: Elf Shoes - 8000 Dinks
+1010: Festive Tree - 2696 Dinks
+1011: Festive Scarecrow - 7331 Dinks
+1012: Festive Crate - 1485 Dinks
+1013: Festive Jackaroo - 5319 Dinks
+1014: Cherries - 117 Dinks
+1015: Cooked Cherries - 410 Dinks
+1016: Fireplace - 2829 Dinks
+1017: Mini Festive Tree - 516 Dinks
+1018: Festive Boom Box - 65669 Dinks
+1019: Festive Towel - 7022 Dinks
+1020: Festive Umbrella - 14881 Dinks
+1021: Candy Cane - 11025 Dinks
+1022: Jolly Dress - 1695 Dinks
+1023: Striped Boogie Board - 10000 Dinks
+1024: Star Light - 8487 Dinks
+1025: Candy Pickaxe - 4000 Dinks
+1026: Candy Axe - 3750 Dinks
+1027: Gingerbread Path - 159 Dinks
+1028: Festive Fence - 56 Dinks
+1029: Pleep Whistle - 3098 Dinks
+1030: Holly Wreath - 3110 Dinks
+1031: Tuckshop Deed - 750000 Dinks
+1032: Marble Path - 6 Dinks
+1033: Coffee Seeds - 680 Dinks
+1034: Coffee Bean - 295 Dinks
+1035: Roasted Coffee Beans - 3097 Dinks
+1036: Coffee - 6194 Dinks
+1037: Signwriting  Table - 6092 Dinks
+1038: A Letter Statue - 38 Dinks
+1039: B Letter Statue - 38 Dinks
+1040: C Letter Statue - 38 Dinks
+1041: D Letter Statue - 38 Dinks
+1042: E Letter Statue - 38 Dinks
+1043: F Letter Statue - 38 Dinks
+1044: G Letter Statue - 38 Dinks
+1045: H Letter Statue - 38 Dinks
+1046: I Letter Statue - 38 Dinks
+1047: J Letter Statue - 38 Dinks
+1048: K Letter Statue - 38 Dinks
+1049: L Letter Statue - 38 Dinks
+1050: M Letter Statue - 38 Dinks
+1051: N Letter Statue - 38 Dinks
+1052: O Letter Statue - 38 Dinks
+1053: P Letter Statue - 38 Dinks
+1054: Q Letter Statue - 38 Dinks
+1055: R Letter Statue - 38 Dinks
+1056: S Letter Statue - 38 Dinks
+1057: T Letter Statue - 38 Dinks
+1058: U Letter Statue - 38 Dinks
+1059: V Letter Statue - 38 Dinks
+1060: W Letter Statue - 38 Dinks
+1061: X Letter Statue - 38 Dinks
+1062: Y Letter Statue - 38 Dinks
+1063: Z Letter Statue - 38 Dinks
+1064: Hand Written sign - 612 Dinks
+1065: Signwriting  Pen - 125 Dinks
+1066: Iron Sign - 2844 Dinks
+1067: Gum Wood Direction Sign - 531 Dinks
+1068: Palm Wood Direction Sign - 669 Dinks
+1069: Hard Wood Direction Sign - 714 Dinks
+1070: Tin Direction Sign - 558 Dinks
+1071: Sail Boat - 116344 Dinks
+1072: Jackaroo Crossing Sign - 13306 Dinks
+1073: Lattice Fence - 146 Dinks
+1074: Jackaroo Paw - 700 Dinks
+1075: Flannel Flower - 700 Dinks
+1076: River Daisy - 700 Dinks
+1077: Orange Paper Daisy - 700 Dinks
+1078: Gum Wood Flower Bed - 236 Dinks
+1079: Wide Gum Wood Bridge - 4275 Dinks
+1080: Wide Hard Wood Bridge - 6150 Dinks
+1081: Bird of Paradise - 700 Dinks
+1082: Glow Button - 240 Dinks
+1083: Trash Bin - 14531 Dinks
+1084: Leaf Glider - 500000 Dinks
+1085: Desert Pea Pot - 984 Dinks
+1086: River Daisy Pot - 984 Dinks
+1087: Flannel Flower Pot - 984 Dinks
+1088: Butterfly Orchid Pot - 984 Dinks
+1089: Orange Paper Daisy Pot - 984 Dinks
+1090: Pink Paper Daisy - 700 Dinks
+1091: White Paper Daisy - 700 Dinks
+1092: Wheelbarrow Flower Bed - 19094 Dinks
+1093: Ruby Shard - 2000 Dinks
+1094: Emerald Shard - 5000 Dinks
+1095: Waterbed - 940 Dinks
+1096: Bottle of Clouds - 30250 Dinks
+1097: Large Cement Fountain - 46172 Dinks
+1098: Copper Flower Pot - 2500 Dinks
+1099: Lilly Pilly Seed - 125 Dinks
+1100: Small Lilly Pilly Seed - 100 Dinks
+1101: Comp Bug Net - 2200 Dinks
+1102: Gold Bug Comp Trophy - 59040 Dinks
+1103: Silver Bug Comp Trophy - 39360 Dinks
+1104: Bronze Bug Comp Trophy - 19680 Dinks
+1105: Bridged Waterbed - 1254 Dinks
+1106: Band Stand - 25000 Dinks
+1107: Diving Helmet - 22750 Dinks
+1108: Improved Chainsaw - 1000000 Dinks
+1109: Empty Improved Chainsaw - 1000000 Dinks
+1110: Balloon - 3000 Dinks
+1111: Red Cloth Path - 401 Dinks
+1112: Sparkler - 3000 Dinks
+1113: Mu Whistle - 200000 Dinks
+1114: Camera Tripod - 12000 Dinks
+1115: Wooden Swing - 1280 Dinks
+1116: Lily Pad - 100 Dinks
+1117: Giant Lily Pad - 375 Dinks
+1118: Hard Wood Flower Bed - 361 Dinks
+1119: Portable Roof - 1182 Dinks
+1120: Key-Cycler - 350000 Dinks
+1121: Billy Can Kit - 1610 Dinks
+1122: Tongs - 900 Dinks
+1123: Tape Measure - 4500 Dinks
+1124: Jacaranda Sapling - 12500 Dinks
+1125: Small Cement Fountain - 15500 Dinks
+1126: Wattle Tea - 1595 Dinks
+1127: Bottle Brush Tea - 2695 Dinks
+1128: Croco Statue - 55000 Dinks
+1129: Frilly Statue - 55000 Dinks
+1130: Cement Planter - 412 Dinks
+1131: Vine - 25 Dinks
+1132: Vine Fence - 126 Dinks
+1133: Mossy Brick Path - 2 Dinks
+1134: Hard Wood Market Stall - 8078 Dinks
+1135: Marble Fence - 26 Dinks
+1136: Post Box - 5000 Dinks
+1137: Marble Pedestal - 125 Dinks
+1138: Marble Bench - 125 Dinks
+1139: Marble Pillar - 312 Dinks
+1140: Rope Fence - 152 Dinks
+1141: Gerse Shirt - 1620 Dinks
+1142: Purple Jeans - 2000 Dinks
+1143: Purple Sneakers - 1800 Dinks
+1144: Orange Sneakers - 1800 Dinks
+1145: KD Shirt - 1620 Dinks
+1146: Orange Pants - 1600 Dinks
+1147: White Shorts - 975 Dinks
+1148: Reaps Shirt - 1620 Dinks
+1149: Lime Sneakers - 1800 Dinks
+1150: Helmet - 22750 Dinks
+1151: Stone Lantern - 292 Dinks
+1152: Sailor Hat - 12750 Dinks
+1153: Sailor Pants - 3000 Dinks
+1154: Sailor Shirt - 3000 Dinks
+1155: Sailor Boots - 1800 Dinks
+1156: Sailor Dress - 3000 Dinks
+1157: Sport Glasses - 3600 Dinks
+1158: Marble - 10 Dinks
+1159: Dinner Set - 984 Dinks
+1160: Stack of Plates - 1968 Dinks
+1161: Bread Board - 1000 Dinks
+1162: Wattle Brew Set - 1000 Dinks
+1163: Ramp - 146 Dinks
+1164: Advanced Sling Shot - 52500 Dinks
+1165: Berkonium Ore - 1000 Dinks
+1166: Berkonium Bar - 10000 Dinks
+1167: Plant Hammer - 8125 Dinks
+1168: Raw Grub Meat - 400 Dinks
+1169: Cooked Grub Meat - 800 Dinks
+1170: Plant Book - 18000 Dinks
+1171: Traffic Cone - 2952 Dinks
+1172: Apple Jam - 3100 Dinks
+1173: Banana Jam - 3100 Dinks
+1174: Lime Jam - 3100 Dinks
+1175: Quandong Jam - 3100 Dinks
+1176: Red Hibiscus - 280 Dinks
+1177: Yellow Hibiscus - 280 Dinks
+1178: Wide Brick Bridge - 238 Dinks
+1179: Improved Dirt Printer - 1000000 Dinks
+1180: Improved Dirt Printer - 1000000 Dinks
+1181: Vine Festoon - 1406 Dinks
+1182: Stone Wand - 45000 Dinks
+1183: Bottle Brush Vase - 1500 Dinks
+1184: Potted Lilly Pilly - 1500 Dinks
+1185: Painted Lady Butterfly - 560 Dinks
+1186: Grass Yellow Butterfly - 220 Dinks
+1187: Purple Azure Butterfly - 2200 Dinks
+1188: Blast Furnace - 400000 Dinks
+1189: Improved Table Saw - 150000 Dinks
+1190: Ginger Shirt - 1620 Dinks
+1191: Purple Shorts - 903 Dinks
+1192: Improved Jack Hammer - 1000000 Dinks
+1193: Empty Improved Jack Hammer - 1000000 Dinks
+1194: Improved Compactor - 1000000 Dinks
+1195: Improved Compactor - 1000000 Dinks
+1196: Jurd Shirt - 1620 Dinks
+1197: Mouth Almighty - 3870 Dinks
+1198: Bee Hood - 9875 Dinks
+1199: Stone Sign - 275 Dinks
+1200: Duck Canyon Shirt - 1620 Dinks
+1201: Tree House Shirt - 1620 Dinks
+1202: Soho Shirt - 1620 Dinks
+1203: Spec Shirt - 1620 Dinks
+1204: Tom Shirt - 1620 Dinks
+1205: Penguin Hood - 9875 Dinks
+1206: Finch Hood - 9875 Dinks
+1207: Moxie Shirt - 1620 Dinks
+1208: Tiger Hood - 9875 Dinks
+1209: Tongue - 2500 Dinks
+1210: Diggo Statue - 55000 Dinks
+1211: Tongue Whip - 45000 Dinks
+1212: Caito Shirt - 1620 Dinks
+1213: RileyKS Shirt - 1620 Dinks
+1214: Sandwich Chalkboard - 588 Dinks
+1215: Bushlime Box - 440 Dinks
+1216: Banana Box - 440 Dinks
+1217: Apple Box - 440 Dinks
+1218: Quandong Box - 440 Dinks
+1219: Party Horn - 3098 Dinks
+1220: Snag - 1612 Dinks
+1221: Balloon - 3000 Dinks
+1222: Dinkum Shirt - 1500 Dinks
+1223: JB Shirt - 1500 Dinks
+1224: Prize Ticket - 0 Dinks
+1225: Dinkum Cap - 1500 Dinks
+1226: Bubble Blower - 500 Dinks
+1227: Croco Plush - 2500 Dinks
+1228: Frying pan - 12500 Dinks
+1229: Magpie Plush - 2500 Dinks
+1230: Mu Plush - 2500 Dinks
+1231: Red Bar Stool - 1680 Dinks
+1232: Raffle Wheel - 4000 Dinks
+1233: Cape - 1500 Dinks
+1234: Anniversary Balloons - 2500 Dinks
+1235: Velvet Rope Fence - 312 Dinks
+1236: Red Carpet Path - 156 Dinks
+1237: Seaweed - 10 Dinks
+1238: Seaweed Soup - 400 Dinks
+1239: Bush Devil Plush - 2500 Dinks
+1240: Camera Drone - 120000 Dinks
+1241: Frilly Plush - 2500 Dinks
+1242: Blue Hang Glider - 0 Dinks
+1243: Pink Hang Glider - 400000 Dinks
+1244: Orange Hang Glider - 400000 Dinks
+1245: Purple Hang Glider - 400000 Dinks
+1246: Diggo Plush - 2500 Dinks
+1247: Gum Wood Market Stall - 7578 Dinks
+1248: Palm Wood Market Stall - 7952 Dinks
+1249: Gum Wood Arch - 945 Dinks
+1250: Palm Wood Arch - 1320 Dinks
+1251: Hard Wood Arch - 1445 Dinks
+1252: Candelabra - 1500 Dinks
+1253: White Gala Dress - 500 Dinks
+1254: Wide Palm Wood Bridge - 5681 Dinks
+1255: Pincher Plant Plush - 2500 Dinks
+1256: Fairy Light Wall - 2500 Dinks
+1257: Tuxedo Jacket - 500 Dinks
+1258: Tuxedo Pants - 500 Dinks
+1259: Tuxedo Shoes - 500 Dinks
+1260: Vine Wall - 134 Dinks
+1261: Statue - 1000 Dinks
+1262: Seamstress Dress - 500 Dinks
+1263: Lab Coat - 500 Dinks
+1264: Bouquet Pot - 500 Dinks
+1265: Black Hood - 1500 Dinks
+1266: Ute - 160000 Dinks
+1267: Red Hood - 1500 Dinks
+1268: Tie Dye Pants - 2000 Dinks
+1269: Tie Dye Shirt - 3000 Dinks
+1270: Tie Dye Cap - 1125 Dinks
+1271: Sugar Cane Crate - 440 Dinks
+1272: Cabbage Box - 440 Dinks
+1273: Carrot Box - 440 Dinks
+1274: Corn Box - 440 Dinks
+1275: Kale Box - 440 Dinks
+1276: Potato Box - 440 Dinks
+1277: Bottled Brush Set - 1000 Dinks
+1278: Jelly Brew Set - 1000 Dinks
+1279: Cooked Meat Plate - 984 Dinks
+1280: Cooked Drumstick Plate - 984 Dinks
+1281: Lamington Plate - 984 Dinks
+1282: Meat Pie Plate - 984 Dinks
+1283: Wheat Crate - 440 Dinks
+1284: Kanz Shirt - 1620 Dinks
+1285: Tomato Box - 440 Dinks
+1286: Cheese Board - 984 Dinks
+1287: Cooked Croco Meat Plate - 984 Dinks
+1288: Pavlova Plate - 984 Dinks
+1289: Quiche Plate - 984 Dinks
+1290: Damper Plate - 984 Dinks
+1291: Sausage Roll Plate - 984 Dinks
+1292: Pastie Plate - 984 Dinks
+1293: Fairy Bread Plate - 984 Dinks
+1294: Egg Plate - 984 Dinks
+1295: Fish And Chips Plate - 984 Dinks
+1296: Fruit Salad Plate - 984 Dinks
+1297: Garden Salad Plate - 984 Dinks
+1298: Hearty Stew Plate - 984 Dinks
+1299: Prime Roast Plate - 984 Dinks
+1300: Onion Box - 440 Dinks
+1301: Watermelon Box - 440 Dinks
+1302: Pumpkin Box - 440 Dinks
+1303: Food Modeller - 50000 Dinks
+1304: Flour Bag Stack - 1000 Dinks
+1305: Sugar Bag Stack - 1000 Dinks
+1306: Coffee Bag Stack - 1000 Dinks
+1307: Coffee Cup Set - 1000 Dinks
+1308: Wattle Tea Set - 1000 Dinks
+1309: Bottle Tea Set - 1000 Dinks
+1310: Mighty Spread Set - 1000 Dinks
+1311: Honey Set - 1000 Dinks
+1312: Apple Jam Set - 1000 Dinks
+1313: Lime Jam Set - 1000 Dinks
+1314: Banana Jam Set - 1000 Dinks
+1315: Quandong Jam Set - 1000 Dinks
+1316: River Reed Seed - 2 Dinks
+1317: Register - 984 Dinks
+1318: Green Bean Box - 440 Dinks
+1319: Meat on a Stick Set - 984 Dinks
+1320: Dagwood Dog Set - 984 Dinks
+1321: Cherry Box - 440 Dinks
+1322: Seaweed Soup Plate - 984 Dinks
+1323: Paper Bag Hat - 9875 Dinks
+1324: Airport Deed - 2500000 Dinks
+1325: Gum Wood Entrance Sign - 1340 Dinks
+1326: Palm Wood Entrance Sign - 1809 Dinks
+1327: Hard Wood Entrance Sign - 1965 Dinks
+1328: Rotary Clothesline - 15500 Dinks
+1329: Red Beach Chair - 435 Dinks
+1330: Gum Log Stool - 435 Dinks
+1331: Hard Wood Log Stool - 435 Dinks
+1332: Palm Wood Log Stool - 435 Dinks
+1333: Summer Lily Seed - 24 Dinks
+1334: Indoor Summer Lily - 1500 Dinks
+1335: Jackaroo Wand - 45000 Dinks
+1336: Aquamarine Shard - 2000 Dinks
+1337: Floor Light - 1115 Dinks
+1338: Red Floor Light - 2240 Dinks
+1339: Green Floor Light - 4115 Dinks
+1340: Blue Floor Light - 2240 Dinks
+1341: White Throwing Disc - 3500 Dinks
+1342: Comp Fishing Rod - 2038 Dinks
+1343: Pirate Glider - 500000 Dinks
+1344: Pineapple - 15000 Dinks
+1345: Treasure Map - 100 Dinks
+1346: Pilot Hat - 12750 Dinks
+1347: Pilot Shirt - 3000 Dinks
+1348: Pilot Pants - 3000 Dinks
+1349: Pilot Boots - 1800 Dinks
+1350: Red Spotty Dress - 1695 Dinks
+1351: Beach Straw Hat - 1350 Dinks
+1352: Ice Cream Maker - 8625 Dinks
+1353: Ice Cream - 3500 Dinks
+1354: Ice Cream Set - 984 Dinks
+1355: Gum Wood Kitchen Cabinet - 600 Dinks
+1356: Gum Wood Kitchen Sink - 600 Dinks
+1357: Palm Wood Kitchen Cabinet - 600 Dinks
+1358: Palm Wood Kitchen Sink - 600 Dinks
+1359: White Strap Shoes - 510 Dinks
+1360: Sand Castle - 600 Dinks
+1361: Sand Bucket - 600 Dinks
+1362: Interior Wall - 500 Dinks
+1363: Sand Fence - 14 Dinks
+1364: Player House 2 - 220000 Dinks
+1365: Your House Deed 3 - 440000 Dinks
+1366: Iron Wood Table - 1384 Dinks
+1367: Season-All - 156 Dinks
+1368: Solar Panel - 200000 Dinks
+1369: Palm Wood Table - 1796 Dinks
+1370: Gum Wood Table - 1328 Dinks
+1371: Hard Wood Table - 1952 Dinks
+1372: Curtain Festoon - 26688 Dinks
+1373: Octagon Sign - 594 Dinks
+1374: Garden Tap - 600 Dinks
+1375: Floor Drain - 600 Dinks
+1376: Picnic Basket - 600 Dinks
+1377: Pink Holiday Shirt - 680 Dinks
+1378: Purple Holiday Shirt - 680 Dinks
+1379: Orange Holiday Shirt - 680 Dinks
+1380: Green Holiday Shirt - 680 Dinks
+1381: Green Holiday Shorts - 665 Dinks
+1382: Orange Holiday Shorts - 665 Dinks
+1383: Pink Holiday Shorts - 665 Dinks
+1384: Purple Holiday Shorts - 665 Dinks
+1385: Life Guard Hat - 730 Dinks
+1386: Life Guard Shirt - 680 Dinks
+1387: Life Guard Shorts - 665 Dinks
+1388: Red Tile Path - 16 Dinks
+1389: Purple Tile Path - 16 Dinks
+1390: Yellow Tile Path - 16 Dinks
+1391: Green Tile Path - 16 Dinks
+1392: Orange Tile Path - 16 Dinks
+1393: Pink Tile Path - 16 Dinks
+1394: Blue Tile Path - 16 Dinks
+1395: Black Tile Path - 16 Dinks
+1396: White Tile Path - 16 Dinks
+1397: Beach Bar - 1565 Dinks
+1398: Hay Bale - 50 Dinks
+1399: Cooler - 2200 Dinks
+1400: Pineapple Box - 440 Dinks
+1401: Big Fan Hand - 75000 Dinks
+1402: Gum Wood Pergola - 4780 Dinks
+1403: Palm Wood Pergola - 5530 Dinks
+1404: Hard Wood Pergola - 5780 Dinks
+1405: Bus Stop - 3188 Dinks
+1406: Red Beach Hammock - 30 Dinks
+1407: Red Beach Umbrella - 14881 Dinks
+1408: Beetroot - 1425 Dinks
+1409: Flat Top Fence - 625 Dinks
+1410: Beetroot Seeds - 285 Dinks
+1411: Blue Beach Towel - 7022 Dinks
+1412: Green Beach Towel - 7022 Dinks
+1413: Red Beach Towel - 7022 Dinks
+1414: Green Beach Umbrella - 14881 Dinks
+1415: Blue Beach Umbrella - 14881 Dinks
+1416: White Hibiscus - 280 Dinks
+1417: Purple Hibiscus - 280 Dinks
+1418: Red Seaweed - 10 Dinks
+1419: Dark Wood Kitchen Cabinet - 600 Dinks
+1420: Dark Wood Kitchen Sink - 600 Dinks
+1421: Green Beach Hammock - 30 Dinks
+1422: Blue Beach Hammock - 30 Dinks
+1423: Blue Beach Chair - 435 Dinks
+1424: Green Beach Chair - 435 Dinks
+1425: Arrow Light - 3815 Dinks
+1426: Clown Fish - 7740 Dinks
+1427: Gold Fish Trophy - 59040 Dinks
+1428: Silver Fish Trophy - 59040 Dinks
+1429: Bronze Fish Trophy - 59040 Dinks
+1430: Shark Egg - 16000 Dinks
+1431: Maggie Egg - 16000 Dinks
+1432: Waiting Chair - 2940 Dinks
+1433: Boarding Pass - 125000 Dinks
+1434: Alpha Trident - 200000 Dinks
+1435: Alpha Shark Tooth - 25000 Dinks
+1436: Coral Acacia Seed - 4 Dinks
+1437: Fridge - 6200 Dinks
+1438: Blue Sun Glasses - 1200 Dinks
+1439: Green Sun Glasses - 1200 Dinks
+1440: Orange Sun Glasses - 1200 Dinks
+1441: Pink Sun Glasses - 1200 Dinks
+1442: Purple Sun Glasses - 1200 Dinks
+1443: Beach Ball - 5000 Dinks
+1444: Cup of Sunshine - 30250 Dinks
+1445: Tropical Grass Turf Roll - 2 Dinks
+1446: Butterfly Perfume - 16000 Dinks
+1447: Beetroot Box - 440 Dinks
+1448: Milk Set - 1000 Dinks
+1449: High Quality Milk Set - 1000 Dinks
+1450: Silver Pocket Watch - 25000 Dinks
+1451: Brain Coral - 4 Dinks
+1452: Bird Nest Coral - 4 Dinks
+1453: Blue Staghorn Coral - 4 Dinks
+1454: Blue Table Coral Fragment - 4 Dinks
+1455: Green Staghorn Coral - 4 Dinks
+1456: Pink Coral - 4 Dinks
+1457: Pink Table Coral Fragment - 4 Dinks
+1458: Green Tube Coral - 4 Dinks
+1459: Purple Spotty Dress - 1695 Dinks
+1460: Purple Strap Shoes - 510 Dinks
+1461: Halo - 1000000 Dinks
+1462: Humphead Wrasse - 15480 Dinks
+1463: Purple-Winged Mantis - 6330 Dinks
+1464: Blue Tiger Butterfly - 2300 Dinks
+1465: Common Crow Butterfly - 1980 Dinks
+1466: Shark Statue - 55000 Dinks
+1467: Seahorse - 3540 Dinks
+1468: Triton's Trumpet - 1300 Dinks
+1469: Sea Sponge - 200 Dinks
+1470: Police Hat - 12750 Dinks
+1471: Police Pants - 3000 Dinks
+1472: Police Shirt - 3000 Dinks
+1473: Police Boots - 1800 Dinks
+1474: White Panel Wall - 657 Dinks
+1475: Black Throwing Disc - 3500 Dinks
+1476: Blue Throwing Disc - 3500 Dinks
+1477: Green Throwing Disc - 3500 Dinks
+1478: Orange Throwing Disc - 3500 Dinks
+1479: Pink Throwing Disc - 3500 Dinks
+1480: Purple Throwing Disc - 3500 Dinks
+1481: Red Throwing Disc - 3500 Dinks
+1482: Blue Tang - 7740 Dinks
+1483: Yellow Tang - 740 Dinks
+1484: Festive Roo Plush - 6088 Dinks
+1485: Wheezing Shirt - 1620 Dinks
+1486: Festive Table - 2391 Dinks
+1487: Festive Festoon - 7870 Dinks
+1488: Cardboard Box - 873 Dinks
+1489: Coconut Drink Set - 1000 Dinks
+1490: Festive Lamp - 4482 Dinks
+1491: Coconut Drink - 2695 Dinks
+1492: Plastic Chair - 435 Dinks
+1493: Festive Pole - 8487 Dinks
+1494: Cooked Prawn - 2800 Dinks
+1495: Cooked Prawn Plate - 984 Dinks
+1496: Red Festive Sweater - 1153 Dinks
+1497: Festive Chair - 966 Dinks
+1498: Light Arch - 1445 Dinks
+1499: Festive Gifts - 8487 Dinks
+1500: Green Festive Sweater - 1153 Dinks
+1501: Spag Bol - 2776 Dinks
+1502: Cheesy Spag - 5125 Dinks
+1503: Spag Bol Plate - 984 Dinks
+1504: Cheese Spag Plate - 984 Dinks
+1505: Jam Toast - 2113 Dinks
+1506: Croco Skewer - 1165 Dinks
+1507: Scones - 7025 Dinks
+1508: Burger - 5780 Dinks
+1509: Lot Burger - 24473 Dinks
+1510: Dunny - 1796 Dinks
+1511: Jam Toast Plate - 984 Dinks
+1512: Scones Plate - 984 Dinks
+1513: Croco Skewer Set - 984 Dinks
+1514: Burger Plate - 984 Dinks
+1515: Lot Burger Plate - 984 Dinks
+1516: Watermelon Popsicle - 3580 Dinks
+1517: Advanced Crafting Table - 70788 Dinks
+1518: Advanced Cooking Table - 72150 Dinks
+1519: Sparkin' Soup - 9750 Dinks
+1520: Water Melon Popsicle Set - 984 Dinks
+1521: Sparkin' Soup Plate - 984 Dinks
+1522: Crab Soup - 890 Dinks
+1523: Parmy and Chips - 4242 Dinks
+1524: Parmi and Chips Plate - 984 Dinks
+1525: Crab Soup Plate - 984 Dinks
+1526: Yellow Morel - 250 Dinks
+1527: Slippery Jack - 250 Dinks
+1528: Field Mushroom - 250 Dinks
+1529: Milk Cap - 250 Dinks
+1530: Hand Trolley - 15000 Dinks
+1531: Cooked Yabbie Plate - 984 Dinks
+1532: Cooked Yabbie - 2800 Dinks
+1533: Red Roundhead - 500 Dinks
+1534: Slippery Jack Stool - 435 Dinks
+1535: Field Mushroom Lamp - 4919 Dinks
+1536: Slippery Jack Lamp - 4919 Dinks
+1537: Red Roundhead Lamp - 8044 Dinks
+1538: Yellow Morel Lamp - 4919 Dinks
+1539: Milk Cap Lamp - 4919 Dinks
+1540: Mushroom Soup - 1000 Dinks
+1541: Cooked Mushroom - 140 Dinks
+1542: Field Mushroom Basket - 440 Dinks
+1543: Milk Cap Basket - 440 Dinks
+1544: Slippery Jack Basket - 440 Dinks
+1545: Yellow Morel Basket - 440 Dinks
+1546: Roundhead Basket - 440 Dinks
+1547: Field Mushroom Stool - 435 Dinks
+1548: Milk Cap Stool - 435 Dinks
+1549: Roundhead Stool - 435 Dinks
+1550: Yellow Morel Stool - 435 Dinks
+1551: Mushroom Soup Plate - 984 Dinks
+1552: Toffee - 2346 Dinks
+1553: Toffee Plate - 984 Dinks
+1554: Pumpkin Soup - 4620 Dinks
+1555: Pumpkin Soup Plate - 984 Dinks
+1556: Balloon Sword - 100000 Dinks
+1557: Battle Broom - 125000 Dinks
+1558: Blastoad - 5000 Dinks
+1559: Plat Pie - 25 Dinks
+1560: Toilet - 7100 Dinks
+1561: Bath Tub - 302 Dinks
+1562: Charcoal Wall - 250 Dinks
+1563: Pastel Blue Wall - 250 Dinks
+1564: Pastel Green Wall - 250 Dinks
+1565: Pastel Grey Wall - 250 Dinks
+1566: Pastel Orange Wall - 250 Dinks
+1567: Pastel Pink Wall - 250 Dinks
+1568: Pastel Purple Wall - 250 Dinks
+1569: Pastel Red Wall - 250 Dinks
+1570: Light Room Divider - 3504 Dinks
+1571: Eastern Room Divider - 3504 Dinks
+1572: Rattan Room Divider - 3504 Dinks
+1573: Mummy Boots - 1800 Dinks
+1574: Mummy Hood - 12750 Dinks
+1575: Mummy Pants - 3000 Dinks
+1576: Mummy Shirt - 3000 Dinks
+1577: Orange And Grey Jumper - 1153 Dinks
+1578: White Hoodie - 1153 Dinks
+1579: White Comfy Shoes - 1200 Dinks
+1580: Black Hoodie - 1153 Dinks
+1581: Black Comfy Shoes - 1200 Dinks
+1582: Black Sweat Pants - 530 Dinks
+1583: Orange Hoodie - 1153 Dinks
+1584: Orange Comfy Shoes - 1200 Dinks
+1585: Orange Sweat Pants - 530 Dinks
+1586: Black And White Scarf - 4500 Dinks
+1587: Pink Hoodie - 1153 Dinks
+1588: Pink Comfy Shoes - 1200 Dinks
+1589: Pink Sweat Pants - 530 Dinks
+1590: Green Hoodie - 1153 Dinks
+1591: Green Comfy Shoes - 1200 Dinks
+1592: Green Sweat Pants - 530 Dinks
+1593: Blue Hoodie - 1153 Dinks
+1594: Blue Comfy Shoes - 1200 Dinks
+1595: Blue Sweat Pants - 530 Dinks
+1596: Purple Hoodie - 1153 Dinks
+1597: Purple Comfy Shoes - 1200 Dinks
+1598: Purple Sweat Pants - 530 Dinks
+1599: Red Hoodie - 1153 Dinks
+1600: Red Comfy Shoes - 1200 Dinks
+1601: Red Sweat Pants - 530 Dinks
+1602: Yellow Hoodie - 1153 Dinks
+1603: Yellow Comfy Shoes - 1200 Dinks
+1604: Yellow Sweat Pants - 530 Dinks
+1605: Black Scarf - 4500 Dinks
+1606: Grey Scarf - 4500 Dinks
+1607: Patterned Scarf - 4500 Dinks
+1608: Red and Black Scarf - 4500 Dinks
+1609: Gum Log Seat - 375 Dinks
+1610: Dark Room Divider - 3504 Dinks
+1611: Office Divider - 3504 Dinks
+1612: Galaxy Glider - 500000 Dinks
+1613: Galaxy Hood - 1500 Dinks
+1614: Meteorite Chunk - 16000 Dinks
+1615: Star Sabre - 1000000 Dinks
+1616: Yellow Stripe Jumper - 1153 Dinks
+1617: Charcoal Tights - 1000 Dinks
+1618: Green Stripe Jumper - 1153 Dinks
+1619: Grey Tights - 1000 Dinks
+1620: Blue Stripe Jumper - 1153 Dinks
+1621: White Tights - 1000 Dinks
+1622: Guest House Level 2 - 220000 Dinks
+1623: Guest House Deed - 95000 Dinks
+1624: Guest House 2 Level 2 - 220000 Dinks
+1625: Guest House Deed - 95000 Dinks
+1626: Guest House 2 Level 2 - 220000 Dinks
+1627: Guest House Deed - 95000 Dinks
+1628: Ride On Lawn Mower - 50000 Dinks
+1629: Interior Doorway - 1000 Dinks
+1630: Interior Half Wall - 250 Dinks
+1631: Fish Pond - 164825 Dinks
+1632: Fish Roe - 400 Dinks
+1633: Rice Seed - 60 Dinks
+1634: Rice - 144 Dinks
+1635: Caviar - 76000 Dinks
+1636: Cooked Rice - 288 Dinks
+1637: Egg Fried Rice - 988 Dinks
+1638: Rice Bag Stack - 1000 Dinks
+1639: Egg Fried Rice Plate - 984 Dinks
+1640: Caviar Set - 984 Dinks
+1641: Cooked Rice Set - 984 Dinks
+1642: Roe Nigiri - 4308 Dinks
+1643: Roe Nigiri Plate - 984 Dinks
+1644: Crude Ladder - 900 Dinks
+1645: Vine Lattice Ladder - 688 Dinks
+1646: Creeping Vine - 10 Dinks
+1647: Gum Wood Ladder - 750 Dinks
+1648: Hard Wood Ladder - 1250 Dinks
+1649: Palm Wood Ladder - 1125 Dinks
+1650: Iron Ladder - 2500 Dinks
+1651: Rope Ladder - 500 Dinks
+1652: Green Wood Floor - 658 Dinks
+1653: Cabin Wall - 250 Dinks
+1654: Rainbow Fish - 3580 Dinks
+1655: Lionfish - 11000 Dinks
+1656: Tiger Beetle - 2400 Dinks
+1657: Grass Tree Seed Pod - 600 Dinks
+1658: Grass Tree Seed - 100 Dinks
+1659: Cabin Stool - 1680 Dinks
+1660: Cabin Chair - 210 Dinks
+1661: Cabin Seat - 550 Dinks
+1662: Cabin Couch - 984 Dinks
+1663: Cabin Bed - 302 Dinks
+1664: Old Table - 1084 Dinks
+1665: Cabin Coffee Table - 410 Dinks
+1666: Cabin Drawers - 389 Dinks
+1667: Cabin Kitchen Table - 371 Dinks
+1668: Cabin Cabinet - 300 Dinks
+1669: Mushroom Risotto - 11418 Dinks
+1670: Mushroom Risotto Plate - 984 Dinks
+1671: Insta-Grow - 1200 Dinks
+1672: Old Wood Fence - 3 Dinks
+1673: Old Wood Lamp Post - 10 Dinks
+1674: Natural Path - 2 Dinks
+1675: Gravel Pathway - 2 Dinks
+1676: Auto Sorter - 500000 Dinks
+1677: Wrought Iron Fence - 625 Dinks
+1678: Wrought Iron Lamp - 4044 Dinks
+1679: Wrought Iron Bench - 5000 Dinks
+1680: Wrought Iron Gate - 5000 Dinks
+1681: Cabin Bedside Table - 302 Dinks
+1682: Cabin Bunk Bed - 1334 Dinks
+1683: Old Gizmo - 2500 Dinks
+1684: Smooth Cement Path - 2 Dinks
+1685: Honeycomb - 32000 Dinks
+1686: Wish Fountain Deed - 50000 Dinks
+1687: Tin Flower Bed - 171 Dinks
+1688: Pin Wheel - 500 Dinks
+1689: White Diamond Kite - 3125 Dinks
+1690: Black Diamond Kite - 3375 Dinks
+1691: Blue Diamond Kite - 3375 Dinks
+1692: Green Diamond Kite - 3375 Dinks
+1693: Orange Diamond Kite - 3375 Dinks
+1694: Pink Diamond Kite - 3375 Dinks
+1695: Purple Diamond Kite - 3375 Dinks
+1696: Red Diamond Kite - 3375 Dinks
+1697: Yellow Diamond Kite - 3375 Dinks
+1698: White Box Kite - 3125 Dinks
+1699: Black Box Kite - 3375 Dinks
+1700: Blue Box Kite - 3375 Dinks
+1701: Green Box Kite - 3375 Dinks
+1702: Orange Box Kite - 3375 Dinks
+1703: Pink Box Kite - 3375 Dinks
+1704: Purple Box Kite - 3375 Dinks
+1705: Red Box Kite - 3375 Dinks
+1706: Yellow Box Kite - 3375 Dinks
+1707: White Sled Kite - 3125 Dinks
+1708: Black Sled Kite - 3375 Dinks
+1709: Blue Sled Kite - 3375 Dinks
+1710: Green Sled Kite - 3375 Dinks
+1711: Orange Sled Kite - 3375 Dinks
+1712: Pink Sled Kite - 3375 Dinks
+1713: Purple Sled Kite - 3375 Dinks
+1714: Red Sled Kite - 3375 Dinks
+1715: Yellow Sled Kite - 3375 Dinks
+1716: Kite Kit - 2500 Dinks
+1717: Glitter Ball - 10000 Dinks
+1718: Search Light - 10000 Dinks
+1719: Aurora Shirt - 2500 Dinks
+1720: Aurora Baseball Cap - 2500 Dinks
+1721: Moon Lamp - 5000 Dinks
+1722: Star Wall - 2500 Dinks
+1723: Sky Fest Prize Ticket - 0 Dinks
+1724: Foil Hat - 2500 Dinks
+1725: Star Carpet Path - 156 Dinks
+1726: Star Fence - 312 Dinks
+1727: Star Balloon - 1500 Dinks

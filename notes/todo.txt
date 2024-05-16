@@ -1,34 +1,6 @@
 Days are a little shorter
 
-Copy mods' effects:
-  Long Distance Relationship
-  Friends Forever
-	  - Pets and livestock are invincible
-
 Stamina goes so low (4) during Late that you're slightly slow at full.
-Machines don't craft during Late
-(But all machines crafting at end of day will advance 7 hours / be done in the morning)
-If you go to bed at or after 11pm, you'll wake with less energy, to a minimum of 3/4 energy at Late+.
-
-✅ Skills need more XP to level up
-✅ Permits cost more points
-✅ Certain items cost 10x more
-
-✅ Several milestones have more tiers
-
-✅ Franlyn recipe unlocks take more discs
-
-✅Buildings construction takes more:
-  ✅ debt
-  ✅materials
-
-New fruit trees take longer to grow up, based on how many fruit they give per harvest. (2 fruit --> x2 grow duration, 3 --> x3, etc.)
-Many simple fruits restore less energy (assume -5, min 1, unless specified):
-	- Cooked Cactus Fruit
-	- Banana / Cooked
-	- Bush Lime / Cooked
-	- Quandong / Cooked
-The energy regen buff is twice as strong
 
 Some craftable items cost more ingredients:
 	- Well
@@ -66,3 +38,26 @@ Most crafting stations craft more slowly. Those marked with a plus are very very
 
 Animals cost more from Irwin's Barn
 The profit margin for selling happy animals is NOT increased from normal
+
+✅ Skills need more XP to level up
+✅ Permits cost more points
+✅ Certain items cost 10x more
+
+✅ Several milestones have more tiers
+
+✅ Franlyn recipe unlocks take more discs
+
+✅Buildings construction takes more:
+  ✅ debt
+  ✅ materials
+
+Quarry biome ignores dirt type when spawning rocks/ores
+  - Ores can overwrite rock & spinifex plants
+  - Ores can overwrite buried treasure (not player-placed)
+  - Slightly increase spawn rate
+
+New licenses:
+  - Prospecting - 5% chance to duplicate ore & stone
+  - Arborism - 5% chance to duplicate logs & tree seeds
+  - Butchery - 5% chance to duplicate meat & animal parts
+  - Botany - 5% chance to duplicate fruits & flowers (wattle/bottle)
