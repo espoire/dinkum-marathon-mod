@@ -85,7 +85,6 @@ internal class Constants
     "Iron Watering Can",
     "Animal Feeder",
     "Animal Food",
-    "Dog Kennel",
     "Milking Bucket",
     "Shears",
     "Alpha Bat",
@@ -189,6 +188,8 @@ internal class Constants
     { 1071, Magnitude.Regular },  // Sail Boat
 
     // These useful permanent structures are build-once, improve-many-others. They cost a LOT more.
+    { 700, Magnitude.Lots },      // Copper Watering Can
+    { 702, Magnitude.Lots },      // Iron Watering Can
     { 692, Magnitude.Lots },      // Water Tank
     { 693, Magnitude.Lots },      // Silo
     { 395, Magnitude.Lots },      // Animal Collection Point
@@ -205,6 +206,8 @@ internal class Constants
     "Camp Fire",
     "Queen Bee",
     "Sprinkler",
+    "Watering Can",
+    "Copper Watering Can",
   ];
 
   // Couldn't increase their difficulty to acquire without breaking the tutorial sequence, so they just craft slower instead.

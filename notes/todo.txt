@@ -2,7 +2,7 @@ Days are a little shorter
 
 Stamina goes so low (4) during Late that you're slightly slow at full.
 
-Some craftable items cost more ingredients:
+✅ Permanent progression craftable items cost more ingredients
 
 Animals cost more from Irwin's Barn
 The profit margin for selling happy animals is NOT increased from normal
