@@ -154,9 +154,58 @@ internal class Constants
 
   internal enum Magnitude { Some, Regular, Lots }
 
-  // internal static readonly Dictionary<int, Magnitude> itemIdsWithBoostedCraftMaterialsCosts = new Dictionary<int, Magnitude>() {
-  //   { 22, Magnitude.Regular },
-  // };
+  internal static readonly Dictionary<int, Magnitude> itemIdsWithBoostedCraftMaterialsCosts = new Dictionary<int, Magnitude>() {
+    // These progression structures are early game, so only boost them a little.
+    { 481, Magnitude.Some },  // Crafting Table
+    { 769, Magnitude.Some },  // Brick Well
+    { 758, Magnitude.Some },  // Gum Wood Bridge
+    { 578, Magnitude.Some },  // Palm Wood Bridge
+    { 99, Magnitude.Some },   // Palm Wood Bridge
+    { 757, Magnitude.Some },  // Hard Wood Bridge
+    { 759, Magnitude.Some },  // Brick Bridge
+    { 1079, Magnitude.Some }, // Wide Gum Wood Bridge
+    { 1254, Magnitude.Some }, // Wide Palm Wood Bridge
+    { 1080, Magnitude.Some }, // Wide Hard Wood Bridge
+    { 1178, Magnitude.Some }, // Wide Brick Bridge
+
+    // These are useful and permanent, so they're progression-related and should cost more.
+    { 359, Magnitude.Regular },   // Cooking Table
+    { 1121, Magnitude.Regular },  // Billy Can Kit
+    { 392, Magnitude.Regular },   // Keg
+    { 697, Magnitude.Regular },   // Simple Animal Trap
+    { 302, Magnitude.Regular },   // Animal Trap
+    { 223, Magnitude.Regular },   // Crab Pot
+    { 226, Magnitude.Regular },   // Bee House
+    { 703, Magnitude.Regular },   // Compost Bin
+    { 863, Magnitude.Regular },   // Worm Farm
+    { 278, Magnitude.Regular },   // Sprinkler
+    { 749, Magnitude.Regular },   // Advanced Sprinkler
+    { 860, Magnitude.Regular },   // Grain Mill
+    { 343, Magnitude.Regular },   // Animal Feeder
+    { 341, Magnitude.Regular },   // Bird Coop
+    { 347, Magnitude.Regular },   // Animal Stall
+    { 404, Magnitude.Regular },   // Animal Den
+    { 604, Magnitude.Regular },   // Row Boat
+    { 1071, Magnitude.Regular },  // Sail Boat
+
+    // These useful permanent structures are build-once, improve-many-others. They cost a LOT more.
+    { 692, Magnitude.Lots },      // Water Tank
+    { 693, Magnitude.Lots },      // Silo
+    { 395, Magnitude.Lots },      // Animal Collection Point
+    { 753, Magnitude.Lots },      // Windmill
+    { 452, Magnitude.Lots },      // (pumpkin) Scarecrow
+    { 1004, Magnitude.Lots },     // Melon Scarecrow
+    { 1011, Magnitude.Regular },  // Festive Scarecrow, only Regular because it's already expensive.
+  };
+
+  /// <summary>
+  ///   It just didn't make in-world sense for crafting recipes to require multiples of these.
+  /// </summary>
+  internal static readonly string[] itemsNotToBoostInCraftCosts = [
+    "Camp Fire",
+    "Queen Bee",
+    "Sprinkler",
+  ];
 
   // Couldn't increase their difficulty to acquire without breaking the tutorial sequence, so they just craft slower instead.
   internal static readonly int[] itemChangerIdsWithLongerCraftDurations = [
@@ -231,16 +280,17 @@ internal class Patches
   [HarmonyPatch(typeof(Inventory), nameof(Inventory.setUpItemOnStart))]
   private static void EditItemDefinitions(Inventory __instance)
   {
-    foreach (var item in __instance.allItems)
-    {
+    for (int i = 0; i < __instance.allItems.Length; i++) {
+      var item = __instance.allItems[i];
       if (item is null) continue;
+
       IncreaseShinyDiscCostsToLearn(item);
       LengthenEarlyGameItemChangerCraftingRecipesFor(item);
-      IncreaseVendorAndCraftCostsFor(item);
+      IncreaseVendorAndCraftCostsFor(item, i);
     }
   }
 
-  private static void IncreaseVendorAndCraftCostsFor(InventoryItem item)
+  private static void IncreaseVendorAndCraftCostsFor(InventoryItem item, int id)
   {
     var name = item.getInvItemName();
     if (
@@ -264,6 +314,33 @@ internal class Patches
         for (int i = 0; i < stacks.Length; i++)
         {
           stacks[i] = (int)(stacks[i] * Constants.SLOWDOWN_FACTOR * 2);
+        }
+      }
+    }
+
+    if (item.craftable && Constants.itemIdsWithBoostedCraftMaterialsCosts.ContainsKey(id)) {
+      double magnitude = 0;
+      switch (Constants.itemIdsWithBoostedCraftMaterialsCosts[id]) {
+        case Constants.Magnitude.Some:
+          magnitude = Math.Sqrt(Constants.SLOWDOWN_FACTOR);
+          break;
+        
+        case Constants.Magnitude.Regular:
+          magnitude = Constants.SLOWDOWN_FACTOR;
+          break;
+        
+        case Constants.Magnitude.Lots:
+          magnitude = Constants.SLOWDOWN_FACTOR * Constants.SLOWDOWN_FACTOR;
+          break;
+      }
+
+      if (magnitude > 0) {
+        var items = item.craftable.itemsInRecipe;
+        var stacks = item.craftable.stackOfItemsInRecipe;
+
+        for (int i = 0; i < stacks.Length; i++) {
+          if (Constants.itemsNotToBoostInCraftCosts.Contains(items[i].getInvItemName())) continue;
+          stacks[i] = (int)(stacks[i] * magnitude);
         }
       }
     }

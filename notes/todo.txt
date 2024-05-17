@@ -3,28 +3,6 @@ Days are a little shorter
 Stamina goes so low (4) during Late that you're slightly slow at full.
 
 Some craftable items cost more ingredients:
-	- Well
-	+ Billy Can Kit
-	- Crude Furnace
-	++ Scarecrows
-	+ Compost Bin
-	+ Worm Farm
-	+ Crab Pot
-	+ Bee House
-	+ Sprinklers
-	++ Water Tank
-	+ Grain Mill
-	+ Cooking Table
-	- Crafting Table
-	+ Bird Coop
-	+ Animal Feeder
-	++ Silo
-	+ Keg
-	++ Animal Collection Point
-	++ Windmill
-	+ Row Boat
-	+ Sail Boat
-	+ Bridges
 
 Animals cost more from Irwin's Barn
 The profit margin for selling happy animals is NOT increased from normal
