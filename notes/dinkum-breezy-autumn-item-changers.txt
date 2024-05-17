@@ -1,0 +1,396 @@
+IDs:
+21: Stone Grinder
+22: BBQ
+25: Camp Fire
+50: Furnace
+143: Table Saw
+192: Keg
+206: Gacha
+213: Crude Furnace
+293: Loom
+294: Cheese Maker
+308: Compost Bin
+362: Charging Station
+365: Grain Mill
+435: Bat Statue
+581: Blast Furnace
+582: Improved Table Saw
+643: Food Modeler
+689: ??? (Converts Old Keys x5 to Treasure Maps)
+690: Ice Cream Maker
+822: ??? (Converts misc machine parts to Old Keys)
+838: ??? (Improved Billy Can Kit? with half craft times)
+
+Detailed Recipe Info
+
+Recipes in ItemChanger tile #362:
+- 1x Chainsaw --> Chainsaw, 600 seconds
+- 1x Torch --> Torch, 300 seconds
+- 1x Metal Detector --> Metal Detector, 300 seconds
+- 1x Miners Helmet --> Miners Helmet, 120 seconds
+- 1x Jack Hammer --> Jack Hammer, 600 seconds
+- 1x Compactor --> Compactor, 600 seconds
+- 1x Empty Miners Helmet --> Miners Helmet, 120 seconds
+- 1x Bat Zapper --> Bat Zapper, 300 seconds
+- 1x Dirt Printer --> Dirt Printer, 600 seconds
+- 1x Improved Chainsaw --> Improved Chainsaw, 600 seconds
+- 1x Empty Improved Chainsaw --> Improved Chainsaw, 600 seconds
+- 1x Improved Dirt Printer --> Improved Dirt Printer, 600 seconds
+- 1x Improved Dirt Printer --> Improved Dirt Printer, 600 seconds
+- 1x Improved Jack Hammer --> Improved Jack Hammer, 600 seconds
+- 1x Empty Improved Jack Hammer --> Improved Jack Hammer, 600 seconds
+- 1x Improved Compactor --> Improved Compactor, 600 seconds
+- 1x Improved Compactor --> Improved Compactor, 600 seconds
+Recipes in ItemChanger tile #308:
+- 8x Bone --> Fertilizer, 1 days, gives Farming xp
+- 15x Nautilus Shell --> Fertilizer, 2 days, gives Farming xp
+- 25x Scallop Shell --> Fertilizer, 2 days, gives Farming xp
+- 10x Syrinx Shell --> Fertilizer, 2 days, gives Farming xp
+- 4x Roo Poo --> Fertilizer, 1 days, gives Farming xp
+- 2x Vombat Poo --> Fertilizer, 1 days, gives Farming xp
+- 25x Buccinidae Shell --> Fertilizer, 2 days, gives Farming xp
+- 25x Cassidae Shell --> Fertilizer, 2 days, gives Farming xp
+- 15x Sand Dollar --> Fertilizer, 2 days, gives Farming xp
+- 25x Tonnidae Shell --> Fertilizer, 2 days, gives Farming xp
+- 1x Alpha Antler --> Insta-Grow, 10 cycles, 30 seconds, gives Farming xp
+- 1x Alpha Scale --> Insta-Grow, 10 cycles, 30 seconds, gives Farming xp
+- 1x Alpha Eye --> Insta-Grow, 10 cycles, 30 seconds, gives Farming xp
+- 1x Alpha Shark Tooth --> Insta-Grow, 10 cycles, 30 seconds, gives Farming xp
+- 1x Tropical Grass Turf Roll --> Season-All, 1 days, gives Farming xp
+- 4x Plat Pie --> Fertilizer, 600 seconds, gives Farming xp
+Recipes in ItemChanger tile #25:
+- 1x Bush Lime --> Cooked Bush Lime, 8 seconds
+- 1x Meat --> Cooked Meat, 16 seconds
+- 1x Barcoo Grunter --> Cooked Freshwater Fish, 12 seconds
+- 1x Barramundi --> Cooked Freshwater Fish, 5 cycles, 12 seconds
+- 1x River Bass --> Cooked Freshwater Fish, 2 cycles, 12 seconds
+- 1x Jungle Perch --> Cooked Freshwater Fish, 12 seconds
+- 1x Banded Morwong --> Cooked Saltwater Fish, 2 cycles, 12 seconds
+- 1x Bluefish --> Cooked Saltwater Fish, 12 seconds
+- 1x Garfish --> Cooked Saltwater Fish, 12 seconds
+- 1x Golden Perch --> Cooked Freshwater Fish, 3 cycles, 12 seconds
+- 1x Mangrove Jack --> Cooked Saltwater Fish, 2 cycles, 12 seconds
+- 1x Luderick --> Cooked Saltwater Fish, 2 cycles, 12 seconds
+- 1x Blue Spot Flathead --> Cooked Saltwater Fish, 12 seconds
+- 1x Travalla --> Cooked Saltwater Fish, 3 cycles, 12 seconds
+- 1x Yellowfin Tuna --> Cooked Saltwater Fish, 9 cycles, 12 seconds
+- 1x Spinifex Tuft --> Spinifex Resin, 1 seconds
+- 1x Cactus Figs --> Cooked Cactus Fig, 4 seconds
+- 1x Yabbie --> Cooked Yabbie, 12 seconds
+- 1x Bananas --> Cooked Banana, 8 seconds
+- 1x Apple --> Cooked Apple, 8 seconds
+- 1x Raw Drumstick --> Cooked Drumstick, 10 seconds, gives Hunting xp
+- 1x Carp --> Cooked Freshwater Fish, 12 seconds
+- 1x Eyestripe Surgeonfish --> Cooked Saltwater Fish, 2 cycles, 12 seconds
+- 1x Black & White Snapper --> Cooked Saltwater Fish, 12 seconds
+- 1x Boofhead Catfish --> Cooked Saltwater Fish, 12 seconds
+- 1x Murray Cod --> Cooked Freshwater Fish, 6 cycles, 12 seconds
+- 1x Eel Tailed Catfish --> Cooked Saltwater Fish, 12 seconds
+- 1x Stingray --> Cooked Saltwater Fish, 2 cycles, 12 seconds
+- 1x Chicken Egg --> Fried Egg, 8 seconds
+- 1x Bonytongue --> Cooked Freshwater Fish, 2 cycles, 12 seconds
+- 1x Raw Giant Drumstick --> Cooked Giant Drumstick, 50 seconds
+- 1x Big Chicken Egg --> Big Fried Egg, 8 seconds
+- 1x Blackfish --> Cooked Freshwater Fish, 2 cycles, 12 seconds
+- 1x Galaxias --> Cooked Freshwater Fish, 3 cycles, 12 seconds
+- 1x Silver Perch --> Cooked Freshwater Fish, 12 seconds
+- 1x Anchovy --> Cooked Saltwater Fish, 2 cycles, 12 seconds
+- 1x Goat Fish --> Cooked Saltwater Fish, 2 cycles, 12 seconds
+- 1x Barracuda --> Cooked Saltwater Fish, 5 cycles, 12 seconds
+- 1x Blob Fish --> Cooked Blob Fish, 12 seconds
+- 1x Saratoga --> Cooked Freshwater Fish, 4 cycles, 12 seconds
+- 1x Tarpon --> Cooked Freshwater Fish, 2 cycles, 12 seconds
+- 1x Marlin --> Cooked Saltwater Fish, 8 cycles, 12 seconds
+- 1x Grayling --> Cooked Freshwater Fish, 2 cycles, 12 seconds
+- 1x Short Finned Eel --> Cooked Freshwater Fish, 2 cycles, 12 seconds
+- 1x Croco Meat --> Cooked Croco Meat, 32 seconds, gives Hunting xp
+- 1x Quandong --> Cooked Quandong, 8 seconds
+- 1x Flake --> Cooked Flake, 32 seconds, gives Hunting xp
+- 1x King Prawn --> Cooked Prawn, 12 seconds
+- 1x Tiger Prawn --> Cooked Prawn, 12 seconds
+- 1x Fresh Water Prawn --> Cooked Prawn, 12 seconds
+- 1x White Yabbie --> Cooked Yabbie, 12 seconds
+- 1x Raw Prime Meat --> Cooked Prime Meat, 16 seconds
+- 1x Deep Fish --> Cooked Freshwater Fish, 10 cycles, 12 seconds
+- 1x Cherries --> Cooked Cherries, 8 seconds
+- 1x Raw Grub Meat --> Cooked Grub Meat, 16 seconds
+- 1x Mouth Almighty --> Cooked Saltwater Fish, 2 cycles, 12 seconds
+- 1x Clown Fish --> Cooked Saltwater Fish, 3 cycles, 12 seconds
+- 1x Humphead Wrasse --> Cooked Saltwater Fish, 6 cycles, 12 seconds
+- 1x Blue Tang --> Cooked Saltwater Fish, 3 cycles, 12 seconds
+- 1x Yellow Tang --> Cooked Saltwater Fish, 12 seconds
+- 1x Yellow Morel --> Cooked Mushroom, 16 seconds, gives Foraging xp
+- 1x Slippery Jack --> Cooked Mushroom, 16 seconds, gives Foraging xp
+- 1x Field Mushroom --> Cooked Mushroom, 16 seconds, gives Foraging xp
+- 1x Milk Cap --> Cooked Mushroom, 16 seconds, gives Foraging xp
+- 1x Red Roundhead --> Cooked Mushroom, 16 seconds, gives Foraging xp
+- 1x Rainbow Fish --> Cooked Freshwater Fish, 2 cycles, 12 seconds
+- 1x Lionfish --> Cooked Saltwater Fish, 4 cycles, 12 seconds
+- 1x Grass Tree Seed Pod --> Grass Tree Seed, 3 cycles, 15 seconds
+Recipes in ItemChanger tile #22:
+- 1x Bush Lime --> Cooked Bush Lime, 4 seconds
+- 1x Meat --> Cooked Meat, 8 seconds
+- 1x Barcoo Grunter --> Cooked Freshwater Fish, 6 seconds
+- 1x Barramundi --> Cooked Freshwater Fish, 5 cycles, 6 seconds
+- 1x River Bass --> Cooked Freshwater Fish, 2 cycles, 6 seconds
+- 1x Jungle Perch --> Cooked Freshwater Fish, 6 seconds
+- 1x Banded Morwong --> Cooked Saltwater Fish, 2 cycles, 6 seconds
+- 1x Bluefish --> Cooked Saltwater Fish, 6 seconds
+- 1x Garfish --> Cooked Saltwater Fish, 6 seconds
+- 1x Golden Perch --> Cooked Freshwater Fish, 3 cycles, 6 seconds
+- 1x Mangrove Jack --> Cooked Saltwater Fish, 2 cycles, 6 seconds
+- 1x Luderick --> Cooked Saltwater Fish, 2 cycles, 6 seconds
+- 1x Blue Spot Flathead --> Cooked Saltwater Fish, 6 seconds
+- 1x Travalla --> Cooked Saltwater Fish, 3 cycles, 6 seconds
+- 1x Yellowfin Tuna --> Cooked Saltwater Fish, 9 cycles, 6 seconds
+- 1x Cactus Figs --> Cooked Cactus Fig, 2 seconds
+- 1x Yabbie --> Cooked Yabbie, 6 seconds
+- 1x Bananas --> Cooked Banana, 4 seconds
+- 1x Apple --> Cooked Apple, 4 seconds
+- 1x Raw Drumstick --> Cooked Drumstick, 5 seconds, gives Hunting xp
+- 1x Carp --> Cooked Freshwater Fish, 6 seconds
+- 1x Eyestripe Surgeonfish --> Cooked Saltwater Fish, 2 cycles, 6 seconds
+- 1x Black & White Snapper --> Cooked Saltwater Fish, 6 seconds
+- 1x Boofhead Catfish --> Cooked Saltwater Fish, 6 seconds
+- 1x Murray Cod --> Cooked Freshwater Fish, 6 cycles, 6 seconds
+- 1x Eel Tailed Catfish --> Cooked Saltwater Fish, 6 seconds
+- 1x Stingray --> Cooked Saltwater Fish, 2 cycles, 6 seconds
+- 1x Chicken Egg --> Fried Egg, 4 seconds
+- 1x Bonytongue --> Cooked Freshwater Fish, 2 cycles, 6 seconds
+- 1x Raw Giant Drumstick --> Cooked Giant Drumstick, 25 seconds
+- 1x Big Chicken Egg --> Big Fried Egg, 4 seconds
+- 1x Blackfish --> Cooked Freshwater Fish, 2 cycles, 6 seconds
+- 1x Galaxias --> Cooked Freshwater Fish, 3 cycles, 6 seconds
+- 1x Silver Perch --> Cooked Freshwater Fish, 6 seconds
+- 1x Anchovy --> Cooked Saltwater Fish, 2 cycles, 6 seconds
+- 1x Goat Fish --> Cooked Saltwater Fish, 2 cycles, 6 seconds
+- 1x Barracuda --> Cooked Saltwater Fish, 5 cycles, 6 seconds
+- 1x Blob Fish --> Cooked Blob Fish, 6 seconds
+- 1x Saratoga --> Cooked Freshwater Fish, 4 cycles, 6 seconds
+- 1x Tarpon --> Cooked Freshwater Fish, 2 cycles, 6 seconds
+- 1x Marlin --> Cooked Saltwater Fish, 8 cycles, 6 seconds
+- 1x Grayling --> Cooked Freshwater Fish, 2 cycles, 6 seconds
+- 1x Short Finned Eel --> Cooked Freshwater Fish, 2 cycles, 6 seconds
+- 1x Croco Meat --> Cooked Croco Meat, 16 seconds, gives Hunting xp
+- 1x Quandong --> Cooked Quandong, 4 seconds
+- 1x Flake --> Cooked Flake, 16 seconds, gives Hunting xp
+- 1x King Prawn --> Cooked Prawn, 6 seconds
+- 1x Tiger Prawn --> Cooked Prawn, 6 seconds
+- 1x Fresh Water Prawn --> Cooked Prawn, 6 seconds
+- 1x White Yabbie --> Cooked Yabbie, 6 seconds
+- 1x Raw Prime Meat --> Cooked Prime Meat, 8 seconds
+- 1x Deep Fish --> Cooked Freshwater Fish, 10 cycles, 6 seconds
+- 1x Cherries --> Cooked Cherries, 4 seconds
+- 3x Coffee Bean --> Roasted Coffee Beans, 4 seconds
+- 1x Raw Grub Meat --> Cooked Grub Meat, 8 seconds
+- 1x Mouth Almighty --> Cooked Saltwater Fish, 2 cycles, 6 seconds
+- 1x Clown Fish --> Cooked Saltwater Fish, 3 cycles, 6 seconds
+- 1x Humphead Wrasse --> Cooked Saltwater Fish, 6 cycles, 6 seconds
+- 1x Blue Tang --> Cooked Saltwater Fish, 3 cycles, 6 seconds
+- 1x Yellow Tang --> Cooked Saltwater Fish, 6 seconds
+- 1x Yellow Morel --> Cooked Mushroom, 8 seconds, gives Foraging xp
+- 1x Slippery Jack --> Cooked Mushroom, 8 seconds, gives Foraging xp
+- 1x Field Mushroom --> Cooked Mushroom, 8 seconds, gives Foraging xp
+- 1x Milk Cap --> Cooked Mushroom, 8 seconds, gives Foraging xp
+- 1x Red Roundhead --> Cooked Mushroom, 8 seconds, gives Foraging xp
+- 1x Rainbow Fish --> Cooked Freshwater Fish, 2 cycles, 6 seconds
+- 1x Lionfish --> Cooked Saltwater Fish, 4 cycles, 6 seconds
+Recipes in ItemChanger tile #545:
+- 10x Bush Lime --> Lime Jam, 600 seconds
+- 10x Yellow Wattle Flower --> Wattle Tea, 240 seconds
+- 1x Mud Crab --> Crab Soup, 180 seconds
+- 10x Bananas --> Banana Jam, 600 seconds
+- 10x Apple --> Apple Jam, 600 seconds
+- 10x Bottle Brush --> Bottle Brush Tea, 180 seconds
+- 10x Quandong --> Quandong Jam, 600 seconds
+- 10x Coconut --> Coconut Drink, 180 seconds
+- 1x Inland Crab --> Crab Soup, 180 seconds
+- 1x Purple Mottled Crab --> Crab Soup, 180 seconds
+- 2x Thunder Sac --> Sparkin' Soup, 180 seconds, gives Hunting xp
+- 1x Roasted Coffee Beans --> Coffee, 300 seconds
+- 10x Seaweed --> Seaweed Soup, 180 seconds
+- 10x Red Seaweed --> Seaweed Soup, 180 seconds
+- 1x Rice --> Cooked Rice, 16 seconds
+Recipes in ItemChanger tile #838:
+- 10x Bush Lime --> Lime Jam, 300 seconds
+- 10x Yellow Wattle Flower --> Wattle Tea, 120 seconds
+- 1x Mud Crab --> Crab Soup, 90 seconds
+- 10x Bananas --> Banana Jam, 300 seconds
+- 10x Apple --> Apple Jam, 300 seconds
+- 10x Bottle Brush --> Bottle Brush Tea, 90 seconds
+- 10x Quandong --> Quandong Jam, 300 seconds
+- 10x Coconut --> Coconut Drink, 90 seconds
+- 1x Inland Crab --> Crab Soup, 90 seconds
+- 1x Purple Mottled Crab --> Crab Soup, 90 seconds
+- 2x Thunder Sac --> Sparkin' Soup, 90 seconds, gives Hunting xp
+- 1x Roasted Coffee Beans --> Coffee, 150 seconds
+- 10x Seaweed --> Seaweed Soup, 90 seconds
+- 10x Red Seaweed --> Seaweed Soup, 90 seconds
+- 1x Rice --> Cooked Rice, 8 seconds
+Recipes in ItemChanger tile #643:
+- 10x Bush Lime --> Bushlime Box, 2 seconds
+- 1x Cooked Meat --> Cooked Meat Plate, 2 seconds
+- 1x Sugar Cane --> Sugar Cane Crate, 2 seconds
+- 1x Cabbage --> Cabbage Box, 2 seconds
+- 3x Carrot --> Carrot Box, 2 seconds
+- 2x Corn --> Corn Box, 2 seconds
+- 1x Honey --> Honey Set, 2 seconds
+- 10x Bananas --> Banana Box, 2 seconds
+- 10x Apple --> Apple Box, 2 seconds
+- 1x Cooked Drumstick --> Cooked Drumstick Plate, 2 seconds
+- 1x Kale --> Kale Box, 2 seconds
+- 3x Potato --> Potato Box, 2 seconds
+- 3x Wheat --> Wheat Crate, 2 seconds
+- 2x Watermelon --> Watermelon Box, 2 seconds
+- 2x Pumpkin --> Pumpkin Box, 2 seconds
+- 3x Onion --> Onion Box, 2 seconds
+- 1x Chicken Egg --> Egg Plate, 4 seconds
+- 3x Milk --> Milk Set, 2 seconds
+- 1x Lamington --> Lamington Plate, 2 seconds
+- 1x Fish and Chips --> Fish And Chips Plate, 2 seconds
+- 1x Fruit Salad --> Fruit Salad Plate, 2 seconds
+- 1x Garden Salad --> Garden Salad Plate, 2 seconds
+- 1x Hearty Stew --> Hearty Stew Plate, 2 seconds
+- 1x Wattle Brew --> Wattle Brew Set, 2 seconds
+- 1x Big Chicken Egg --> Egg Plate, 4 seconds
+- 1x Cheese --> Cheese Board, 2 seconds
+- 3x High Quality Milk --> High Quality Milk Set, 2 seconds
+- 1x High Quality Cheese --> Cheese Board, 2 seconds
+- 1x Cooked Croco Meat --> Cooked Croco Meat Plate, 2 seconds
+- 1x Meat Pie --> Meat Pie Plate, 2 seconds
+- 1x Pavlova --> Pavlova Plate, 2 seconds
+- 1x Dagwood Dog --> Dagwood Dog Set, 2 seconds
+- 1x Quiche --> Quiche Plate, 2 seconds
+- 1x Meat on a stick. --> Meat on a Stick Set, 2 seconds
+- 1x Jelly Brew --> Jelly Brew Set, 2 seconds
+- 1x Bottle Brush Brew --> Bottled Brush Set, 2 seconds
+- 1x Big Fried Egg --> Egg Plate, 2 seconds
+- 1x Fried Egg --> Egg Plate, 2 seconds
+- 10x Quandong --> Quandong Box, 2 seconds
+- 1x Tomato --> Tomato Box, 2 seconds
+- 3x Green Bean --> Green Bean Box, 2 seconds
+- 1x Flour --> Flour Bag Stack, 2 seconds
+- 1x Sugar --> Sugar Bag Stack, 2 seconds
+- 1x Bread --> Bread Board, 2 seconds
+- 1x Fairy Bread --> Fairy Bread Plate, 2 seconds
+- 1x Pastie --> Pastie Plate, 2 seconds
+- 1x Damper --> Damper Plate, 2 seconds
+- 1x Sausage Roll --> Sausage Roll Plate, 2 seconds
+- 1x Prime Roast --> Prime Roast Plate, 2 seconds
+- 1x Mighty Spread --> Mighty Spread Set, 2 seconds
+- 10x Cherries --> Cherry Box, 2 seconds
+- 1x Roasted Coffee Beans --> Coffee Bag Stack, 2 seconds
+- 1x Coffee --> Coffee Cup Set, 2 seconds
+- 1x Wattle Tea --> Wattle Tea Set, 2 seconds
+- 1x Bottle Brush Tea --> Bottle Tea Set, 2 seconds
+- 1x Apple Jam --> Apple Jam Set, 2 seconds
+- 1x Banana Jam --> Banana Jam Set, 2 seconds
+- 1x Lime Jam --> Lime Jam Set, 2 seconds
+- 1x Quandong Jam --> Quandong Jam Set, 2 seconds
+- 1x Seaweed Soup --> Seaweed Soup Plate, 2 seconds
+- 10x Pineapple --> Pineapple Box, 2 seconds
+- 1x Ice Cream --> Ice Cream Set, 2 seconds
+- 3x Beetroot --> Beetroot Box, 2 seconds
+- 1x Coconut Drink --> Coconut Drink Set, 2 seconds
+- 1x Cooked Prawn --> Cooked Prawn Plate, 2 seconds
+- 1x Spag Bol --> Spag Bol Plate, 2 seconds
+- 1x Cheesy Spag --> Cheese Spag Plate, 2 seconds
+- 1x Jam Toast --> Jam Toast Plate, 2 seconds
+- 1x Croco Skewer --> Croco Skewer Set, 2 seconds
+- 1x Scones --> Scones Plate, 2 seconds
+- 1x Burger --> Burger Plate, 2 seconds
+- 1x Lot Burger --> Lot Burger Plate, 2 seconds
+- 1x Watermelon Popsicle --> Water Melon Popsicle Set, 2 seconds
+- 1x Sparkin' Soup --> Sparkin' Soup Plate, 2 seconds
+- 1x Crab Soup --> Crab Soup Plate, 2 seconds
+- 1x Parmy and Chips --> Parmi and Chips Plate, 2 seconds
+- 5x Yellow Morel --> Yellow Morel Basket, 2 seconds
+- 5x Slippery Jack --> Slippery Jack Basket, 2 seconds
+- 5x Field Mushroom --> Field Mushroom Basket, 2 seconds
+- 5x Milk Cap --> Milk Cap Basket, 2 seconds
+- 1x Cooked Yabbie --> Cooked Yabbie Plate, 2 seconds
+- 5x Red Roundhead --> Roundhead Basket, 2 seconds
+- 1x Mushroom Soup --> Mushroom Soup Plate, 2 seconds
+- 1x Toffee --> Toffee Plate, 2 seconds
+- 1x Pumpkin Soup --> Pumpkin Soup Plate, 2 seconds
+- 1x Rice --> Rice Bag Stack, 2 seconds
+- 1x Caviar --> Caviar Set, 2 seconds
+- 1x Cooked Rice --> Cooked Rice Set, 2 seconds
+- 1x Egg Fried Rice --> Egg Fried Rice Plate, 2 seconds
+- 1x Roe Nigiri --> Roe Nigiri Plate, 2 seconds
+- 1x Mushroom Risotto --> Mushroom Risotto Plate, 2 seconds
+Recipes in ItemChanger tile #21:
+- 1x Shiny Stone --> Opal / Iron Ore / Copper Ore / Tin Ore, 3 cycles, 10 seconds, gives Mining xp
+- 1x Stone --> Bag of Cement, 10 seconds
+- 1x Old Gizmo --> Old Spring / Old Gear / Green Board, 25 cycles, 1 seconds
+Recipes in ItemChanger tile #365:
+- 1x Sugar Cane --> Sugar, 180 seconds, gives Farming xp
+- 1x Corn --> Animal Food, 10 cycles, 18 seconds, gives Farming xp
+- 5x Grass Seed --> Animal Food, 180 seconds, gives Farming xp
+- 4x Wheat --> Flour, 180 seconds, gives Farming xp
+- 5x Fir Grass Seeds --> Animal Food, 180 seconds, gives Farming xp
+- 5x Tropical Grass Seeds --> Animal Food, 180 seconds, gives Farming xp
+Recipes in ItemChanger tile #143:
+- 1x Gum Log --> Gum Wood Plank, 2 seconds
+- 1x Palm Wood --> Palm Wood Plank, 2 seconds
+- 1x Hard Wood Log --> Hard Wood Plank, 2 seconds
+- 1x Tin Bar --> Tin Sheet, 2 seconds
+- 1x Bottle Tree Wood --> Hard Wood Plank, 2 seconds
+- 1x Ramp --> Corner Ramp, 2 seconds
+Recipes in ItemChanger tile #582:
+- 10x Gum Log --> Gum Wood Plank, 10 cycles, 1 seconds
+- 10x Palm Wood --> Palm Wood Plank, 10 cycles, 1 seconds
+- 10x Hard Wood Log --> Hard Wood Plank, 10 cycles, 1 seconds
+- 10x Bottle Tree Wood --> Hard Wood Plank, 10 cycles, 1 seconds
+- 1x Ramp --> Corner Ramp, 2 seconds
+Recipes in ItemChanger tile #50:
+- 5x Copper Ore --> Copper Bar, 30 seconds, gives Mining xp
+- 5x Iron Ore --> Iron Bar, 40 seconds, gives Mining xp
+- 1x Spinifex Tuft --> Spinifex Resin, 1 seconds
+- 5x Tin Ore --> Tin Bar, 30 seconds, gives Mining xp
+- 1x Tin Sheet --> Tin Bar, 30 seconds
+Recipes in ItemChanger tile #213:
+- 5x Copper Ore --> Copper Bar, 60 seconds, gives Mining xp
+- 1x Spinifex Tuft --> Spinifex Resin, 1 seconds
+- 5x Tin Ore --> Tin Bar, 60 seconds, gives Mining xp
+- 1x Tin Sheet --> Tin Bar, 60 seconds
+Recipes in ItemChanger tile #581:
+- 5x Copper Ore --> Copper Bar, 2 cycles, 10 seconds, gives Mining xp
+- 5x Iron Ore --> Iron Bar, 2 cycles, 10 seconds, gives Mining xp
+- 5x Tin Ore --> Tin Bar, 2 cycles, 10 seconds, gives Mining xp
+- 5x Berkonium Ore --> Berkonium Bar, 240 seconds, gives Mining xp
+Recipes in ItemChanger tile #206:
+- 5000x Dink --> Opal / Iron Bar / Copper Bar / StreetLamp / Wooden Flower Bed / Copper Pickaxe / Iron Pickaxe / Basic Pickaxe / Tin Bar / Miners Helmet / Basic Spear / Copper Spear / Iron Spear / Worm Farm / Slingshot / Basic Axe / Copper Axe / Iron Pickaxe / Fishing Rod / Roo Poo / Wooden Flower Bed / Brick Flower Bed / Furnace / Bird Coop / Chicken Egg / Milk / High Quality Milk / Bee House / Vombat Poo / Copper Scythe / Iron Scythe / Scythe / Cooked Prime Meat / Raw Prime Meat / Copper Ore / Tin Ore / Iron Ore / Nails / Feather / Maggie Egg / Copper Flower Pot / Desert Rose Pot / Cement Planter / Marble / Marble Pillar / Marble Pedestal / Basic Bench / Gum Wood Bench / Hard Wood Bench / Iron Wood Bench / Marble Bench / Palm Wood Bench / Rock Path / Black Tile Path / Blue Tile Path / Brick Path / Cement Path / Cobblestone Path / Emerald Shard / Green Tile Path / Gum Wood Path / Hard Wood Path / Honey Comb Path / Iron Path / Marble Path / Mossy Brick Path / Mushroom Path / Orange Tile Path / Palm Wood Path / Pattern Stone Path / Pearl Path / Pink Tile Path / Purple Tile Path / Red Carpet Path / Red Cloth Path / Red Tile Path / Rock Edge Path / White Tile Path / Yellow Tile Path / Cherries / Diving Helmet, 1 days
+Recipes in ItemChanger tile #690:
+- 1x Watermelon --> Watermelon Popsicle, 60 seconds
+- 1x High Quality Milk --> Ice Cream, 60 seconds
+Recipes in ItemChanger tile #294:
+- 1x Milk --> Cheese, 1 days
+- 1x High Quality Milk --> High Quality Cheese, 1 days
+- 1x High Quality Cheese --> Cheese, 10 seconds
+Recipes in ItemChanger tile #689:
+- 5x Old Key --> Treasure Map, 3 seconds
+Recipes in ItemChanger tile #822:
+- 10x Old Gear --> Old Key, 1200 seconds
+- 1x Hot Cylinder --> Old Key, 1200 seconds
+- 2x Green Board --> Old Key, 1200 seconds
+- 3x Old Wheel --> Old Key, 1200 seconds
+- 2x Shiny Disc --> Old Key, 1200 seconds
+- 2x Glass Bulb --> Old Key, 1200 seconds
+- 2x Smooth Slate --> Old Key, 1200 seconds
+- 5x Old Spring --> Old Key, 1200 seconds
+- 2x Sliding Handle --> Old Key, 1200 seconds
+- 3x Button Board --> Old Key, 1200 seconds
+- 2x Bright Wire --> Old Key, 1200 seconds
+- 3x Old Toy --> Old Key, 1200 seconds
+- 3x Ear Hats --> Old Key, 1200 seconds
+- 1x Old Contraption --> Old Key, 1200 seconds
+Recipes in ItemChanger tile #293:
+- 1x Wool --> Cloth, 1 days
+Recipes in ItemChanger tile #192:
+- 10x Jelly --> Jelly Brew, 2 days
+- 1x Wattle Tea --> Wattle Brew, 2 days
+- 1x Bottle Brush Tea --> Bottle Brush Brew, 2 days
+- 30x Fish Roe --> Caviar, 7 days, gives Farming xp
+Recipes in ItemChanger tile #435:
+- 20x Bat Wing --> Bat Glider, 15 seconds

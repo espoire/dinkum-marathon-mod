@@ -25,17 +25,21 @@ public partial class Plugin : BaseUnityPlugin
   }
 
   internal static Plugin ActiveInstance;
-  static internal void LogItems(IEnumerable<InventoryItem> items) {
-    foreach (var item in items) {
+  static internal void LogItems(IEnumerable<InventoryItem> items)
+  {
+    foreach (var item in items)
+    {
       Log($"{item.getItemId()}: {item.getInvItemName()} - {item.value} Dinks");
     }
   }
 
-  internal static void Log(string message) {
+  internal static void Log(string message)
+  {
     ActiveInstance?.Logger.LogInfo(message);
   }
 
-  internal static void LogMany(IEnumerable<string> messages) {
+  internal static void LogMany(IEnumerable<string> messages)
+  {
     foreach (var message in messages) Log(message);
   }
 }
@@ -150,8 +154,14 @@ internal class Constants
 
   internal enum Magnitude { Some, Regular, Lots }
 
-  internal static readonly (int, Magnitude)[] itemIdsWithBoostedCraftMaterialsCosts = [
-    
+  // internal static readonly Dictionary<int, Magnitude> itemIdsWithBoostedCraftMaterialsCosts = new Dictionary<int, Magnitude>() {
+  //   { 22, Magnitude.Regular },
+  // };
+
+  // Couldn't increase their difficulty to acquire without breaking the tutorial sequence, so they just craft slower instead.
+  internal static readonly int[] itemChangerIdsWithLongerCraftDurations = [
+    25,   // Camp Fire
+    213,  // Crude Furnace
   ];
 
   /// <summary>
@@ -221,80 +231,161 @@ internal class Patches
   [HarmonyPatch(typeof(Inventory), nameof(Inventory.setUpItemOnStart))]
   private static void EditItemDefinitions(Inventory __instance)
   {
-    // Plugin.LogItems(__instance.allItems);
-
-    var selected = new List<InventoryItem>();
-
-    foreach (var item in __instance.allItems) {
+    foreach (var item in __instance.allItems)
+    {
       if (item is null) continue;
-
-      // Franklyn needs more discs to unlock recipes TODO test
-      if (
-        item.craftable?.crafterLevelLearnt > 0 &&
-        item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.CraftingShop
-      ) {
-        item.craftable.crafterLevelLearnt = (int) (item.craftable.crafterLevelLearnt * Constants.SLOWDOWN_FACTOR);
-      }
-
-      var name = item.getInvItemName();
-
-      if (
-        Constants.allowList.Contains(name) ||
-        !Constants.denyList.Contains(name) && (
-          item.isDeed ||
-          item.isPowerTool ||
-          item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.CraftingShop || (
-            item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.TrapperShop &&
-            (item.spawnPlaceable is not null || item.weaponDamage > 1f)
-          )
-        )
-      ) selected.Add(item);
+      IncreaseShinyDiscCostsToLearn(item);
+      LengthenEarlyGameItemChangerCraftingRecipesFor(item);
+      IncreaseVendorAndCraftCostsFor(item);
     }
+  }
 
+  private static void IncreaseVendorAndCraftCostsFor(InventoryItem item)
+  {
+    var name = item.getInvItemName();
+    if (
+      Constants.allowList.Contains(name) ||
+      !Constants.denyList.Contains(name) && (
+        item.isDeed ||
+        item.isPowerTool ||
+        item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.CraftingShop || (
+          item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.TrapperShop &&
+          (item.spawnPlaceable is not null || item.weaponDamage > 1f)
+        )
+      )
+    )
+    {
+      item.value = (int)(item.value * Constants.SLOWDOWN_FACTOR * (item.isDeed ? 2 : 1));
+
+      if (item.isDeed && item.craftable)
+      {
+        var stacks = item.craftable.stackOfItemsInRecipe;
+
+        for (int i = 0; i < stacks.Length; i++)
+        {
+          stacks[i] = (int)(stacks[i] * Constants.SLOWDOWN_FACTOR * 2);
+        }
+      }
+    }
+  }
+
+  private static void IncreaseShinyDiscCostsToLearn(InventoryItem item)
+  {
+    if (
+      item.craftable?.crafterLevelLearnt > 0 &&
+      item.craftable?.workPlaceConditions == CraftingManager.CraftingMenuType.CraftingShop
+    )
+    {
+      item.craftable.crafterLevelLearnt = (int)(item.craftable.crafterLevelLearnt * Constants.SLOWDOWN_FACTOR * 2);
+    }
+  }
+
+  private static readonly int gameHoursPerGameDay = 17;
+  private static readonly int realSecondsPerGameHour = 120;
+  private static readonly int realSecondsPerGameDay = gameHoursPerGameDay * realSecondsPerGameHour;
+
+  private static void LengthenEarlyGameItemChangerCraftingRecipesFor(InventoryItem item)
+  {
+    if (item?.itemChange is null) return;
+
+    foreach (var recipe in item.itemChange.changesAndTheirChanger)
+    {
+      var tileObjectId = recipe.depositInto.tileObjectId;
+      if (!Constants.itemChangerIdsWithLongerCraftDurations.Contains(tileObjectId)) continue;
+
+      recipe.daysToComplete = (int)(recipe.daysToComplete * Constants.SLOWDOWN_FACTOR);
+      recipe.secondsToComplete = (int)(recipe.secondsToComplete * Constants.SLOWDOWN_FACTOR);
+      if (recipe.secondsToComplete >= realSecondsPerGameDay)
+      {
+        recipe.daysToComplete = recipe.secondsToComplete / realSecondsPerGameDay;
+        recipe.secondsToComplete = 0;
+      }
+    }
+  }
+
+  private static void LogSelectedItems(IEnumerable<InventoryItem> selected)
+  {
     Plugin.Log("Selected");
     Plugin.LogItems(selected);
     Plugin.Log("\n");
 
-    // var needs = Constants.targetItemNames.Where(name =>
-    //   !selected.Any(item => item.getInvItemName() == name)
-    // );
-    // if (needs.Any()) {
-    //   Plugin.Log("Not Selected, but needs to be");
-    //   Plugin.LogMany(needs);
-    // }
+    var needs = Constants.targetItemNames.Where(name =>
+      !selected.Any(item => item.getInvItemName() == name)
+    );
+    if (needs.Any())
+    {
+      Plugin.Log("Not Selected, but needs to be");
+      Plugin.LogMany(needs);
+    }
 
-    // var shouldNot = selected.Where(item =>
-    //   !Constants.targetItemNames.Any(name => item.getInvItemName() == name)
-    // );
-    // if (shouldNot.Any()) {
-    //   if (needs.Any()) Plugin.Log("\n");
-    //   Plugin.Log("Selected, but shouldn't be");
-    //   Plugin.LogItems(shouldNot);
-    // }
-    
-    // Progression items cost more from vendors
-    foreach (var item in selected) {
-      item.value = (int) (item.value * Constants.SLOWDOWN_FACTOR * (item.isDeed ? 2 : 1));
+    var shouldNot = selected.Where(item =>
+      !Constants.targetItemNames.Any(name => item.getInvItemName() == name)
+    );
+    if (shouldNot.Any())
+    {
+      if (needs.Any()) Plugin.Log("\n");
+      Plugin.Log("Selected, but shouldn't be");
+      Plugin.LogItems(shouldNot);
+    }
+  }
 
-      if (item.isDeed && item.craftable) {
-        var stacks = item.craftable.stackOfItemsInRecipe;
+  private static void LogAllItemChangers(Inventory __instance)
+  {
+    var data = new Dictionary<int, List<string>>();
 
-        for (int i = 0; i < stacks.Length; i++) {
-          stacks[i] = (int) (stacks[i] * Constants.SLOWDOWN_FACTOR * 2);
+    foreach (var item in __instance.allItems)
+    {
+      if (item is null) continue;
+
+      if (item.itemChange is not null)
+      {
+        foreach (var recipe in item.itemChange.changesAndTheirChanger)
+        {
+          var productName = recipe.changesWhenComplete?.getInvItemName() ?? string.Join(" / ", recipe.changesWhenCompleteTable.itemsInLootTable.Select(item => item?.getInvItemName() ?? "(null)"));
+          var productCount = recipe.cycles > 1 ? $"{recipe.cycles}x " : "";
+
+          string duration;
+          if (recipe.daysToComplete > 0)
+          {
+            duration = $"{recipe.daysToComplete} days";
+          }
+          else
+          {
+            duration = $"{recipe.secondsToComplete} seconds";
+          }
+
+          var xp = recipe.givesXp ? $", gives {recipe.xPType} xp" : "";
+
+
+          var tileObjectId = recipe.depositInto.tileObjectId;
+          if (!data.ContainsKey(tileObjectId))
+          {
+            data.Add(tileObjectId, []);
+          }
+
+          var output = $"- {recipe.amountNeededed}x {item.getInvItemName()} --> {productCount}{productName}, {duration}{xp}";
+          data[tileObjectId].Add(output);
         }
       }
     }
 
-    Plugin.Log("Selected");
-    Plugin.LogItems(selected);
-    Plugin.Log("\n");
+    foreach (int key in data.Keys)
+    {
+      Plugin.Log($"Recipes in ItemChanger tile #{key}:");
+
+      foreach (var output in data[key])
+      {
+        Plugin.Log(output);
+      }
+    }
   }
 
   [HarmonyPostfix]
   [HarmonyPatch(typeof(MilestoneManager), nameof(MilestoneManager.refreshMilestoneAmounts))]
   private static void AddExtraLevelsToMilestones(MilestoneManager __instance)
   {
-    for (int i = 0; i < __instance.milestones.Count; i++) {
+    for (int i = 0; i < __instance.milestones.Count; i++)
+    {
       var milestone = __instance.milestones[i];
       if (milestone is null) continue;
 
@@ -306,24 +397,27 @@ internal class Patches
     }
   }
 
-  private static void addExtraLevels(Milestone m) {
+  private static void addExtraLevels(Milestone m)
+  {
     // Number of extra tiers should roughly match the slowdown factor.
     // If the game is going to go 4x as long, add 2x, 3x, and 4x milestones, so you don't max out way too early.
     int extraLevels = Math.Max(0,
-      (int) Constants.SLOWDOWN_FACTOR - 1
+      (int)Constants.SLOWDOWN_FACTOR - 1
     );
 
     // Make a copy of existing Milestone Levels with extra space in the array
     var size = m.pointsPerLevel.Length;
     var levels = new int[size + extraLevels];
-    for (int j = 0; j < size; j++) {
+    for (int j = 0; j < size; j++)
+    {
       levels[j] = m.pointsPerLevel[j];
     }
 
     // Append additional levels that are multiples of the old max level: 2x, 3x, 4x...
     var lastVanillaLevel = m.pointsPerLevel.Last();
-    for (int j = 0; j < extraLevels; j++) {
-      levels[size + j] = lastVanillaLevel * (j+2);
+    for (int j = 0; j < extraLevels; j++)
+    {
+      levels[size + j] = lastVanillaLevel * (j + 2);
     }
 
     // Save new levels array back to the Milestone object
@@ -335,22 +429,27 @@ internal class Patches
   private static void Abcd(LicenceManager __instance)
   {
     // Increase Commerce license max level from 3 to 5
-    foreach (int id in Constants.addExtraTiersLicenseIds) {
+    foreach (int id in Constants.addExtraTiersLicenseIds)
+    {
       var license = __instance.allLicences[id];
       license.maxLevel = 5;
     }
 
-    for (int i = 0; i < __instance.allLicences.Length; i++) {
+    for (int i = 0; i < __instance.allLicences.Length; i++)
+    {
       var license = __instance.allLicences[i];
       if (license is null) continue;
 
-      if (Constants.cheapFirstTierLicenseIds.Contains(i)) {
+      if (Constants.cheapFirstTierLicenseIds.Contains(i))
+      {
         // Increase total cost by about SLOWDOWN_FACTOR times, backloaded
-        license.levelCostMuliplier = (int) (license.levelCostMuliplier * Constants.SLOWDOWN_FACTOR);
+        license.levelCostMuliplier = (int)(license.levelCostMuliplier * Constants.SLOWDOWN_FACTOR);
 
-      } else if (!Constants.noIncreaseLicenseIds.Contains(i)) {
+      }
+      else if (!Constants.noIncreaseLicenseIds.Contains(i))
+      {
         // Increase total cost by SLOWDOWN_FACTOR times, evenly
-        license.levelCost = (int) (license.levelCost * Constants.SLOWDOWN_FACTOR);
+        license.levelCost = (int)(license.levelCost * Constants.SLOWDOWN_FACTOR);
       }
     }
   }
@@ -372,10 +471,12 @@ internal class Patches
 
   [HarmonyPrefix]
   [HarmonyPatch(typeof(LicenceManager), nameof(LicenceManager.getLicenceLevelDescription))]
-  private static bool ExtendFormulaicLicenseDescriptions(ref string __result, LicenceManager.LicenceTypes type, int level) {
-    
+  private static bool ExtendFormulaicLicenseDescriptions(ref string __result, LicenceManager.LicenceTypes type, int level)
+  {
+
     // Provide English language description text from Commerce-4 and Commerce-5
-    if (type == LicenceManager.LicenceTypes.Commerce && level > 3) {
+    if (type == LicenceManager.LicenceTypes.Commerce && level > 3)
+    {
       __result = $"The holder will receive {5 * level}% more when selling items.";
       return false;
     }
@@ -392,27 +493,30 @@ internal class Patches
 
   [HarmonyPrefix]
   [HarmonyPatch(typeof(TownManager), "townMembersDonate")]
-  private static void TownMembersDonateMore(ref TownManager ___manage) {
+  private static void TownMembersDonateMore(ref TownManager ___manage)
+  {
     int debt = NetworkMapSharer.Instance.townDebt;
     if (debt <= 0) return;
 
     int residents = NPCManager.manage.npcStatus.Where(npc => npc.checkIfHasMovedIn()).Count();
     int possibleResidents = NPCManager.manage.npcStatus.Count;
-    double residentsFrac = (double) residents / possibleResidents;
+    double residentsFrac = (double)residents / possibleResidents;
     double debtPaidFrac = residentsFrac / UnityEngine.Random.Range(8f, 18f);
-    int payment = (int) (debt * debtPaidFrac);
+    int payment = (int)(debt * debtPaidFrac);
 
     ___manage.payTownDebt(payment);
   }
 
-  private static double getSkillTypeCostMultiplier(int skillId) {
-    switch (skillId) {
-      case (int) SkillTypes.Farming: return 1.0;
-      case (int) SkillTypes.Foraging: return 2.0;
-      case (int) SkillTypes.Mining: return 2.5;
-      case (int) SkillTypes.Fishing: return 2.0;
-      case (int) SkillTypes.BugCatching: return 2.0;
-      case (int) SkillTypes.Hunting: return 1.75;
+  private static double getSkillTypeCostMultiplier(int skillId)
+  {
+    switch (skillId)
+    {
+      case (int)SkillTypes.Farming: return 1.0;
+      case (int)SkillTypes.Foraging: return 2.0;
+      case (int)SkillTypes.Mining: return 2.5;
+      case (int)SkillTypes.Fishing: return 2.0;
+      case (int)SkillTypes.BugCatching: return 2.0;
+      case (int)SkillTypes.Hunting: return 1.75;
     }
 
     return 1.0;
@@ -420,8 +524,9 @@ internal class Patches
 
   [HarmonyPostfix]
   [HarmonyPatch(typeof(CharLevelManager), "getLevelRequiredXP")]
-  private static void SkillsTakeMoreXp(ref int __result, int skillId) {
+  private static void SkillsTakeMoreXp(ref int __result, int skillId)
+  {
     double multiplier = Constants.SLOWDOWN_FACTOR * getSkillTypeCostMultiplier(skillId);
-    __result = (int) (__result * multiplier);
+    __result = (int)(__result * multiplier);
   }
 }

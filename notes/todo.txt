@@ -25,19 +25,13 @@ Some craftable items cost more ingredients:
 	+ Row Boat
 	+ Sail Boat
 	+ Bridges
-	
-
-Most crafting stations craft more slowly. Those marked with a plus are very very slow:
-	+ Campfire
-	+ Crude Furnace
-	- Table Saw
-	- Barbecue
-	- Furnace
-	- Stone Grinder
-	- Grain Mill
 
 Animals cost more from Irwin's Barn
 The profit margin for selling happy animals is NOT increased from normal
+
+✅ Some crafting stations craft more slowly:
+	- Campfire
+	- Crude Furnace
 
 ✅ Skills need more XP to level up
 ✅ Permits cost more points
@@ -50,6 +44,10 @@ The profit margin for selling happy animals is NOT increased from normal
 ✅Buildings construction takes more:
   ✅ debt
   ✅ materials
+
+
+
+Spin these off into new mods:
 
 Quarry biome ignores dirt type when spawning rocks/ores
   - Ores can overwrite rock & spinifex plants
