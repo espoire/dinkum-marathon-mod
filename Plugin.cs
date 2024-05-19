@@ -48,7 +48,7 @@ public partial class Plugin : BaseUnityPlugin
 internal class Constants
 {
   internal static readonly double SLOWDOWN_FACTOR = 3;
-  internal static readonly bool ENABLE_LOGGING = false;
+  internal static readonly bool ENABLE_LOGGING = true;
 
   /// <summary>
   ///   Target item list, used to check that the rules are actually hitting the desired items.
@@ -531,14 +531,11 @@ internal class Patches
     m.changeAmountPerLevel(levels);
   }
 
-  // private static bool licensesPatched = false;
-
   [HarmonyPostfix]
   [HarmonyPatch(typeof(LicenceManager), nameof(LicenceManager.setLicenceLevelsAndPrice))]
-  private static void PatchLicenses(LicenceManager __instance)
-  {
-    // if (licensesPatched) return;
-    // licensesPatched = true;
+  private static void PatchLicenses(LicenceManager __instance) {
+    // Only run if the licenses are in their unmodded state.
+    if (__instance.allLicences[1].levelCostMuliplier != 2) return;
 
     if (Constants.ENABLE_LOGGING) Plugin.Log("Running PatchLicenses");
 
@@ -555,7 +552,7 @@ internal class Patches
       if (license is null) continue;
 
       if (Constants.ENABLE_LOGGING) {
-        Plugin.Log($"Modifying License: {__instance.getLicenceName(license.type)}");
+        Plugin.Log($"Modifying License #{i}: {__instance.getLicenceName(license.type)}");
         Plugin.Log($"- Original tier costs: {GetCostSummary(license)}");
       }
 
