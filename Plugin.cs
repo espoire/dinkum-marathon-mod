@@ -666,11 +666,11 @@ internal class Patches
     switch (skillId)
     {
       case (int)SkillTypes.Farming: return 1.0;
-      case (int)SkillTypes.Foraging: return 2.2;
-      case (int)SkillTypes.Mining: return 2.5;
+      case (int)SkillTypes.Foraging: return 2.5;
+      case (int)SkillTypes.Mining: return 2.0;
       case (int)SkillTypes.Fishing: return 2.0;
       case (int)SkillTypes.BugCatching: return 2.0;
-      case (int)SkillTypes.Hunting: return 1.9;
+      case (int)SkillTypes.Hunting: return 2.0;
     }
 
     return 1.0;
