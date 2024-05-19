@@ -1,0 +1,26 @@
+1: Mining Licence - Max Lv. 3, costs 250 / 1000 / 3000
+2: Logging Licence - Max Lv. 3, costs 250 / 1000 / 3000
+3: Fishing Licence - Max Lv. 3, costs 250 / 1000 / 3000
+4: Hunting Licence - Max Lv. 3, costs 250 / 1000 / 3000
+5: Landscaping Licence - Max Lv. 2, costs 250 / 500
+6: Metal Detecting - Max Lv. 2, costs 500 / 2000
+7: Vehicle Licence - Max Lv. 3, costs 1200 / 2400 / 7200
+8: Commerce Licence - Max Lv. 3, costs 750 / 3000 / 9000
+9: Handling Licence - Max Lv. 3, costs 250 / 1000 / 3000
+10: Building Licence - Max Lv. 3, costs 250 / 1000 / 3000
+11: Farming Licence - Max Lv. 3, costs 250 / 1000 / 3000
+12: Cargo Licence - Max Lv. 3, costs 500 / 2000 / 6000
+13: Deep Mining Licence - Max Lv. 1, costs 3500
+14: Toolbelt Licence - Max Lv. 3, costs 250 / 1000 / 3000
+15: Trapping Licence - Max Lv. 2, costs 500 / 1000
+16: Excavation Licence - Max Lv. 1, costs 500
+17: Irrigation Licence - Max Lv. 2, costs 1000 / 4000
+18: Agricultural Vehicle Licence - Max Lv. 3, costs 2000 / 4000 / 6000
+19: Sign Writing Licence - Max Lv. 2, costs 500 / 1000
+20: Water Scaping Licence - Max Lv. 1, costs 1000
+21: Brewing Licence - Max Lv. 2, costs 500 / 2000
+22: Animal Processing Licence - Max Lv. 2, costs 500 / 1000
+23: Fish Farming Licence - Max Lv. 1, costs 2500
+
+// Added by mod: Improved Minimap
+24: Improved Minimap - Max Lv. 2, costs 250 / 1000

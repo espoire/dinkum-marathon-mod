@@ -48,7 +48,7 @@ public partial class Plugin : BaseUnityPlugin
 internal class Constants
 {
   internal static readonly double SLOWDOWN_FACTOR = 3;
-  internal static readonly bool ENABLE_LOGGING = true;
+  internal static readonly bool ENABLE_LOGGING = false;
   internal static readonly bool ENABLE_LOG_LICENSE_COSTS = false;
 
   /// <summary>
@@ -543,10 +543,16 @@ internal class Patches
   [HarmonyPostfix]
   [HarmonyPatch(typeof(LicenceManager), nameof(LicenceManager.setLicenceLevelsAndPrice))]
   private static void PatchLicenses(LicenceManager __instance) {
+    // Needed to fix broken saves from old versions of the mod
+    ResetLicensesToVanilla(__instance);
+
     // Only run if the licenses are in their unmodded state.
-    if (__instance.allLicences[1].levelCostMuliplier != 2) return;
+    if (__instance.allLicences[6].levelCost != 500) return;
 
     if (Constants.ENABLE_LOGGING) Plugin.Log("Running PatchLicenses");
+
+    // LogAllLicenses(__instance);
+
 
     // Increase Commerce license max level from 3 to 5
     foreach (int id in Constants.addExtraTiersLicenseIds)
@@ -578,6 +584,22 @@ internal class Patches
       }
 
       if (Constants.ENABLE_LOGGING && Constants.ENABLE_LOG_LICENSE_COSTS) Plugin.Log($"- Modified tier costs: {GetCostSummary(license)}");
+    }
+  }
+
+  private static readonly int numVanillaLicenses = 23;
+  private static readonly int[] vanillaLicensesResetInBase = [
+    5, 6, 7, 8, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23
+  ];
+
+  private static void ResetLicensesToVanilla(LicenceManager __instance) {
+    for (int i = 0; i <= numVanillaLicenses; i++) {
+      if (vanillaLicensesResetInBase.Contains(i)) continue;
+
+      var license = __instance.allLicences[i];
+      if (license is null) continue;
+
+      license.setLevelCost(250);
     }
   }
 
