@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace PaCInfo;
 
-[BepInPlugin(GUID: "vespoire.dinkum.marathon", Name: "Marathon Mode", Version: "0.0.1")]
+[BepInPlugin(GUID: "vespoire.dinkum.marathon", Name: "Marathon Mode", Version: "1.0.1")]
 public partial class Plugin : BaseUnityPlugin
 {
   private static Harmony _harmony;
