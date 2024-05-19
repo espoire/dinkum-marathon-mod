@@ -228,6 +228,8 @@ internal class Constants
     48, // Explorer - Place the base tent
     49, // Camper - Place your home tent
     50, // Town Planner - Build new buildings
+    54, // Entomologist - Collect types of bugs
+    55, // Ichthyologist - Collect types of fish
     63, // Stylish Hair - Get your first hair cut
     75, // Teleporter - Use your first teleporter
     81, // Bucket Head - Wear a bucket for a hat for the first time
