@@ -4,6 +4,7 @@ using BepInEx;
 using HarmonyLib;
 using System.Linq;
 using SkillTypes = CharLevelManager.SkillTypes;
+using UnityEngine;
 
 namespace PaCInfo;
 
@@ -47,6 +48,7 @@ public partial class Plugin : BaseUnityPlugin
 internal class Constants
 {
   internal static readonly double SLOWDOWN_FACTOR = 3;
+  internal static readonly bool ENABLE_LOGGING = false;
 
   /// <summary>
   ///   Target item list, used to check that the rules are actually hitting the desired items.
@@ -153,62 +155,77 @@ internal class Constants
 
   internal enum Magnitude { Some, Regular, Lots }
 
-  internal static readonly Dictionary<int, Magnitude> itemIdsWithBoostedCraftMaterialsCosts = new Dictionary<int, Magnitude>() {
+  internal static readonly Dictionary<int, (Magnitude magnitude, string[] exceptions)> itemIdsWithBoostedCraftMaterialsCosts = new Dictionary<int, (Magnitude magnitude, string[] exceptions)>() {
     // These progression structures are early game, so only boost them a little.
-    { 481, Magnitude.Some },  // Crafting Table
-    { 769, Magnitude.Some },  // Brick Well
-    { 758, Magnitude.Some },  // Gum Wood Bridge
-    { 578, Magnitude.Some },  // Palm Wood Bridge
-    { 99, Magnitude.Some },   // Palm Wood Bridge
-    { 757, Magnitude.Some },  // Hard Wood Bridge
-    { 759, Magnitude.Some },  // Brick Bridge
-    { 1079, Magnitude.Some }, // Wide Gum Wood Bridge
-    { 1254, Magnitude.Some }, // Wide Palm Wood Bridge
-    { 1080, Magnitude.Some }, // Wide Hard Wood Bridge
-    { 1178, Magnitude.Some }, // Wide Brick Bridge
+    { 481,  ( Magnitude.Some, [] ) }, // Crafting Table
+    { 769,  ( Magnitude.Some, [] ) }, // Brick Well
+    { 758,  ( Magnitude.Some, [] ) }, // Gum Wood Bridge
+    { 578,  ( Magnitude.Some, [] ) }, // Palm Wood Bridge
+    { 99,   ( Magnitude.Some, [] ) }, // Palm Wood Bridge
+    { 757,  ( Magnitude.Some, [] ) }, // Hard Wood Bridge
+    { 759,  ( Magnitude.Some, [] ) }, // Brick Bridge
+    { 1079, ( Magnitude.Some, [] ) }, // Wide Gum Wood Bridge
+    { 1254, ( Magnitude.Some, [] ) }, // Wide Palm Wood Bridge
+    { 1080, ( Magnitude.Some, [] ) }, // Wide Hard Wood Bridge
+    { 1178, ( Magnitude.Some, [] ) }, // Wide Brick Bridge
 
     // These are useful and permanent, so they're progression-related and should cost more.
-    { 359, Magnitude.Regular },   // Cooking Table
-    { 1121, Magnitude.Regular },  // Billy Can Kit
-    { 392, Magnitude.Regular },   // Keg
-    { 697, Magnitude.Regular },   // Simple Animal Trap
-    { 302, Magnitude.Regular },   // Animal Trap
-    { 223, Magnitude.Regular },   // Crab Pot
-    { 226, Magnitude.Regular },   // Bee House
-    { 703, Magnitude.Regular },   // Compost Bin
-    { 863, Magnitude.Regular },   // Worm Farm
-    { 278, Magnitude.Regular },   // Sprinkler
-    { 749, Magnitude.Regular },   // Advanced Sprinkler
-    { 860, Magnitude.Regular },   // Grain Mill
-    { 343, Magnitude.Regular },   // Animal Feeder
-    { 341, Magnitude.Regular },   // Bird Coop
-    { 347, Magnitude.Regular },   // Animal Stall
-    { 404, Magnitude.Regular },   // Animal Den
-    { 604, Magnitude.Regular },   // Row Boat
-    { 1071, Magnitude.Regular },  // Sail Boat
+    { 359,  ( Magnitude.Regular, [] ) },   // Cooking Table
+    { 1121, ( Magnitude.Regular, ["Camp Fire"] ) },   // Billy Can Kit, but don't take extra Camp Fires
+    { 392,  ( Magnitude.Regular, [] ) },   // Keg
+    { 697,  ( Magnitude.Regular, [] ) },   // Simple Animal Trap
+    { 302,  ( Magnitude.Regular, [] ) },   // Animal Trap
+    { 223,  ( Magnitude.Regular, [] ) },   // Crab Pot
+    { 226,  ( Magnitude.Regular, ["Queen Bee"] ) },   // Bee House, but don't take extra Queen Bees
+    { 703,  ( Magnitude.Regular, [] ) },   // Compost Bin
+    { 863,  ( Magnitude.Regular, [] ) },   // Worm Farm
+    { 278,  ( Magnitude.Regular, [] ) },   // Sprinkler
+    { 749,  ( Magnitude.Regular, ["Sprinkler"] ) },   // Advanced Sprinkler, but don't take extra Sprinklers
+    { 860,  ( Magnitude.Regular, [] ) },   // Grain Mill
+    { 343,  ( Magnitude.Regular, [] ) },   // Animal Feeder
+    { 341,  ( Magnitude.Regular, [] ) },   // Bird Coop
+    { 347,  ( Magnitude.Regular, [] ) },   // Animal Stall
+    { 404,  ( Magnitude.Regular, [] ) },   // Animal Den
+    { 604,  ( Magnitude.Regular, [] ) },   // Row Boat
+    { 1071, ( Magnitude.Regular, [] ) },   // Sail Boat
+
+    // Franklyn's
+    { 3, ( Magnitude.Regular, ["Table Saw"] ) }, // Chainsaw
+    { 599, ( Magnitude.Regular, ["Stone Grinder"] ) }, // Jack Hammer
+    { 682, ( Magnitude.Regular, ["Shovel"] ) }, // Compactor
+    { 925, ( Magnitude.Regular, [] ) }, // Dirt Printer
+    { 1108, ( Magnitude.Regular, ["Chainsaw"] ) }, // Improved Chainsaw
+    { 1192, ( Magnitude.Regular, ["Jack Hammer"] ) }, // Improved Jack Hammer
+    { 1194, ( Magnitude.Regular, ["Compactor"] ) }, // Improved Compactor
+    { 1179, ( Magnitude.Regular, ["Dirt Printer"] ) }, // Improved Dirt Printer
+    // Bomb intentionally excluded
+    { 503, ( Magnitude.Regular, [] ) }, // Weather Station
+    { 854, ( Magnitude.Regular, [] ) }, // Repair Table
+    { 856, ( Magnitude.Regular, ["Iron Bar"] ) }, // Charging Station
+    { 383, ( Magnitude.Regular, ["Iron Bar"] ) }, // Quarry
+    { 450, ( Magnitude.Regular, ["Iron Bar"] ) }, // Gacha Machine
+    { 1188, ( Magnitude.Regular, ["Furnace", "Berkonium Ore"] ) }, // Blast Furnace
+    { 1189, ( Magnitude.Regular, ["Table Saw", "Berkonium Bar"] ) }, // Improved Table Saw
+    { 1368, ( Magnitude.Regular, ["Berkonium Bar"] ) }, // Solar Panel
+    // Auto Sorter intentionally excluded
+    // Lawn Mower, Ride On Lawn Mower intentionally excluded
+    { 600, ( Magnitude.Regular, [] ) },  // Jet Ski
+    { 340, ( Magnitude.Regular, [] ) },  // MotorBike
+    { 1266, ( Magnitude.Regular, [] ) }, // Ute
+    { 211, ( Magnitude.Regular, [] ) },  // Hot Air Balloon
+    { 684, ( Magnitude.Regular, [] ) },  // Helicopter
 
     // These useful permanent structures are build-once, improve-many-others. They cost a LOT more.
-    { 700, Magnitude.Lots },      // Copper Watering Can
-    { 702, Magnitude.Lots },      // Iron Watering Can
-    { 692, Magnitude.Lots },      // Water Tank
-    { 693, Magnitude.Lots },      // Silo
-    { 395, Magnitude.Lots },      // Animal Collection Point
-    { 753, Magnitude.Lots },      // Windmill
-    { 452, Magnitude.Lots },      // (pumpkin) Scarecrow
-    { 1004, Magnitude.Lots },     // Melon Scarecrow
-    { 1011, Magnitude.Regular },  // Festive Scarecrow, only Regular because it's already expensive.
+    { 700,  ( Magnitude.Lots, ["Watering Can"] ) },         // Copper Watering Can, but don't take extra Watering Cans
+    { 702,  ( Magnitude.Lots, ["Copper Watering Can"] ) },  // Iron Watering Can, but don't take extra Copper Watering Cans
+    { 692,  ( Magnitude.Lots, [] ) },     // Water Tank
+    { 693,  ( Magnitude.Lots, [] ) },     // Silo
+    { 395,  ( Magnitude.Lots, [] ) },     // Animal Collection Point
+    { 753,  ( Magnitude.Lots, [] ) },     // Windmill
+    { 452,  ( Magnitude.Lots, [] ) },     // (pumpkin) Scarecrow
+    { 1004, ( Magnitude.Lots, [] ) },     // Melon Scarecrow
+    { 1011, ( Magnitude.Regular, [] ) },  // Festive Scarecrow, only Regular because it's already expensive.
   };
-
-  /// <summary>
-  ///   It just didn't make in-world sense for crafting recipes to require multiples of these.
-  /// </summary>
-  internal static readonly string[] itemsNotToBoostInCraftCosts = [
-    "Camp Fire",
-    "Queen Bee",
-    "Sprinkler",
-    "Watering Can",
-    "Copper Watering Can",
-  ];
 
   // Couldn't increase their difficulty to acquire without breaking the tutorial sequence, so they just craft slower instead.
   internal static readonly int[] itemChangerIdsWithLongerCraftDurations = [
@@ -285,6 +302,8 @@ internal class Patches
   [HarmonyPatch(typeof(Inventory), nameof(Inventory.setUpItemOnStart))]
   private static void EditItemDefinitions(Inventory __instance)
   {
+    if (Constants.ENABLE_LOGGING) Plugin.Log("Running EditItemDefinitions");
+
     for (int i = 0; i < __instance.allItems.Length; i++) {
       var item = __instance.allItems[i];
       if (item is null) continue;
@@ -324,28 +343,32 @@ internal class Patches
     }
 
     if (item.craftable && Constants.itemIdsWithBoostedCraftMaterialsCosts.ContainsKey(id)) {
-      double magnitude = 0;
-      switch (Constants.itemIdsWithBoostedCraftMaterialsCosts[id]) {
+      var config = Constants.itemIdsWithBoostedCraftMaterialsCosts[id];
+      var magnitude = config.magnitude;
+      var exceptions = config.exceptions;
+
+      double multiplier = 0;
+      switch (magnitude) {
         case Constants.Magnitude.Some:
-          magnitude = Math.Sqrt(Constants.SLOWDOWN_FACTOR);
+          multiplier = Math.Sqrt(Constants.SLOWDOWN_FACTOR);
           break;
         
         case Constants.Magnitude.Regular:
-          magnitude = Constants.SLOWDOWN_FACTOR;
+          multiplier = Constants.SLOWDOWN_FACTOR;
           break;
         
         case Constants.Magnitude.Lots:
-          magnitude = Constants.SLOWDOWN_FACTOR * Constants.SLOWDOWN_FACTOR;
+          multiplier = Constants.SLOWDOWN_FACTOR * Constants.SLOWDOWN_FACTOR;
           break;
       }
 
-      if (magnitude > 0) {
+      if (multiplier > 0) {
         var items = item.craftable.itemsInRecipe;
         var stacks = item.craftable.stackOfItemsInRecipe;
 
         for (int i = 0; i < stacks.Length; i++) {
-          if (Constants.itemsNotToBoostInCraftCosts.Contains(items[i].getInvItemName())) continue;
-          stacks[i] = (int)(stacks[i] * magnitude);
+          if (exceptions.Contains(items[i].getInvItemName())) continue;
+          stacks[i] = (int)(stacks[i] * multiplier);
         }
       }
     }
@@ -466,6 +489,8 @@ internal class Patches
   [HarmonyPatch(typeof(MilestoneManager), nameof(MilestoneManager.refreshMilestoneAmounts))]
   private static void AddExtraLevelsToMilestones(MilestoneManager __instance)
   {
+    if (Constants.ENABLE_LOGGING) Plugin.Log("Running AddExtraLevelsToMilestones");
+
     for (int i = 0; i < __instance.milestones.Count; i++)
     {
       var milestone = __instance.milestones[i];
@@ -506,10 +531,17 @@ internal class Patches
     m.changeAmountPerLevel(levels);
   }
 
+  // private static bool licensesPatched = false;
+
   [HarmonyPostfix]
   [HarmonyPatch(typeof(LicenceManager), nameof(LicenceManager.setLicenceLevelsAndPrice))]
-  private static void Abcd(LicenceManager __instance)
+  private static void PatchLicenses(LicenceManager __instance)
   {
+    // if (licensesPatched) return;
+    // licensesPatched = true;
+
+    if (Constants.ENABLE_LOGGING) Plugin.Log("Running PatchLicenses");
+
     // Increase Commerce license max level from 3 to 5
     foreach (int id in Constants.addExtraTiersLicenseIds)
     {
@@ -522,6 +554,11 @@ internal class Patches
       var license = __instance.allLicences[i];
       if (license is null) continue;
 
+      if (Constants.ENABLE_LOGGING) {
+        Plugin.Log($"Modifying License: {__instance.getLicenceName(license.type)}");
+        Plugin.Log($"- Original tier costs: {GetCostSummary(license)}");
+      }
+
       if (Constants.cheapFirstTierLicenseIds.Contains(i))
       {
         // Increase total cost by about SLOWDOWN_FACTOR times, backloaded
@@ -533,29 +570,34 @@ internal class Patches
         // Increase total cost by SLOWDOWN_FACTOR times, evenly
         license.levelCost = (int)(license.levelCost * Constants.SLOWDOWN_FACTOR);
       }
+
+      if (Constants.ENABLE_LOGGING) Plugin.Log($"- Modified tier costs: {GetCostSummary(license)}");
     }
   }
 
-  // private static void LogAllLicenses(LicenceManager __instance) {
-  //   for (int i = 0; i < __instance.allLicences.Length; i++) {
-  //     var license = __instance.allLicences[i];
-  //     if (license is null) continue;
+  private static void LogAllLicenses(LicenceManager __instance) {
+    for (int i = 0; i < __instance.allLicences.Length; i++) {
+      var license = __instance.allLicences[i];
+      if (license is null) continue;
 
-  //     var name = __instance.getLicenceName(license.type);
-  //     var levelPrices = new int[license.maxLevel];
-  //     for (int j = 0; j < license.maxLevel; j++) {
-  //       levelPrices[j] = (j + 1) * license.levelCost * Mathf.Clamp(j * license.levelCostMuliplier, 1, 100);
-  //     }
+      var name = __instance.getLicenceName(license.type);
+      Plugin.Log($@"{i}: {name} - Max Lv. {license.maxLevel}, costs {GetCostSummary(license)}");
+    }
+  }
 
-  //     Plugin.Log($@"{i}: {name} - Max Lv. {license.maxLevel}, costs {string.Join(" / ", levelPrices)}");
-  //   }
-  // }
+  private static string GetCostSummary(Licence license) {
+    var levelPrices = new int[license.maxLevel];
+    for (int j = 0; j < license.maxLevel; j++) {
+      levelPrices[j] = (j + 1) * license.levelCost * Mathf.Clamp(j * license.levelCostMuliplier, 1, 100);
+    }
+
+    return string.Join(" / ", levelPrices);
+  }
 
   [HarmonyPrefix]
   [HarmonyPatch(typeof(LicenceManager), nameof(LicenceManager.getLicenceLevelDescription))]
   private static bool ExtendFormulaicLicenseDescriptions(ref string __result, LicenceManager.LicenceTypes type, int level)
   {
-
     // Provide English language description text from Commerce-4 and Commerce-5
     if (type == LicenceManager.LicenceTypes.Commerce && level > 3)
     {
@@ -575,18 +617,20 @@ internal class Patches
 
   [HarmonyPrefix]
   [HarmonyPatch(typeof(TownManager), "townMembersDonate")]
-  private static void TownMembersDonateMore(ref TownManager ___manage)
+  private static bool TownMembersDonateMore(ref TownManager ___manage)
   {
     int debt = NetworkMapSharer.Instance.townDebt;
-    if (debt <= 0) return;
+    if (debt > 0) {
+      int residents = NPCManager.manage.npcStatus.Where(npc => npc.checkIfHasMovedIn()).Count();
+      int possibleResidents = NPCManager.manage.npcStatus.Count;
+      double residentsFrac = (double) residents / possibleResidents;
+      double debtPaidFrac = residentsFrac / UnityEngine.Random.Range(8f, 18f);
+      int payment = (int)(debt * debtPaidFrac);
 
-    int residents = NPCManager.manage.npcStatus.Where(npc => npc.checkIfHasMovedIn()).Count();
-    int possibleResidents = NPCManager.manage.npcStatus.Count;
-    double residentsFrac = (double)residents / possibleResidents;
-    double debtPaidFrac = residentsFrac / UnityEngine.Random.Range(8f, 18f);
-    int payment = (int)(debt * debtPaidFrac);
+      ___manage.payTownDebt(payment);
+    }
 
-    ___manage.payTownDebt(payment);
+    return false;
   }
 
   private static double getSkillTypeCostMultiplier(int skillId)
@@ -594,11 +638,11 @@ internal class Patches
     switch (skillId)
     {
       case (int)SkillTypes.Farming: return 1.0;
-      case (int)SkillTypes.Foraging: return 2.0;
+      case (int)SkillTypes.Foraging: return 2.2;
       case (int)SkillTypes.Mining: return 2.5;
       case (int)SkillTypes.Fishing: return 2.0;
       case (int)SkillTypes.BugCatching: return 2.0;
-      case (int)SkillTypes.Hunting: return 1.75;
+      case (int)SkillTypes.Hunting: return 1.9;
     }
 
     return 1.0;
