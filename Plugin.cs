@@ -49,6 +49,7 @@ internal class Constants
 {
   internal static readonly double SLOWDOWN_FACTOR = 3;
   internal static readonly bool ENABLE_LOGGING = true;
+  internal static readonly bool ENABLE_LOG_LICENSE_COSTS = false;
 
   /// <summary>
   ///   Target item list, used to check that the rules are actually hitting the desired items.
@@ -302,6 +303,10 @@ internal class Patches
   [HarmonyPatch(typeof(Inventory), nameof(Inventory.setUpItemOnStart))]
   private static void EditItemDefinitions(Inventory __instance)
   {
+    // Only run if the items are in their unmodded state.
+    var chainsaw = __instance.allItems[3];
+    if (chainsaw.value != 50000) return;
+
     if (Constants.ENABLE_LOGGING) Plugin.Log("Running EditItemDefinitions");
 
     for (int i = 0; i < __instance.allItems.Length; i++) {
@@ -489,6 +494,10 @@ internal class Patches
   [HarmonyPatch(typeof(MilestoneManager), nameof(MilestoneManager.refreshMilestoneAmounts))]
   private static void AddExtraLevelsToMilestones(MilestoneManager __instance)
   {
+    // Only run if the milestones are in their unmodded state.
+    var harvestMaster = __instance.milestones[1];
+    if (harvestMaster.pointsPerLevel.Length != 4) return;
+
     if (Constants.ENABLE_LOGGING) Plugin.Log("Running AddExtraLevelsToMilestones");
 
     for (int i = 0; i < __instance.milestones.Count; i++)
@@ -551,7 +560,7 @@ internal class Patches
       var license = __instance.allLicences[i];
       if (license is null) continue;
 
-      if (Constants.ENABLE_LOGGING) {
+      if (Constants.ENABLE_LOGGING && Constants.ENABLE_LOG_LICENSE_COSTS) {
         Plugin.Log($"Modifying License #{i}: {__instance.getLicenceName(license.type)}");
         Plugin.Log($"- Original tier costs: {GetCostSummary(license)}");
       }
@@ -568,7 +577,7 @@ internal class Patches
         license.levelCost = (int)(license.levelCost * Constants.SLOWDOWN_FACTOR);
       }
 
-      if (Constants.ENABLE_LOGGING) Plugin.Log($"- Modified tier costs: {GetCostSummary(license)}");
+      if (Constants.ENABLE_LOGGING && Constants.ENABLE_LOG_LICENSE_COSTS) Plugin.Log($"- Modified tier costs: {GetCostSummary(license)}");
     }
   }
 
